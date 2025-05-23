@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_250d89d5269cf583a5ffed61c43d7566 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_250d89d5269cf583a5ffed61c43d7566" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_250d89d5269cf583a5ffed61c43d7566 = L.map(
+                "map_250d89d5269cf583a5ffed61c43d7566",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4062c9fbb5de7623bc8d48820ef57079 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4062c9fbb5de7623bc8d48820ef57079.addTo(map_250d89d5269cf583a5ffed61c43d7566);
+        
+    
+            var marker_6cf8c9ef9824a70c642161a17ada8f9c = L.marker(
+                [45.0703, 7.6869],
+                {
+}
+            ).addTo(map_250d89d5269cf583a5ffed61c43d7566);
+        
+    
+            var icon_2511b4c9ccad89f3e17b2ede897fd705 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80f418ce32d1e202bc78978afbcd9cdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_904e71d83ac76b3e9c734775f523818e = $(`<div id="html_904e71d83ac76b3e9c734775f523818e" style="width: 100.0%; height: 100.0%;">     <strong>Torino</strong><br>     Incidenti: 12000<br>     Morti: 120<br>     Feriti: 5000     </div>`)[0];
+                popup_80f418ce32d1e202bc78978afbcd9cdd.setContent(html_904e71d83ac76b3e9c734775f523818e);
+            
+        
+
+        marker_6cf8c9ef9824a70c642161a17ada8f9c.bindPopup(popup_80f418ce32d1e202bc78978afbcd9cdd)
+        ;
+
+        
+    
+    
+            marker_6cf8c9ef9824a70c642161a17ada8f9c.bindTooltip(
+                `<div>
+                     Torino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6cf8c9ef9824a70c642161a17ada8f9c.setIcon(icon_2511b4c9ccad89f3e17b2ede897fd705);
+            
+    
+            var marker_fc034a8820fc164276d40f57ad86fae8 = L.marker(
+                [45.4642, 9.19],
+                {
+}
+            ).addTo(map_250d89d5269cf583a5ffed61c43d7566);
+        
+    
+            var icon_457089b2790e2f03f202134819153017 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0fe34bff3ed1826317916c00aebd544 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_443acaa39fef69e97db4ca7551bdbeb9 = $(`<div id="html_443acaa39fef69e97db4ca7551bdbeb9" style="width: 100.0%; height: 100.0%;">     <strong>Milano</strong><br>     Incidenti: 10000<br>     Morti: 80<br>     Feriti: 4500     </div>`)[0];
+                popup_f0fe34bff3ed1826317916c00aebd544.setContent(html_443acaa39fef69e97db4ca7551bdbeb9);
+            
+        
+
+        marker_fc034a8820fc164276d40f57ad86fae8.bindPopup(popup_f0fe34bff3ed1826317916c00aebd544)
+        ;
+
+        
+    
+    
+            marker_fc034a8820fc164276d40f57ad86fae8.bindTooltip(
+                `<div>
+                     Milano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc034a8820fc164276d40f57ad86fae8.setIcon(icon_457089b2790e2f03f202134819153017);
+            
+    
+            var marker_e81e28e8f93221287800bada2caad186 = L.marker(
+                [41.9028, 12.4964],
+                {
+}
+            ).addTo(map_250d89d5269cf583a5ffed61c43d7566);
+        
+    
+            var icon_0db71f228dc0b2c0039b5865d285848f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8e00ddf6f2a9b46c378627cd1eed909 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b193e1239e9c41d35334e5e0154567c8 = $(`<div id="html_b193e1239e9c41d35334e5e0154567c8" style="width: 100.0%; height: 100.0%;">     <strong>Roma</strong><br>     Incidenti: 9500<br>     Morti: 70<br>     Feriti: 4200     </div>`)[0];
+                popup_d8e00ddf6f2a9b46c378627cd1eed909.setContent(html_b193e1239e9c41d35334e5e0154567c8);
+            
+        
+
+        marker_e81e28e8f93221287800bada2caad186.bindPopup(popup_d8e00ddf6f2a9b46c378627cd1eed909)
+        ;
+
+        
+    
+    
+            marker_e81e28e8f93221287800bada2caad186.bindTooltip(
+                `<div>
+                     Roma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e81e28e8f93221287800bada2caad186.setIcon(icon_0db71f228dc0b2c0039b5865d285848f);
+            
+</script>
+</html>
