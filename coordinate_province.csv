@@ -1,4 +1,4 @@
-"`id`","`nome`","`latitudine`","`longitudine`"
+"`id`","Provincia","Lat","Long"
 "1","1","Torino","TO","45.063299","7.669289"
 "2","1","Vercelli","VC","45.320220","8.418508"
 "3","1","Novara","NO","45.548513","8.515079"
