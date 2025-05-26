@@ -1,0 +1,7 @@
+Confronto tra province con popolazione simile ma mortalità differente:
+- Verbano-Cusio-Ossola e Vercelli hanno una popolazione simile (154,038 vs 165,892) ma differenze marcate di mortalità: 5.2 vs 10.2 per 100.000 abitanti.
+- Vercelli e Biella hanno una popolazione simile (165,892 vs 169,106) ma differenze marcate di mortalità: 10.2 vs 5.9 per 100.000 abitanti.
+- Massa Carrara e Belluno hanno una popolazione simile (187,583 vs 198,105) ma differenze marcate di mortalità: 5.3 vs 9.6 per 100.000 abitanti.
+- Belluno e Imperia hanno una popolazione simile (198,105 vs 208,792) ma differenze marcate di mortalità: 9.6 vs 6.2 per 100.000 abitanti.
+- Belluno e La Spezia hanno una popolazione simile (198,105 vs 214,872) ma differenze marcate di mortalità: 9.6 vs 3.3 per 100.000 abitanti.
+Queste discrepanze indicano che la sola dimensione demografica non basta a spiegare la sicurezza stradale, e che fattori come infrastrutture, politiche locali e gestione del traffico giocano un ruolo chiave.
