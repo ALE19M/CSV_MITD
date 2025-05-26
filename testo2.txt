@@ -1,0 +1,10 @@
+Distribuzione della mortalità per gruppi di numero ospedali:
+
+- 0–5 ospedali: media = 5.32, deviazione standard = 2.02, province = 37
+- 6–10 ospedali: media = 5.54, deviazione standard = 1.67, province = 14
+- 11–20 ospedali: media = 4.62, deviazione standard = 2.12, province = 4
+- 21+ ospedali: media = 3.72, deviazione standard = nan, province = 1
+
+Analisi della correlazione lineare tra numero di ospedali e mortalità:
+- Equazione stimata: y = 1.56 * x + 3.49
+- Coefficiente di determinazione (R²): 0.144
