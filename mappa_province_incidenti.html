@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5635f33b7fce1046657eca8062ba0b33 {
+                #map_797d806b8a54552aade2e518637b6d57 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_5635f33b7fce1046657eca8062ba0b33" ></div>
+            <div class="folium-map" id="map_797d806b8a54552aade2e518637b6d57" ></div>
         
 </body>
 <script>
     
     
-            var map_5635f33b7fce1046657eca8062ba0b33 = L.map(
-                "map_5635f33b7fce1046657eca8062ba0b33",
+            var map_797d806b8a54552aade2e518637b6d57 = L.map(
+                "map_797d806b8a54552aade2e518637b6d57",
                 {
                     center: [42.5, 12.5],
                     crs: L.CRS.EPSG3857,
@@ -63,7 +63,7 @@
 
         
     
-            var tile_layer_32403ca525aafe86c88c40228a3c4886 = L.tileLayer(
+            var tile_layer_8f3dba066b5a55839f5b995c6ffa0b07 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -80,45 +80,33 @@
             );
         
     
-            tile_layer_32403ca525aafe86c88c40228a3c4886.addTo(map_5635f33b7fce1046657eca8062ba0b33);
+            tile_layer_8f3dba066b5a55839f5b995c6ffa0b07.addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var marker_c0d6a17a0ff3c083c248565e2c0d136a = L.marker(
+            var circle_marker_ae677771f846854ad6a3e0e6ed17c762 = L.circleMarker(
                 [45.063299, 7.669289],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_24d66b8fe598f3da42fd89e32933bda8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_dc18348ac253b039f1732bad47047fcb = L.popup({
-  "maxWidth": "100%",
+        var popup_946354003ffcbb69c2440647537422ef = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_6d82bdfb3ade2f905a14c4cca769edfa = $(`<div id="html_6d82bdfb3ade2f905a14c4cca769edfa" style="width: 100.0%; height: 100.0%;">         <strong>Torino</strong><br>         Incidenti medi: 5268<br>         Morti medi: 74<br>         Feriti medi: 7527         </div>`)[0];
-                popup_dc18348ac253b039f1732bad47047fcb.setContent(html_6d82bdfb3ade2f905a14c4cca769edfa);
+                var html_1b85908fae4839baaec6583a37ed2242 = $(`<div id="html_1b85908fae4839baaec6583a37ed2242" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Torino</strong><br>           <b>Incidenti medi:</b> 5268<br>           <b>Morti medi:</b> 74<br>           <b>Feriti medi:</b> 7527         </div>         </div>`)[0];
+                popup_946354003ffcbb69c2440647537422ef.setContent(html_1b85908fae4839baaec6583a37ed2242);
             
         
 
-        marker_c0d6a17a0ff3c083c248565e2c0d136a.bindPopup(popup_dc18348ac253b039f1732bad47047fcb)
+        circle_marker_ae677771f846854ad6a3e0e6ed17c762.bindPopup(popup_946354003ffcbb69c2440647537422ef)
         ;
 
         
     
     
-            marker_c0d6a17a0ff3c083c248565e2c0d136a.bindTooltip(
+            circle_marker_ae677771f846854ad6a3e0e6ed17c762.bindTooltip(
                 `<div>
                      Torino
                  </div>`,
@@ -128,45 +116,30 @@
             );
         
     
-                marker_c0d6a17a0ff3c083c248565e2c0d136a.setIcon(icon_24d66b8fe598f3da42fd89e32933bda8);
-            
-    
-            var marker_14b2e4f8c712e4b4bcba08fe7bb805d4 = L.marker(
+            var circle_marker_1905c4ccc40016edcad6924eedb3036c = L.circleMarker(
                 [45.32022, 8.418508],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_e7871debf243179c191c08f2e2cda771 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_b45d10fb4e32849f635be69c76a00c97 = L.popup({
-  "maxWidth": "100%",
+        var popup_90a8f27b306ceb7d01230f922ab7a6d5 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_3150090650db74de8c9bd5ed5e9dcbce = $(`<div id="html_3150090650db74de8c9bd5ed5e9dcbce" style="width: 100.0%; height: 100.0%;">         <strong>Vercelli</strong><br>         Incidenti medi: 363<br>         Morti medi: 14<br>         Feriti medi: 552         </div>`)[0];
-                popup_b45d10fb4e32849f635be69c76a00c97.setContent(html_3150090650db74de8c9bd5ed5e9dcbce);
+                var html_4cf413da9fa1f939ba175363964ae2e6 = $(`<div id="html_4cf413da9fa1f939ba175363964ae2e6" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Vercelli</strong><br>           <b>Incidenti medi:</b> 363<br>           <b>Morti medi:</b> 14<br>           <b>Feriti medi:</b> 552         </div>         </div>`)[0];
+                popup_90a8f27b306ceb7d01230f922ab7a6d5.setContent(html_4cf413da9fa1f939ba175363964ae2e6);
             
         
 
-        marker_14b2e4f8c712e4b4bcba08fe7bb805d4.bindPopup(popup_b45d10fb4e32849f635be69c76a00c97)
+        circle_marker_1905c4ccc40016edcad6924eedb3036c.bindPopup(popup_90a8f27b306ceb7d01230f922ab7a6d5)
         ;
 
         
     
     
-            marker_14b2e4f8c712e4b4bcba08fe7bb805d4.bindTooltip(
+            circle_marker_1905c4ccc40016edcad6924eedb3036c.bindTooltip(
                 `<div>
                      Vercelli
                  </div>`,
@@ -176,45 +149,30 @@
             );
         
     
-                marker_14b2e4f8c712e4b4bcba08fe7bb805d4.setIcon(icon_e7871debf243179c191c08f2e2cda771);
-            
-    
-            var marker_5e5108263651b8ace9453e06cd0f4e77 = L.marker(
+            var circle_marker_85c1df9d96c6f429ee9a686450d5bcfb = L.circleMarker(
                 [45.562818, 8.058272],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_c494c9dd6fd52baebb98eaeda1770c5f = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_9033d1a0337a655c4dd0cdefe6df8585 = L.popup({
-  "maxWidth": "100%",
+        var popup_0c3e5e0dab1b2856da866feffeea472d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_c2d84ab6516f25f59a5b7da621c78863 = $(`<div id="html_c2d84ab6516f25f59a5b7da621c78863" style="width: 100.0%; height: 100.0%;">         <strong>Biella</strong><br>         Incidenti medi: 376<br>         Morti medi: 8<br>         Feriti medi: 476         </div>`)[0];
-                popup_9033d1a0337a655c4dd0cdefe6df8585.setContent(html_c2d84ab6516f25f59a5b7da621c78863);
+                var html_2c17fdd2d41cb335de92c882b607e678 = $(`<div id="html_2c17fdd2d41cb335de92c882b607e678" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Biella</strong><br>           <b>Incidenti medi:</b> 376<br>           <b>Morti medi:</b> 8<br>           <b>Feriti medi:</b> 476         </div>         </div>`)[0];
+                popup_0c3e5e0dab1b2856da866feffeea472d.setContent(html_2c17fdd2d41cb335de92c882b607e678);
             
         
 
-        marker_5e5108263651b8ace9453e06cd0f4e77.bindPopup(popup_9033d1a0337a655c4dd0cdefe6df8585)
+        circle_marker_85c1df9d96c6f429ee9a686450d5bcfb.bindPopup(popup_0c3e5e0dab1b2856da866feffeea472d)
         ;
 
         
     
     
-            marker_5e5108263651b8ace9453e06cd0f4e77.bindTooltip(
+            circle_marker_85c1df9d96c6f429ee9a686450d5bcfb.bindTooltip(
                 `<div>
                      Biella
                  </div>`,
@@ -224,45 +182,30 @@
             );
         
     
-                marker_5e5108263651b8ace9453e06cd0f4e77.setIcon(icon_c494c9dd6fd52baebb98eaeda1770c5f);
-            
-    
-            var marker_91e29a075271cc3ee7d3cdbe2b832250 = L.marker(
+            var circle_marker_118f9b9f72b5f147ba4c2382f154ebd2 = L.circleMarker(
                 [46.139969, 8.272465],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_3455340fae10934200a0b680cd7adc35 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_22f969c9f6657a2bcfd8d0b028e64a7a = L.popup({
-  "maxWidth": "100%",
+        var popup_90ec76f229d48334d8cd31d56e54ab02 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_ea94b18b2b0dffdd319e1be6e7bbc350 = $(`<div id="html_ea94b18b2b0dffdd319e1be6e7bbc350" style="width: 100.0%; height: 100.0%;">         <strong>Verbano-Cusio-Ossola</strong><br>         Incidenti medi: 367<br>         Morti medi: 5<br>         Feriti medi: 465         </div>`)[0];
-                popup_22f969c9f6657a2bcfd8d0b028e64a7a.setContent(html_ea94b18b2b0dffdd319e1be6e7bbc350);
+                var html_473bc2304a57b348feb1bce5f81791d3 = $(`<div id="html_473bc2304a57b348feb1bce5f81791d3" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Verbano-Cusio-Ossola</strong><br>           <b>Incidenti medi:</b> 367<br>           <b>Morti medi:</b> 5<br>           <b>Feriti medi:</b> 465         </div>         </div>`)[0];
+                popup_90ec76f229d48334d8cd31d56e54ab02.setContent(html_473bc2304a57b348feb1bce5f81791d3);
             
         
 
-        marker_91e29a075271cc3ee7d3cdbe2b832250.bindPopup(popup_22f969c9f6657a2bcfd8d0b028e64a7a)
+        circle_marker_118f9b9f72b5f147ba4c2382f154ebd2.bindPopup(popup_90ec76f229d48334d8cd31d56e54ab02)
         ;
 
         
     
     
-            marker_91e29a075271cc3ee7d3cdbe2b832250.bindTooltip(
+            circle_marker_118f9b9f72b5f147ba4c2382f154ebd2.bindTooltip(
                 `<div>
                      Verbano-Cusio-Ossola
                  </div>`,
@@ -272,45 +215,30 @@
             );
         
     
-                marker_91e29a075271cc3ee7d3cdbe2b832250.setIcon(icon_3455340fae10934200a0b680cd7adc35);
-            
-    
-            var marker_e401ed809f06853073a686e4a043e1a0 = L.marker(
+            var circle_marker_33a05073bde8395d6dd7b082469e86e7 = L.circleMarker(
                 [45.548513, 8.515079],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_4829346dc043d7e0b22a67a52d11f7b8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_2107683f20da191bf631146845cb023a = L.popup({
-  "maxWidth": "100%",
+        var popup_65282eead48f8a423fae227acba54ae2 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_4332c69772a910265be4455dafacb24f = $(`<div id="html_4332c69772a910265be4455dafacb24f" style="width: 100.0%; height: 100.0%;">         <strong>Novara</strong><br>         Incidenti medi: 985<br>         Morti medi: 21<br>         Feriti medi: 1329         </div>`)[0];
-                popup_2107683f20da191bf631146845cb023a.setContent(html_4332c69772a910265be4455dafacb24f);
+                var html_b7fac8b274a3e0bc3de44e11fac2f37d = $(`<div id="html_b7fac8b274a3e0bc3de44e11fac2f37d" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Novara</strong><br>           <b>Incidenti medi:</b> 985<br>           <b>Morti medi:</b> 21<br>           <b>Feriti medi:</b> 1329         </div>         </div>`)[0];
+                popup_65282eead48f8a423fae227acba54ae2.setContent(html_b7fac8b274a3e0bc3de44e11fac2f37d);
             
         
 
-        marker_e401ed809f06853073a686e4a043e1a0.bindPopup(popup_2107683f20da191bf631146845cb023a)
+        circle_marker_33a05073bde8395d6dd7b082469e86e7.bindPopup(popup_65282eead48f8a423fae227acba54ae2)
         ;
 
         
     
     
-            marker_e401ed809f06853073a686e4a043e1a0.bindTooltip(
+            circle_marker_33a05073bde8395d6dd7b082469e86e7.bindTooltip(
                 `<div>
                      Novara
                  </div>`,
@@ -320,45 +248,30 @@
             );
         
     
-                marker_e401ed809f06853073a686e4a043e1a0.setIcon(icon_4829346dc043d7e0b22a67a52d11f7b8);
-            
-    
-            var marker_acf50a0d2e9a7c8e173577b644c6c0b8 = L.marker(
+            var circle_marker_8babf86a5be5e1e3edf5a629a7928665 = L.circleMarker(
                 [44.597031, 7.611422],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_089fff96fa9d43329b35be72e8e95a98 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_f3b8dc63ec76228b12f0bc82f8f967c9 = L.popup({
-  "maxWidth": "100%",
+        var popup_f35159dee5b9e3f704508f8b3759bed9 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_a360b913c14f0ce6c8b0927285931724 = $(`<div id="html_a360b913c14f0ce6c8b0927285931724" style="width: 100.0%; height: 100.0%;">         <strong>Cuneo</strong><br>         Incidenti medi: 1121<br>         Morti medi: 41<br>         Feriti medi: 1567         </div>`)[0];
-                popup_f3b8dc63ec76228b12f0bc82f8f967c9.setContent(html_a360b913c14f0ce6c8b0927285931724);
+                var html_50a381f5a438d868951d983ca4fbf751 = $(`<div id="html_50a381f5a438d868951d983ca4fbf751" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Cuneo</strong><br>           <b>Incidenti medi:</b> 1121<br>           <b>Morti medi:</b> 41<br>           <b>Feriti medi:</b> 1567         </div>         </div>`)[0];
+                popup_f35159dee5b9e3f704508f8b3759bed9.setContent(html_50a381f5a438d868951d983ca4fbf751);
             
         
 
-        marker_acf50a0d2e9a7c8e173577b644c6c0b8.bindPopup(popup_f3b8dc63ec76228b12f0bc82f8f967c9)
+        circle_marker_8babf86a5be5e1e3edf5a629a7928665.bindPopup(popup_f35159dee5b9e3f704508f8b3759bed9)
         ;
 
         
     
     
-            marker_acf50a0d2e9a7c8e173577b644c6c0b8.bindTooltip(
+            circle_marker_8babf86a5be5e1e3edf5a629a7928665.bindTooltip(
                 `<div>
                      Cuneo
                  </div>`,
@@ -368,45 +281,30 @@
             );
         
     
-                marker_acf50a0d2e9a7c8e173577b644c6c0b8.setIcon(icon_089fff96fa9d43329b35be72e8e95a98);
-            
-    
-            var marker_e396fe82c7103cf53abe60e84961ace6 = L.marker(
+            var circle_marker_cc1a29969a3494916ea95df246ee8222 = L.circleMarker(
                 [44.900765, 8.206432],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_dcc39680789bf07db4afb7b652ed76ed = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_da30beaeea2917e10d9b5ee2014497eb = L.popup({
-  "maxWidth": "100%",
+        var popup_2acb642ca4f563e991bbd21141ede32e = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_ca361ed6d5149016c18becf765d39fee = $(`<div id="html_ca361ed6d5149016c18becf765d39fee" style="width: 100.0%; height: 100.0%;">         <strong>Asti</strong><br>         Incidenti medi: 402<br>         Morti medi: 11<br>         Feriti medi: 543         </div>`)[0];
-                popup_da30beaeea2917e10d9b5ee2014497eb.setContent(html_ca361ed6d5149016c18becf765d39fee);
+                var html_b6cb6bfb0ca1ee82f0921a2e0766577a = $(`<div id="html_b6cb6bfb0ca1ee82f0921a2e0766577a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Asti</strong><br>           <b>Incidenti medi:</b> 402<br>           <b>Morti medi:</b> 11<br>           <b>Feriti medi:</b> 543         </div>         </div>`)[0];
+                popup_2acb642ca4f563e991bbd21141ede32e.setContent(html_b6cb6bfb0ca1ee82f0921a2e0766577a);
             
         
 
-        marker_e396fe82c7103cf53abe60e84961ace6.bindPopup(popup_da30beaeea2917e10d9b5ee2014497eb)
+        circle_marker_cc1a29969a3494916ea95df246ee8222.bindPopup(popup_2acb642ca4f563e991bbd21141ede32e)
         ;
 
         
     
     
-            marker_e396fe82c7103cf53abe60e84961ace6.bindTooltip(
+            circle_marker_cc1a29969a3494916ea95df246ee8222.bindTooltip(
                 `<div>
                      Asti
                  </div>`,
@@ -416,45 +314,30 @@
             );
         
     
-                marker_e396fe82c7103cf53abe60e84961ace6.setIcon(icon_dcc39680789bf07db4afb7b652ed76ed);
-            
-    
-            var marker_3712a43bb6f53ed3c93b57b3044ceceb = L.marker(
+            var circle_marker_b2cf6be1f127e45916e624f718de86b7 = L.circleMarker(
                 [44.817559, 8.704663],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_64a71cafedaa411a2c8f36da52ff7c31 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_88bfc17216b5a5c8d262c206205f28c5 = L.popup({
-  "maxWidth": "100%",
+        var popup_e33403b712135f6e298939022cf56b2d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_a93b87e68f69cb6e7580d4056d4fc4fd = $(`<div id="html_a93b87e68f69cb6e7580d4056d4fc4fd" style="width: 100.0%; height: 100.0%;">         <strong>Alessandria</strong><br>         Incidenti medi: 1095<br>         Morti medi: 27<br>         Feriti medi: 1540         </div>`)[0];
-                popup_88bfc17216b5a5c8d262c206205f28c5.setContent(html_a93b87e68f69cb6e7580d4056d4fc4fd);
+                var html_fc5f044a9db38e64f0ccf1ffedf44901 = $(`<div id="html_fc5f044a9db38e64f0ccf1ffedf44901" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Alessandria</strong><br>           <b>Incidenti medi:</b> 1095<br>           <b>Morti medi:</b> 27<br>           <b>Feriti medi:</b> 1540         </div>         </div>`)[0];
+                popup_e33403b712135f6e298939022cf56b2d.setContent(html_fc5f044a9db38e64f0ccf1ffedf44901);
             
         
 
-        marker_3712a43bb6f53ed3c93b57b3044ceceb.bindPopup(popup_88bfc17216b5a5c8d262c206205f28c5)
+        circle_marker_b2cf6be1f127e45916e624f718de86b7.bindPopup(popup_e33403b712135f6e298939022cf56b2d)
         ;
 
         
     
     
-            marker_3712a43bb6f53ed3c93b57b3044ceceb.bindTooltip(
+            circle_marker_b2cf6be1f127e45916e624f718de86b7.bindTooltip(
                 `<div>
                      Alessandria
                  </div>`,
@@ -464,47 +347,32 @@
             );
         
     
-                marker_3712a43bb6f53ed3c93b57b3044ceceb.setIcon(icon_64a71cafedaa411a2c8f36da52ff7c31);
-            
-    
-            var marker_9c0da23187060e9f2d88fa81ff692383 = L.marker(
+            var circle_marker_88e97cebc71451d57f68f337c4c85238 = L.circleMarker(
                 [45.738888, 7.426187],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_8c6b687fbcb24157f98fcae0ff79bb2a = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_f59fca067b2b65e4716d7c4bec208441 = L.popup({
-  "maxWidth": "100%",
+        var popup_c40d03d00ecc7cf1ec0367ad999ee2e8 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_7705846c2fae934d6d7bb8b7854026c2 = $(`<div id="html_7705846c2fae934d6d7bb8b7854026c2" style="width: 100.0%; height: 100.0%;">         <strong>Valle d'Aosta/Valle d'Aoste</strong><br>         Incidenti medi: 287<br>         Morti medi: 5<br>         Feriti medi: 429         </div>`)[0];
-                popup_f59fca067b2b65e4716d7c4bec208441.setContent(html_7705846c2fae934d6d7bb8b7854026c2);
+                var html_aadfda1f9d0493942faa2eafeaa502ea = $(`<div id="html_aadfda1f9d0493942faa2eafeaa502ea" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Valle D'Aosta/Valle D'Aoste</strong><br>           <b>Incidenti medi:</b> 287<br>           <b>Morti medi:</b> 5<br>           <b>Feriti medi:</b> 429         </div>         </div>`)[0];
+                popup_c40d03d00ecc7cf1ec0367ad999ee2e8.setContent(html_aadfda1f9d0493942faa2eafeaa502ea);
             
         
 
-        marker_9c0da23187060e9f2d88fa81ff692383.bindPopup(popup_f59fca067b2b65e4716d7c4bec208441)
+        circle_marker_88e97cebc71451d57f68f337c4c85238.bindPopup(popup_c40d03d00ecc7cf1ec0367ad999ee2e8)
         ;
 
         
     
     
-            marker_9c0da23187060e9f2d88fa81ff692383.bindTooltip(
+            circle_marker_88e97cebc71451d57f68f337c4c85238.bindTooltip(
                 `<div>
-                     Valle d'Aosta/Valle d'Aoste
+                     Valle D'Aosta/Valle D'Aoste
                  </div>`,
                 {
   "sticky": true,
@@ -512,45 +380,30 @@
             );
         
     
-                marker_9c0da23187060e9f2d88fa81ff692383.setIcon(icon_8c6b687fbcb24157f98fcae0ff79bb2a);
-            
-    
-            var marker_bf89d7a78dce810905a7bdbf10975b73 = L.marker(
+            var circle_marker_0353684a3d72bafa1d7eaaa54569d083 = L.circleMarker(
                 [45.799026, 8.730095],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_8acf94d61923eaf537ee3458a8e0d937 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_9cb47a2d9141dfd56cf61397449c598b = L.popup({
-  "maxWidth": "100%",
+        var popup_9cb45b6bf52a640164186dd55a6608b3 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_bec690e3e502b6aa88f1361decbd5b8d = $(`<div id="html_bec690e3e502b6aa88f1361decbd5b8d" style="width: 100.0%; height: 100.0%;">         <strong>Varese</strong><br>         Incidenti medi: 2156<br>         Morti medi: 28<br>         Feriti medi: 2839         </div>`)[0];
-                popup_9cb47a2d9141dfd56cf61397449c598b.setContent(html_bec690e3e502b6aa88f1361decbd5b8d);
+                var html_9e7de4fd80382ca3457f892cc7f63530 = $(`<div id="html_9e7de4fd80382ca3457f892cc7f63530" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Varese</strong><br>           <b>Incidenti medi:</b> 2156<br>           <b>Morti medi:</b> 28<br>           <b>Feriti medi:</b> 2839         </div>         </div>`)[0];
+                popup_9cb45b6bf52a640164186dd55a6608b3.setContent(html_9e7de4fd80382ca3457f892cc7f63530);
             
         
 
-        marker_bf89d7a78dce810905a7bdbf10975b73.bindPopup(popup_9cb47a2d9141dfd56cf61397449c598b)
+        circle_marker_0353684a3d72bafa1d7eaaa54569d083.bindPopup(popup_9cb45b6bf52a640164186dd55a6608b3)
         ;
 
         
     
     
-            marker_bf89d7a78dce810905a7bdbf10975b73.bindTooltip(
+            circle_marker_0353684a3d72bafa1d7eaaa54569d083.bindTooltip(
                 `<div>
                      Varese
                  </div>`,
@@ -560,45 +413,30 @@
             );
         
     
-                marker_bf89d7a78dce810905a7bdbf10975b73.setIcon(icon_8acf94d61923eaf537ee3458a8e0d937);
-            
-    
-            var marker_427674810e277ff324ff78b4d808c2bd = L.marker(
+            var circle_marker_1d2db7bbaf9b7b90599ef87f7335287f = L.circleMarker(
                 [45.808042, 9.085179],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_4e54db247b335497351db37d044f75f9 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e97aeb42cda51f3b461888eefb18e141 = L.popup({
-  "maxWidth": "100%",
+        var popup_f957bcc4aef339f17c3a11e57ca492cf = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_4827fe494b9545d113bd163214eac54e = $(`<div id="html_4827fe494b9545d113bd163214eac54e" style="width: 100.0%; height: 100.0%;">         <strong>Como</strong><br>         Incidenti medi: 1320<br>         Morti medi: 24<br>         Feriti medi: 1830         </div>`)[0];
-                popup_e97aeb42cda51f3b461888eefb18e141.setContent(html_4827fe494b9545d113bd163214eac54e);
+                var html_f287c658c26339496650e4e88de6507f = $(`<div id="html_f287c658c26339496650e4e88de6507f" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Como</strong><br>           <b>Incidenti medi:</b> 1320<br>           <b>Morti medi:</b> 24<br>           <b>Feriti medi:</b> 1830         </div>         </div>`)[0];
+                popup_f957bcc4aef339f17c3a11e57ca492cf.setContent(html_f287c658c26339496650e4e88de6507f);
             
         
 
-        marker_427674810e277ff324ff78b4d808c2bd.bindPopup(popup_e97aeb42cda51f3b461888eefb18e141)
+        circle_marker_1d2db7bbaf9b7b90599ef87f7335287f.bindPopup(popup_f957bcc4aef339f17c3a11e57ca492cf)
         ;
 
         
     
     
-            marker_427674810e277ff324ff78b4d808c2bd.bindTooltip(
+            circle_marker_1d2db7bbaf9b7b90599ef87f7335287f.bindTooltip(
                 `<div>
                      Como
                  </div>`,
@@ -608,45 +446,30 @@
             );
         
     
-                marker_427674810e277ff324ff78b4d808c2bd.setIcon(icon_4e54db247b335497351db37d044f75f9);
-            
-    
-            var marker_a66581705b960c786551608a2dfb97fe = L.marker(
+            var circle_marker_6ac8847ed08d7a4ca05dd1559c075dbe = L.circleMarker(
                 [45.938294, 9.385729],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_155b34983303b1d2b4dba9bd52a80c3d = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_da237c4d85a62be9cce05afcd9046887 = L.popup({
-  "maxWidth": "100%",
+        var popup_283f3e521a9fc3adb7a985e8bce6df3b = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_5c8cebfeef291efd7e49e3785d0bd981 = $(`<div id="html_5c8cebfeef291efd7e49e3785d0bd981" style="width: 100.0%; height: 100.0%;">         <strong>Lecco</strong><br>         Incidenti medi: 738<br>         Morti medi: 15<br>         Feriti medi: 1038         </div>`)[0];
-                popup_da237c4d85a62be9cce05afcd9046887.setContent(html_5c8cebfeef291efd7e49e3785d0bd981);
+                var html_086bfaf5ef303873bbe83451e36267e1 = $(`<div id="html_086bfaf5ef303873bbe83451e36267e1" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Lecco</strong><br>           <b>Incidenti medi:</b> 738<br>           <b>Morti medi:</b> 15<br>           <b>Feriti medi:</b> 1038         </div>         </div>`)[0];
+                popup_283f3e521a9fc3adb7a985e8bce6df3b.setContent(html_086bfaf5ef303873bbe83451e36267e1);
             
         
 
-        marker_a66581705b960c786551608a2dfb97fe.bindPopup(popup_da237c4d85a62be9cce05afcd9046887)
+        circle_marker_6ac8847ed08d7a4ca05dd1559c075dbe.bindPopup(popup_283f3e521a9fc3adb7a985e8bce6df3b)
         ;
 
         
     
     
-            marker_a66581705b960c786551608a2dfb97fe.bindTooltip(
+            circle_marker_6ac8847ed08d7a4ca05dd1559c075dbe.bindTooltip(
                 `<div>
                      Lecco
                  </div>`,
@@ -656,45 +479,30 @@
             );
         
     
-                marker_a66581705b960c786551608a2dfb97fe.setIcon(icon_155b34983303b1d2b4dba9bd52a80c3d);
-            
-    
-            var marker_bce4b5f623b31e7d232a432b9e00082f = L.marker(
+            var circle_marker_171936f137f27e1ea31df03936aea885 = L.circleMarker(
                 [46.172764, 9.799492],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_954ae02acaff82bdd8cf6358c848da25 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e4cde8754ad90dbd68297d772a06cbd6 = L.popup({
-  "maxWidth": "100%",
+        var popup_cd5a0ab539296088cf8282a7c85beeb0 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_484ee158618f1e6dc9e83db5568f4917 = $(`<div id="html_484ee158618f1e6dc9e83db5568f4917" style="width: 100.0%; height: 100.0%;">         <strong>Sondrio</strong><br>         Incidenti medi: 383<br>         Morti medi: 9<br>         Feriti medi: 595         </div>`)[0];
-                popup_e4cde8754ad90dbd68297d772a06cbd6.setContent(html_484ee158618f1e6dc9e83db5568f4917);
+                var html_2dc1d2c76d86c878aee3bbd688231a67 = $(`<div id="html_2dc1d2c76d86c878aee3bbd688231a67" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Sondrio</strong><br>           <b>Incidenti medi:</b> 383<br>           <b>Morti medi:</b> 9<br>           <b>Feriti medi:</b> 595         </div>         </div>`)[0];
+                popup_cd5a0ab539296088cf8282a7c85beeb0.setContent(html_2dc1d2c76d86c878aee3bbd688231a67);
             
         
 
-        marker_bce4b5f623b31e7d232a432b9e00082f.bindPopup(popup_e4cde8754ad90dbd68297d772a06cbd6)
+        circle_marker_171936f137f27e1ea31df03936aea885.bindPopup(popup_cd5a0ab539296088cf8282a7c85beeb0)
         ;
 
         
     
     
-            marker_bce4b5f623b31e7d232a432b9e00082f.bindTooltip(
+            circle_marker_171936f137f27e1ea31df03936aea885.bindTooltip(
                 `<div>
                      Sondrio
                  </div>`,
@@ -704,45 +512,30 @@
             );
         
     
-                marker_bce4b5f623b31e7d232a432b9e00082f.setIcon(icon_954ae02acaff82bdd8cf6358c848da25);
-            
-    
-            var marker_e3ffda727f05619cbcb3d932f6bc3655 = L.marker(
+            var circle_marker_f2c749afbf6dcc8a9d2514a4a6099d3f = L.circleMarker(
                 [45.458626, 9.181873],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_8bfc55db8600206f73f039bbc93fd228 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_61357d8224bdbdba31fc4b5b99bc6167 = L.popup({
-  "maxWidth": "100%",
+        var popup_e42ce163acdb0565b4c3538604cea64d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_934f1a7bade814bbbd1ea7800cd1cb54 = $(`<div id="html_934f1a7bade814bbbd1ea7800cd1cb54" style="width: 100.0%; height: 100.0%;">         <strong>Milano</strong><br>         Incidenti medi: 12255<br>         Morti medi: 102<br>         Feriti medi: 16139         </div>`)[0];
-                popup_61357d8224bdbdba31fc4b5b99bc6167.setContent(html_934f1a7bade814bbbd1ea7800cd1cb54);
+                var html_0738c84e14e0425155e52a192192fb1d = $(`<div id="html_0738c84e14e0425155e52a192192fb1d" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Milano</strong><br>           <b>Incidenti medi:</b> 12255<br>           <b>Morti medi:</b> 102<br>           <b>Feriti medi:</b> 16139         </div>         </div>`)[0];
+                popup_e42ce163acdb0565b4c3538604cea64d.setContent(html_0738c84e14e0425155e52a192192fb1d);
             
         
 
-        marker_e3ffda727f05619cbcb3d932f6bc3655.bindPopup(popup_61357d8224bdbdba31fc4b5b99bc6167)
+        circle_marker_f2c749afbf6dcc8a9d2514a4a6099d3f.bindPopup(popup_e42ce163acdb0565b4c3538604cea64d)
         ;
 
         
     
     
-            marker_e3ffda727f05619cbcb3d932f6bc3655.bindTooltip(
+            circle_marker_f2c749afbf6dcc8a9d2514a4a6099d3f.bindTooltip(
                 `<div>
                      Milano
                  </div>`,
@@ -752,47 +545,32 @@
             );
         
     
-                marker_e3ffda727f05619cbcb3d932f6bc3655.setIcon(icon_8bfc55db8600206f73f039bbc93fd228);
-            
-    
-            var marker_fd940664a35362b048a323ab99e52e1f = L.marker(
+            var circle_marker_dc860a0f58f10ccb6f6125623f04cd67 = L.circleMarker(
                 [45.623599, 9.258802],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_6cb38394af70897994cc1c3610b65714 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_bdc559a99c68a0f8831ddc013ca270da = L.popup({
-  "maxWidth": "100%",
+        var popup_2407f22a74bcecb9e8f6f7cf64b77f89 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_d9ececb397c78077fc9a3bf47ffc135e = $(`<div id="html_d9ececb397c78077fc9a3bf47ffc135e" style="width: 100.0%; height: 100.0%;">         <strong>Monza e della Brianza</strong><br>         Incidenti medi: 2126<br>         Morti medi: 15<br>         Feriti medi: 2864         </div>`)[0];
-                popup_bdc559a99c68a0f8831ddc013ca270da.setContent(html_d9ececb397c78077fc9a3bf47ffc135e);
+                var html_75e6f8eac40eb878da609e59d3c1f177 = $(`<div id="html_75e6f8eac40eb878da609e59d3c1f177" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Monza E Della Brianza</strong><br>           <b>Incidenti medi:</b> 2126<br>           <b>Morti medi:</b> 15<br>           <b>Feriti medi:</b> 2864         </div>         </div>`)[0];
+                popup_2407f22a74bcecb9e8f6f7cf64b77f89.setContent(html_75e6f8eac40eb878da609e59d3c1f177);
             
         
 
-        marker_fd940664a35362b048a323ab99e52e1f.bindPopup(popup_bdc559a99c68a0f8831ddc013ca270da)
+        circle_marker_dc860a0f58f10ccb6f6125623f04cd67.bindPopup(popup_2407f22a74bcecb9e8f6f7cf64b77f89)
         ;
 
         
     
     
-            marker_fd940664a35362b048a323ab99e52e1f.bindTooltip(
+            circle_marker_dc860a0f58f10ccb6f6125623f04cd67.bindTooltip(
                 `<div>
-                     Monza e della Brianza
+                     Monza E Della Brianza
                  </div>`,
                 {
   "sticky": true,
@@ -800,45 +578,30 @@
             );
         
     
-                marker_fd940664a35362b048a323ab99e52e1f.setIcon(icon_6cb38394af70897994cc1c3610b65714);
-            
-    
-            var marker_e43adc1c11526085acab35d37d276c87 = L.marker(
+            var circle_marker_0bde9e4b94c38fd3661c46890d8fe6c6 = L.circleMarker(
                 [45.85783, 9.881998],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_2ca46d7133ab88287db89588600c45c3 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_1cf6e0eaacd23a376ff7a913af36aad9 = L.popup({
-  "maxWidth": "100%",
+        var popup_394de3949ba2a539758ce1b0c4ee99d9 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_3ea7e37b9545d6d193fdc04e9c03efb8 = $(`<div id="html_3ea7e37b9545d6d193fdc04e9c03efb8" style="width: 100.0%; height: 100.0%;">         <strong>Bergamo</strong><br>         Incidenti medi: 2611<br>         Morti medi: 40<br>         Feriti medi: 3609         </div>`)[0];
-                popup_1cf6e0eaacd23a376ff7a913af36aad9.setContent(html_3ea7e37b9545d6d193fdc04e9c03efb8);
+                var html_7a9db851eaf4bca9f2eb930ff5677b77 = $(`<div id="html_7a9db851eaf4bca9f2eb930ff5677b77" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Bergamo</strong><br>           <b>Incidenti medi:</b> 2611<br>           <b>Morti medi:</b> 40<br>           <b>Feriti medi:</b> 3609         </div>         </div>`)[0];
+                popup_394de3949ba2a539758ce1b0c4ee99d9.setContent(html_7a9db851eaf4bca9f2eb930ff5677b77);
             
         
 
-        marker_e43adc1c11526085acab35d37d276c87.bindPopup(popup_1cf6e0eaacd23a376ff7a913af36aad9)
+        circle_marker_0bde9e4b94c38fd3661c46890d8fe6c6.bindPopup(popup_394de3949ba2a539758ce1b0c4ee99d9)
         ;
 
         
     
     
-            marker_e43adc1c11526085acab35d37d276c87.bindTooltip(
+            circle_marker_0bde9e4b94c38fd3661c46890d8fe6c6.bindTooltip(
                 `<div>
                      Bergamo
                  </div>`,
@@ -848,45 +611,30 @@
             );
         
     
-                marker_e43adc1c11526085acab35d37d276c87.setIcon(icon_2ca46d7133ab88287db89588600c45c3);
-            
-    
-            var marker_41613df58581bc44f76dcf2a326083f2 = L.marker(
+            var circle_marker_1c804e37ac23314eddba01d1c7c395ce = L.circleMarker(
                 [45.659677, 10.385672],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_478a3b462e3200cc689154bd77c7d092 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_20dc3a25b567ce62cc87ae1bafbfd01c = L.popup({
-  "maxWidth": "100%",
+        var popup_5be22d61591c1e85d329a4f54ed36650 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_d1fff1285c6b9efbd7f7f4a331006bfc = $(`<div id="html_d1fff1285c6b9efbd7f7f4a331006bfc" style="width: 100.0%; height: 100.0%;">         <strong>Brescia</strong><br>         Incidenti medi: 2757<br>         Morti medi: 62<br>         Feriti medi: 3863         </div>`)[0];
-                popup_20dc3a25b567ce62cc87ae1bafbfd01c.setContent(html_d1fff1285c6b9efbd7f7f4a331006bfc);
+                var html_d6101489bf5df00edbb95cd37efe06e8 = $(`<div id="html_d6101489bf5df00edbb95cd37efe06e8" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Brescia</strong><br>           <b>Incidenti medi:</b> 2757<br>           <b>Morti medi:</b> 62<br>           <b>Feriti medi:</b> 3863         </div>         </div>`)[0];
+                popup_5be22d61591c1e85d329a4f54ed36650.setContent(html_d6101489bf5df00edbb95cd37efe06e8);
             
         
 
-        marker_41613df58581bc44f76dcf2a326083f2.bindPopup(popup_20dc3a25b567ce62cc87ae1bafbfd01c)
+        circle_marker_1c804e37ac23314eddba01d1c7c395ce.bindPopup(popup_5be22d61591c1e85d329a4f54ed36650)
         ;
 
         
     
     
-            marker_41613df58581bc44f76dcf2a326083f2.bindTooltip(
+            circle_marker_1c804e37ac23314eddba01d1c7c395ce.bindTooltip(
                 `<div>
                      Brescia
                  </div>`,
@@ -896,45 +644,30 @@
             );
         
     
-                marker_41613df58581bc44f76dcf2a326083f2.setIcon(icon_478a3b462e3200cc689154bd77c7d092);
-            
-    
-            var marker_a2cab82ed4c790536392a84a506f4300 = L.marker(
+            var circle_marker_0cc51a4b30f3ee93ecaa65ab1af580bd = L.circleMarker(
                 [45.321817, 8.846624],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_3290fad3287de1a43fceb3212e543f8d = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_46967c107c8a2a7e76a8fd739df673b3 = L.popup({
-  "maxWidth": "100%",
+        var popup_0dbdde61f5216708e70683c67711d1e8 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_c244304ecaed1d253fa70f0b62b0a6ae = $(`<div id="html_c244304ecaed1d253fa70f0b62b0a6ae" style="width: 100.0%; height: 100.0%;">         <strong>Pavia</strong><br>         Incidenti medi: 1310<br>         Morti medi: 35<br>         Feriti medi: 1860         </div>`)[0];
-                popup_46967c107c8a2a7e76a8fd739df673b3.setContent(html_c244304ecaed1d253fa70f0b62b0a6ae);
+                var html_1cf36da55bfa51b75e1496ad1868655a = $(`<div id="html_1cf36da55bfa51b75e1496ad1868655a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Pavia</strong><br>           <b>Incidenti medi:</b> 1310<br>           <b>Morti medi:</b> 35<br>           <b>Feriti medi:</b> 1860         </div>         </div>`)[0];
+                popup_0dbdde61f5216708e70683c67711d1e8.setContent(html_1cf36da55bfa51b75e1496ad1868655a);
             
         
 
-        marker_a2cab82ed4c790536392a84a506f4300.bindPopup(popup_46967c107c8a2a7e76a8fd739df673b3)
+        circle_marker_0cc51a4b30f3ee93ecaa65ab1af580bd.bindPopup(popup_0dbdde61f5216708e70683c67711d1e8)
         ;
 
         
     
     
-            marker_a2cab82ed4c790536392a84a506f4300.bindTooltip(
+            circle_marker_0cc51a4b30f3ee93ecaa65ab1af580bd.bindTooltip(
                 `<div>
                      Pavia
                  </div>`,
@@ -944,45 +677,30 @@
             );
         
     
-                marker_a2cab82ed4c790536392a84a506f4300.setIcon(icon_3290fad3287de1a43fceb3212e543f8d);
-            
-    
-            var marker_fe8f8b86234ed21d1cfbcb322038754f = L.marker(
+            var circle_marker_e1495f89f606080f6376776634b28e89 = L.circleMarker(
                 [45.240504, 9.529251],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.333333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_9aabd38a4c27419149de4354ed31f047 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_f0ed3ccdd66d38afc5a5a301db105b9a = L.popup({
-  "maxWidth": "100%",
+        var popup_367779b5147df0be57b4e4041aed1bfd = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_b164dd466b425e2a2e82a9c114e3381e = $(`<div id="html_b164dd466b425e2a2e82a9c114e3381e" style="width: 100.0%; height: 100.0%;">         <strong>Lodi</strong><br>         Incidenti medi: 398<br>         Morti medi: 6<br>         Feriti medi: 629         </div>`)[0];
-                popup_f0ed3ccdd66d38afc5a5a301db105b9a.setContent(html_b164dd466b425e2a2e82a9c114e3381e);
+                var html_e3cd084c24371ac448d71449ec2dbf0e = $(`<div id="html_e3cd084c24371ac448d71449ec2dbf0e" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Lodi</strong><br>           <b>Incidenti medi:</b> 398<br>           <b>Morti medi:</b> 6<br>           <b>Feriti medi:</b> 629         </div>         </div>`)[0];
+                popup_367779b5147df0be57b4e4041aed1bfd.setContent(html_e3cd084c24371ac448d71449ec2dbf0e);
             
         
 
-        marker_fe8f8b86234ed21d1cfbcb322038754f.bindPopup(popup_f0ed3ccdd66d38afc5a5a301db105b9a)
+        circle_marker_e1495f89f606080f6376776634b28e89.bindPopup(popup_367779b5147df0be57b4e4041aed1bfd)
         ;
 
         
     
     
-            marker_fe8f8b86234ed21d1cfbcb322038754f.bindTooltip(
+            circle_marker_e1495f89f606080f6376776634b28e89.bindTooltip(
                 `<div>
                      Lodi
                  </div>`,
@@ -992,45 +710,30 @@
             );
         
     
-                marker_fe8f8b86234ed21d1cfbcb322038754f.setIcon(icon_9aabd38a4c27419149de4354ed31f047);
-            
-    
-            var marker_bd514679b0b82e11e009757ca3613aa6 = L.marker(
+            var circle_marker_dcbf199fbb9f6b945f9e128840a7f9be = L.circleMarker(
                 [45.201438, 9.983658],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_da9226aab4e6d8b3f2fd5e15ea8a03e4 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_4b1a70d84baf18aa8014a0a1d241a79c = L.popup({
-  "maxWidth": "100%",
+        var popup_284094b2d45f72df71471a13b4d33a5a = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_dfc008a7dbccbc6e385ecf988213dc64 = $(`<div id="html_dfc008a7dbccbc6e385ecf988213dc64" style="width: 100.0%; height: 100.0%;">         <strong>Cremona</strong><br>         Incidenti medi: 958<br>         Morti medi: 17<br>         Feriti medi: 1345         </div>`)[0];
-                popup_4b1a70d84baf18aa8014a0a1d241a79c.setContent(html_dfc008a7dbccbc6e385ecf988213dc64);
+                var html_499401658060cddc2d8cf1caff9dd378 = $(`<div id="html_499401658060cddc2d8cf1caff9dd378" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Cremona</strong><br>           <b>Incidenti medi:</b> 958<br>           <b>Morti medi:</b> 17<br>           <b>Feriti medi:</b> 1345         </div>         </div>`)[0];
+                popup_284094b2d45f72df71471a13b4d33a5a.setContent(html_499401658060cddc2d8cf1caff9dd378);
             
         
 
-        marker_bd514679b0b82e11e009757ca3613aa6.bindPopup(popup_4b1a70d84baf18aa8014a0a1d241a79c)
+        circle_marker_dcbf199fbb9f6b945f9e128840a7f9be.bindPopup(popup_284094b2d45f72df71471a13b4d33a5a)
         ;
 
         
     
     
-            marker_bd514679b0b82e11e009757ca3613aa6.bindTooltip(
+            circle_marker_dcbf199fbb9f6b945f9e128840a7f9be.bindTooltip(
                 `<div>
                      Cremona
                  </div>`,
@@ -1040,45 +743,30 @@
             );
         
     
-                marker_bd514679b0b82e11e009757ca3613aa6.setIcon(icon_da9226aab4e6d8b3f2fd5e15ea8a03e4);
-            
-    
-            var marker_6fe2bb7a674f74e496009d9e5f59ea83 = L.marker(
+            var circle_marker_b426bce291ca61ffc380aabca84658bc = L.circleMarker(
                 [45.156417, 10.791375],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_53ec36a7227dc8d7b830979d8ac07d5a = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_2f0e4496bffaf94a97227c67560667ff = L.popup({
-  "maxWidth": "100%",
+        var popup_ab3417462f6731e167002b0dd87821cf = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_edfd927a7d4df76005cb64769bf196ec = $(`<div id="html_edfd927a7d4df76005cb64769bf196ec" style="width: 100.0%; height: 100.0%;">         <strong>Mantova</strong><br>         Incidenti medi: 923<br>         Morti medi: 22<br>         Feriti medi: 1356         </div>`)[0];
-                popup_2f0e4496bffaf94a97227c67560667ff.setContent(html_edfd927a7d4df76005cb64769bf196ec);
+                var html_5ae0422f3d8063ee35a1c115918c4daf = $(`<div id="html_5ae0422f3d8063ee35a1c115918c4daf" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Mantova</strong><br>           <b>Incidenti medi:</b> 923<br>           <b>Morti medi:</b> 22<br>           <b>Feriti medi:</b> 1356         </div>         </div>`)[0];
+                popup_ab3417462f6731e167002b0dd87821cf.setContent(html_5ae0422f3d8063ee35a1c115918c4daf);
             
         
 
-        marker_6fe2bb7a674f74e496009d9e5f59ea83.bindPopup(popup_2f0e4496bffaf94a97227c67560667ff)
+        circle_marker_b426bce291ca61ffc380aabca84658bc.bindPopup(popup_ab3417462f6731e167002b0dd87821cf)
         ;
 
         
     
     
-            marker_6fe2bb7a674f74e496009d9e5f59ea83.bindTooltip(
+            circle_marker_b426bce291ca61ffc380aabca84658bc.bindTooltip(
                 `<div>
                      Mantova
                  </div>`,
@@ -1088,45 +776,30 @@
             );
         
     
-                marker_6fe2bb7a674f74e496009d9e5f59ea83.setIcon(icon_53ec36a7227dc8d7b830979d8ac07d5a);
-            
-    
-            var marker_7368b75a0832a09a02f2990d8ed5f316 = L.marker(
+            var circle_marker_fbe6cca53fdeaf10c8a7145c5dd3811f = L.circleMarker(
                 [46.734096, 11.288802],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_0f319fc8ad87ab8264f09e9126c32be4 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_8b9b774c869a859c13d11fa3747db919 = L.popup({
-  "maxWidth": "100%",
+        var popup_99ca0eb8c31a91485b44ffe6077afb5b = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_50d5656b2774c2a53a5218f6e4eb2ce3 = $(`<div id="html_50d5656b2774c2a53a5218f6e4eb2ce3" style="width: 100.0%; height: 100.0%;">         <strong>Bolzano-Bozen</strong><br>         Incidenti medi: 1677<br>         Morti medi: 30<br>         Feriti medi: 2300         </div>`)[0];
-                popup_8b9b774c869a859c13d11fa3747db919.setContent(html_50d5656b2774c2a53a5218f6e4eb2ce3);
+                var html_978f5df18c1b0cc7d6461b3b4f3f2e9f = $(`<div id="html_978f5df18c1b0cc7d6461b3b4f3f2e9f" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Bolzano-Bozen</strong><br>           <b>Incidenti medi:</b> 1677<br>           <b>Morti medi:</b> 30<br>           <b>Feriti medi:</b> 2300         </div>         </div>`)[0];
+                popup_99ca0eb8c31a91485b44ffe6077afb5b.setContent(html_978f5df18c1b0cc7d6461b3b4f3f2e9f);
             
         
 
-        marker_7368b75a0832a09a02f2990d8ed5f316.bindPopup(popup_8b9b774c869a859c13d11fa3747db919)
+        circle_marker_fbe6cca53fdeaf10c8a7145c5dd3811f.bindPopup(popup_99ca0eb8c31a91485b44ffe6077afb5b)
         ;
 
         
     
     
-            marker_7368b75a0832a09a02f2990d8ed5f316.bindTooltip(
+            circle_marker_fbe6cca53fdeaf10c8a7145c5dd3811f.bindTooltip(
                 `<div>
                      Bolzano-Bozen
                  </div>`,
@@ -1136,45 +809,30 @@
             );
         
     
-                marker_7368b75a0832a09a02f2990d8ed5f316.setIcon(icon_0f319fc8ad87ab8264f09e9126c32be4);
-            
-    
-            var marker_355b95872a523bccbd3698e5591f1914 = L.marker(
+            var circle_marker_6d23d70348bf70f1422710fc83a8dfb3 = L.circleMarker(
                 [46.0512, 11.117539],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_da65677f19dd563a288cbd6081ba08b0 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_4f884929a39e4377ed834bd4c51df5e6 = L.popup({
-  "maxWidth": "100%",
+        var popup_d0c975f2b1e377ff1d4055bc225522e5 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_b06581789b1c21f03555273189d3e0b1 = $(`<div id="html_b06581789b1c21f03555273189d3e0b1" style="width: 100.0%; height: 100.0%;">         <strong>Trento</strong><br>         Incidenti medi: 1253<br>         Morti medi: 31<br>         Feriti medi: 1778         </div>`)[0];
-                popup_4f884929a39e4377ed834bd4c51df5e6.setContent(html_b06581789b1c21f03555273189d3e0b1);
+                var html_2c233a55ff64b5f5bb69f73142001221 = $(`<div id="html_2c233a55ff64b5f5bb69f73142001221" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Trento</strong><br>           <b>Incidenti medi:</b> 1253<br>           <b>Morti medi:</b> 31<br>           <b>Feriti medi:</b> 1778         </div>         </div>`)[0];
+                popup_d0c975f2b1e377ff1d4055bc225522e5.setContent(html_2c233a55ff64b5f5bb69f73142001221);
             
         
 
-        marker_355b95872a523bccbd3698e5591f1914.bindPopup(popup_4f884929a39e4377ed834bd4c51df5e6)
+        circle_marker_6d23d70348bf70f1422710fc83a8dfb3.bindPopup(popup_d0c975f2b1e377ff1d4055bc225522e5)
         ;
 
         
     
     
-            marker_355b95872a523bccbd3698e5591f1914.bindTooltip(
+            circle_marker_6d23d70348bf70f1422710fc83a8dfb3.bindTooltip(
                 `<div>
                      Trento
                  </div>`,
@@ -1184,45 +842,30 @@
             );
         
     
-                marker_355b95872a523bccbd3698e5591f1914.setIcon(icon_da65677f19dd563a288cbd6081ba08b0);
-            
-    
-            var marker_8b1aa501f6547865e58a00341184c743 = L.marker(
+            var circle_marker_3004f9b663a104f91aff9c51f0627afa = L.circleMarker(
                 [45.44185, 11.073532],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_b47c68d36d6eeba3df1bb31f4823a5bc = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_19047c19b77909f1b2351ebd519dae68 = L.popup({
-  "maxWidth": "100%",
+        var popup_c8363cdaf11d51cd2ae15069f053c533 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_2dcd46d2a3514dd22b4784aa88590957 = $(`<div id="html_2dcd46d2a3514dd22b4784aa88590957" style="width: 100.0%; height: 100.0%;">         <strong>Verona</strong><br>         Incidenti medi: 2823<br>         Morti medi: 57<br>         Feriti medi: 3731         </div>`)[0];
-                popup_19047c19b77909f1b2351ebd519dae68.setContent(html_2dcd46d2a3514dd22b4784aa88590957);
+                var html_25e663b70106c1e52fc091046c1f5f96 = $(`<div id="html_25e663b70106c1e52fc091046c1f5f96" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Verona</strong><br>           <b>Incidenti medi:</b> 2823<br>           <b>Morti medi:</b> 57<br>           <b>Feriti medi:</b> 3731         </div>         </div>`)[0];
+                popup_c8363cdaf11d51cd2ae15069f053c533.setContent(html_25e663b70106c1e52fc091046c1f5f96);
             
         
 
-        marker_8b1aa501f6547865e58a00341184c743.bindPopup(popup_19047c19b77909f1b2351ebd519dae68)
+        circle_marker_3004f9b663a104f91aff9c51f0627afa.bindPopup(popup_c8363cdaf11d51cd2ae15069f053c533)
         ;
 
         
     
     
-            marker_8b1aa501f6547865e58a00341184c743.bindTooltip(
+            circle_marker_3004f9b663a104f91aff9c51f0627afa.bindTooltip(
                 `<div>
                      Verona
                  </div>`,
@@ -1232,45 +875,30 @@
             );
         
     
-                marker_8b1aa501f6547865e58a00341184c743.setIcon(icon_b47c68d36d6eeba3df1bb31f4823a5bc);
-            
-    
-            var marker_7fe7454efd5a59b153088ed4513a82be = L.marker(
+            var circle_marker_1b577475533d5b84963862fcf59b011c = L.circleMarker(
                 [45.545479, 11.535421],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_29f8e85b7a0e10389640978caf171e58 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_84f514408cbc24847e076a73eaf7460f = L.popup({
-  "maxWidth": "100%",
+        var popup_d6c78abfce813cc57cd2a57e750b8aa7 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_4ac9c85af5c1f8331181ce30252d46f1 = $(`<div id="html_4ac9c85af5c1f8331181ce30252d46f1" style="width: 100.0%; height: 100.0%;">         <strong>Vicenza</strong><br>         Incidenti medi: 2082<br>         Morti medi: 40<br>         Feriti medi: 2760         </div>`)[0];
-                popup_84f514408cbc24847e076a73eaf7460f.setContent(html_4ac9c85af5c1f8331181ce30252d46f1);
+                var html_6c393733f3f272a354f8812cf902ea31 = $(`<div id="html_6c393733f3f272a354f8812cf902ea31" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Vicenza</strong><br>           <b>Incidenti medi:</b> 2082<br>           <b>Morti medi:</b> 40<br>           <b>Feriti medi:</b> 2760         </div>         </div>`)[0];
+                popup_d6c78abfce813cc57cd2a57e750b8aa7.setContent(html_6c393733f3f272a354f8812cf902ea31);
             
         
 
-        marker_7fe7454efd5a59b153088ed4513a82be.bindPopup(popup_84f514408cbc24847e076a73eaf7460f)
+        circle_marker_1b577475533d5b84963862fcf59b011c.bindPopup(popup_d6c78abfce813cc57cd2a57e750b8aa7)
         ;
 
         
     
     
-            marker_7fe7454efd5a59b153088ed4513a82be.bindTooltip(
+            circle_marker_1b577475533d5b84963862fcf59b011c.bindTooltip(
                 `<div>
                      Vicenza
                  </div>`,
@@ -1280,45 +908,30 @@
             );
         
     
-                marker_7fe7454efd5a59b153088ed4513a82be.setIcon(icon_29f8e85b7a0e10389640978caf171e58);
-            
-    
-            var marker_86d5707b9eb47249b4feb5f2f35081a0 = L.marker(
+            var circle_marker_ef9daca5511ff83a4f1b28f93e984a28 = L.circleMarker(
                 [46.249766, 12.196957],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_f62c6d7a674b1482c775c45193d7d530 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_1e3f06d2c192eb8f16f601092b374371 = L.popup({
-  "maxWidth": "100%",
+        var popup_06cc46bc835d17b201c584495c7c1e26 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_29bcf94149382ff972678f523d7a86ae = $(`<div id="html_29bcf94149382ff972678f523d7a86ae" style="width: 100.0%; height: 100.0%;">         <strong>Belluno</strong><br>         Incidenti medi: 421<br>         Morti medi: 16<br>         Feriti medi: 584         </div>`)[0];
-                popup_1e3f06d2c192eb8f16f601092b374371.setContent(html_29bcf94149382ff972678f523d7a86ae);
+                var html_cdfc6644799bbe43cb3c8f7275770119 = $(`<div id="html_cdfc6644799bbe43cb3c8f7275770119" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Belluno</strong><br>           <b>Incidenti medi:</b> 421<br>           <b>Morti medi:</b> 16<br>           <b>Feriti medi:</b> 584         </div>         </div>`)[0];
+                popup_06cc46bc835d17b201c584495c7c1e26.setContent(html_cdfc6644799bbe43cb3c8f7275770119);
             
         
 
-        marker_86d5707b9eb47249b4feb5f2f35081a0.bindPopup(popup_1e3f06d2c192eb8f16f601092b374371)
+        circle_marker_ef9daca5511ff83a4f1b28f93e984a28.bindPopup(popup_06cc46bc835d17b201c584495c7c1e26)
         ;
 
         
     
     
-            marker_86d5707b9eb47249b4feb5f2f35081a0.bindTooltip(
+            circle_marker_ef9daca5511ff83a4f1b28f93e984a28.bindTooltip(
                 `<div>
                      Belluno
                  </div>`,
@@ -1328,45 +941,30 @@
             );
         
     
-                marker_86d5707b9eb47249b4feb5f2f35081a0.setIcon(icon_f62c6d7a674b1482c775c45193d7d530);
-            
-    
-            var marker_844d0eb214aa2a0586e9af1a54f2a6cd = L.marker(
+            var circle_marker_0dc0c6ae222a9bb7b6ddfbd841788b18 = L.circleMarker(
                 [45.666852, 12.243062],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_76577b3617c41b6de2cf169800ea6d30 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_ef09edab89f156169c0c4b0c7abe1c4e = L.popup({
-  "maxWidth": "100%",
+        var popup_0c253197eb5dcd46076e1caefffe79af = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_df9db4d7ce596f9d463dc19909803a79 = $(`<div id="html_df9db4d7ce596f9d463dc19909803a79" style="width: 100.0%; height: 100.0%;">         <strong>Treviso</strong><br>         Incidenti medi: 1968<br>         Morti medi: 60<br>         Feriti medi: 2668         </div>`)[0];
-                popup_ef09edab89f156169c0c4b0c7abe1c4e.setContent(html_df9db4d7ce596f9d463dc19909803a79);
+                var html_694ff413e3a58afad4da5534c0a47b0b = $(`<div id="html_694ff413e3a58afad4da5534c0a47b0b" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Treviso</strong><br>           <b>Incidenti medi:</b> 1968<br>           <b>Morti medi:</b> 60<br>           <b>Feriti medi:</b> 2668         </div>         </div>`)[0];
+                popup_0c253197eb5dcd46076e1caefffe79af.setContent(html_694ff413e3a58afad4da5534c0a47b0b);
             
         
 
-        marker_844d0eb214aa2a0586e9af1a54f2a6cd.bindPopup(popup_ef09edab89f156169c0c4b0c7abe1c4e)
+        circle_marker_0dc0c6ae222a9bb7b6ddfbd841788b18.bindPopup(popup_0c253197eb5dcd46076e1caefffe79af)
         ;
 
         
     
     
-            marker_844d0eb214aa2a0586e9af1a54f2a6cd.bindTooltip(
+            circle_marker_0dc0c6ae222a9bb7b6ddfbd841788b18.bindTooltip(
                 `<div>
                      Treviso
                  </div>`,
@@ -1376,45 +974,30 @@
             );
         
     
-                marker_844d0eb214aa2a0586e9af1a54f2a6cd.setIcon(icon_76577b3617c41b6de2cf169800ea6d30);
-            
-    
-            var marker_12afb105fc8d90b69b707e7e30a51e06 = L.marker(
+            var circle_marker_9f856666c658b8ad4f6c2975092a7eaf = L.circleMarker(
                 [45.493048, 12.4177],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_370771ec75986dd14c0eebf388a40023 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_8a4c03dfbe0ff476af0048a325d0981c = L.popup({
-  "maxWidth": "100%",
+        var popup_062605277e01e58f499b38b4f66922f6 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_7c757ce49c635a11f468d15be046784e = $(`<div id="html_7c757ce49c635a11f468d15be046784e" style="width: 100.0%; height: 100.0%;">         <strong>Venezia</strong><br>         Incidenti medi: 2329<br>         Morti medi: 62<br>         Feriti medi: 3211         </div>`)[0];
-                popup_8a4c03dfbe0ff476af0048a325d0981c.setContent(html_7c757ce49c635a11f468d15be046784e);
+                var html_2e15c35d1dbdd6fb89291f23fc6e6c6b = $(`<div id="html_2e15c35d1dbdd6fb89291f23fc6e6c6b" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Venezia</strong><br>           <b>Incidenti medi:</b> 2329<br>           <b>Morti medi:</b> 62<br>           <b>Feriti medi:</b> 3211         </div>         </div>`)[0];
+                popup_062605277e01e58f499b38b4f66922f6.setContent(html_2e15c35d1dbdd6fb89291f23fc6e6c6b);
             
         
 
-        marker_12afb105fc8d90b69b707e7e30a51e06.bindPopup(popup_8a4c03dfbe0ff476af0048a325d0981c)
+        circle_marker_9f856666c658b8ad4f6c2975092a7eaf.bindPopup(popup_062605277e01e58f499b38b4f66922f6)
         ;
 
         
     
     
-            marker_12afb105fc8d90b69b707e7e30a51e06.bindTooltip(
+            circle_marker_9f856666c658b8ad4f6c2975092a7eaf.bindTooltip(
                 `<div>
                      Venezia
                  </div>`,
@@ -1424,45 +1007,30 @@
             );
         
     
-                marker_12afb105fc8d90b69b707e7e30a51e06.setIcon(icon_370771ec75986dd14c0eebf388a40023);
-            
-    
-            var marker_b7428d72b3c18c95b400d07a8a9e84a2 = L.marker(
+            var circle_marker_122060c14a05b7a291108d8f0195627a = L.circleMarker(
                 [45.366186, 11.820914],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_4e4db23e27649ec6239b02a78f02d561 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_a634973f865a99269e3766fa57ff015f = L.popup({
-  "maxWidth": "100%",
+        var popup_7a5be2a48ad22a01805b04f2d8ce7b02 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_7bd9b38a6fe2186cee9be0d9746dbb98 = $(`<div id="html_7bd9b38a6fe2186cee9be0d9746dbb98" style="width: 100.0%; height: 100.0%;">         <strong>Padova</strong><br>         Incidenti medi: 2641<br>         Morti medi: 49<br>         Feriti medi: 3483         </div>`)[0];
-                popup_a634973f865a99269e3766fa57ff015f.setContent(html_7bd9b38a6fe2186cee9be0d9746dbb98);
+                var html_19e71eb14da81ed35e0a55fada195abb = $(`<div id="html_19e71eb14da81ed35e0a55fada195abb" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Padova</strong><br>           <b>Incidenti medi:</b> 2641<br>           <b>Morti medi:</b> 49<br>           <b>Feriti medi:</b> 3483         </div>         </div>`)[0];
+                popup_7a5be2a48ad22a01805b04f2d8ce7b02.setContent(html_19e71eb14da81ed35e0a55fada195abb);
             
         
 
-        marker_b7428d72b3c18c95b400d07a8a9e84a2.bindPopup(popup_a634973f865a99269e3766fa57ff015f)
+        circle_marker_122060c14a05b7a291108d8f0195627a.bindPopup(popup_7a5be2a48ad22a01805b04f2d8ce7b02)
         ;
 
         
     
     
-            marker_b7428d72b3c18c95b400d07a8a9e84a2.bindTooltip(
+            circle_marker_122060c14a05b7a291108d8f0195627a.bindTooltip(
                 `<div>
                      Padova
                  </div>`,
@@ -1472,45 +1040,30 @@
             );
         
     
-                marker_b7428d72b3c18c95b400d07a8a9e84a2.setIcon(icon_4e4db23e27649ec6239b02a78f02d561);
-            
-    
-            var marker_813bda321f14a99352948429036d95ed = L.marker(
+            var circle_marker_a5306c278616fc4c4eef2a429cf32e64 = L.circleMarker(
                 [45.024182, 11.823816],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_10a9b6f36c8468720de137c90baf76cb = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_9907a9e520e3091c09bf2ee4d5b8a9a5 = L.popup({
-  "maxWidth": "100%",
+        var popup_91947e6948710b3142192a03197a2995 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_ade95e7baf2ed3b20bd8b9f5a818f8c3 = $(`<div id="html_ade95e7baf2ed3b20bd8b9f5a818f8c3" style="width: 100.0%; height: 100.0%;">         <strong>Rovigo</strong><br>         Incidenti medi: 533<br>         Morti medi: 19<br>         Feriti medi: 701         </div>`)[0];
-                popup_9907a9e520e3091c09bf2ee4d5b8a9a5.setContent(html_ade95e7baf2ed3b20bd8b9f5a818f8c3);
+                var html_2c29f78a7cad05a0ef7bd2429d4e84c2 = $(`<div id="html_2c29f78a7cad05a0ef7bd2429d4e84c2" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Rovigo</strong><br>           <b>Incidenti medi:</b> 533<br>           <b>Morti medi:</b> 19<br>           <b>Feriti medi:</b> 701         </div>         </div>`)[0];
+                popup_91947e6948710b3142192a03197a2995.setContent(html_2c29f78a7cad05a0ef7bd2429d4e84c2);
             
         
 
-        marker_813bda321f14a99352948429036d95ed.bindPopup(popup_9907a9e520e3091c09bf2ee4d5b8a9a5)
+        circle_marker_a5306c278616fc4c4eef2a429cf32e64.bindPopup(popup_91947e6948710b3142192a03197a2995)
         ;
 
         
     
     
-            marker_813bda321f14a99352948429036d95ed.bindTooltip(
+            circle_marker_a5306c278616fc4c4eef2a429cf32e64.bindTooltip(
                 `<div>
                      Rovigo
                  </div>`,
@@ -1520,45 +1073,30 @@
             );
         
     
-                marker_813bda321f14a99352948429036d95ed.setIcon(icon_10a9b6f36c8468720de137c90baf76cb);
-            
-    
-            var marker_5211e7cbdf21ca98235dd52076aed933 = L.marker(
+            var circle_marker_044a80a4d088774855389026ee4e4deb = L.circleMarker(
                 [46.037886, 12.710835],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_3f1184525a13d73105836760385f75d3 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_5b28599af8f801e2676d03740a71f009 = L.popup({
-  "maxWidth": "100%",
+        var popup_259aafe7b16e1f113f6c81d5318d93f8 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_830b50a015d2c9fbe75eb445a5797b66 = $(`<div id="html_830b50a015d2c9fbe75eb445a5797b66" style="width: 100.0%; height: 100.0%;">         <strong>Pordenone</strong><br>         Incidenti medi: 654<br>         Morti medi: 16<br>         Feriti medi: 894         </div>`)[0];
-                popup_5b28599af8f801e2676d03740a71f009.setContent(html_830b50a015d2c9fbe75eb445a5797b66);
+                var html_47c1144cea788fb973e7af96172594e8 = $(`<div id="html_47c1144cea788fb973e7af96172594e8" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Pordenone</strong><br>           <b>Incidenti medi:</b> 654<br>           <b>Morti medi:</b> 16<br>           <b>Feriti medi:</b> 894         </div>         </div>`)[0];
+                popup_259aafe7b16e1f113f6c81d5318d93f8.setContent(html_47c1144cea788fb973e7af96172594e8);
             
         
 
-        marker_5211e7cbdf21ca98235dd52076aed933.bindPopup(popup_5b28599af8f801e2676d03740a71f009)
+        circle_marker_044a80a4d088774855389026ee4e4deb.bindPopup(popup_259aafe7b16e1f113f6c81d5318d93f8)
         ;
 
         
     
     
-            marker_5211e7cbdf21ca98235dd52076aed933.bindTooltip(
+            circle_marker_044a80a4d088774855389026ee4e4deb.bindTooltip(
                 `<div>
                      Pordenone
                  </div>`,
@@ -1568,45 +1106,30 @@
             );
         
     
-                marker_5211e7cbdf21ca98235dd52076aed933.setIcon(icon_3f1184525a13d73105836760385f75d3);
-            
-    
-            var marker_0260456cc971d7e33a93591106c8e27a = L.marker(
+            var circle_marker_ab1defe66fd9891b3bdbbff88afee544 = L.circleMarker(
                 [46.140797, 13.16629],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_1f6dc67175070a33c5dc65f5e4d42750 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_3bfeaabf2b9702a76df3ab17680f385c = L.popup({
-  "maxWidth": "100%",
+        var popup_421ee16055b61b5e2f320e6b5a860c69 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_0e0c333200739e1b03bae529f353f3a5 = $(`<div id="html_0e0c333200739e1b03bae529f353f3a5" style="width: 100.0%; height: 100.0%;">         <strong>Udine</strong><br>         Incidenti medi: 1162<br>         Morti medi: 39<br>         Feriti medi: 1550         </div>`)[0];
-                popup_3bfeaabf2b9702a76df3ab17680f385c.setContent(html_0e0c333200739e1b03bae529f353f3a5);
+                var html_4a964af944b64600cad358550de204ca = $(`<div id="html_4a964af944b64600cad358550de204ca" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Udine</strong><br>           <b>Incidenti medi:</b> 1162<br>           <b>Morti medi:</b> 39<br>           <b>Feriti medi:</b> 1550         </div>         </div>`)[0];
+                popup_421ee16055b61b5e2f320e6b5a860c69.setContent(html_4a964af944b64600cad358550de204ca);
             
         
 
-        marker_0260456cc971d7e33a93591106c8e27a.bindPopup(popup_3bfeaabf2b9702a76df3ab17680f385c)
+        circle_marker_ab1defe66fd9891b3bdbbff88afee544.bindPopup(popup_421ee16055b61b5e2f320e6b5a860c69)
         ;
 
         
     
     
-            marker_0260456cc971d7e33a93591106c8e27a.bindTooltip(
+            circle_marker_ab1defe66fd9891b3bdbbff88afee544.bindTooltip(
                 `<div>
                      Udine
                  </div>`,
@@ -1616,45 +1139,30 @@
             );
         
     
-                marker_0260456cc971d7e33a93591106c8e27a.setIcon(icon_1f6dc67175070a33c5dc65f5e4d42750);
-            
-    
-            var marker_3c70cc1112d1b17353b7d2a9ae0f4836 = L.marker(
+            var circle_marker_59ef9cc86107700c73751a819c9b92f4 = L.circleMarker(
                 [45.90539, 13.516373],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_ac6eef55a0b68472de4151ed8d28685f = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_7358d7e8bfe21115fb0039de396e3064 = L.popup({
-  "maxWidth": "100%",
+        var popup_f9e89acc440d5a6e10d6530d0166e3e5 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_9c23f8d6bf503775e5193e70735bbd01 = $(`<div id="html_9c23f8d6bf503775e5193e70735bbd01" style="width: 100.0%; height: 100.0%;">         <strong>Gorizia</strong><br>         Incidenti medi: 398<br>         Morti medi: 7<br>         Feriti medi: 539         </div>`)[0];
-                popup_7358d7e8bfe21115fb0039de396e3064.setContent(html_9c23f8d6bf503775e5193e70735bbd01);
+                var html_8f4f5d3aeaa7f7bc92e86d7a8b6ace26 = $(`<div id="html_8f4f5d3aeaa7f7bc92e86d7a8b6ace26" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Gorizia</strong><br>           <b>Incidenti medi:</b> 398<br>           <b>Morti medi:</b> 7<br>           <b>Feriti medi:</b> 539         </div>         </div>`)[0];
+                popup_f9e89acc440d5a6e10d6530d0166e3e5.setContent(html_8f4f5d3aeaa7f7bc92e86d7a8b6ace26);
             
         
 
-        marker_3c70cc1112d1b17353b7d2a9ae0f4836.bindPopup(popup_7358d7e8bfe21115fb0039de396e3064)
+        circle_marker_59ef9cc86107700c73751a819c9b92f4.bindPopup(popup_f9e89acc440d5a6e10d6530d0166e3e5)
         ;
 
         
     
     
-            marker_3c70cc1112d1b17353b7d2a9ae0f4836.bindTooltip(
+            circle_marker_59ef9cc86107700c73751a819c9b92f4.bindTooltip(
                 `<div>
                      Gorizia
                  </div>`,
@@ -1664,45 +1172,30 @@
             );
         
     
-                marker_3c70cc1112d1b17353b7d2a9ae0f4836.setIcon(icon_ac6eef55a0b68472de4151ed8d28685f);
-            
-    
-            var marker_60dfe62b6a367498d2e6878e0a4eef5c = L.marker(
+            var circle_marker_575dc344889df61883ffd95c06af3453 = L.circleMarker(
                 [45.689482, 13.783307],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_ea9ab88ad448e58eb387156fd3b608e6 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_8a9cdbc7ed70e5d5a550bf8274639218 = L.popup({
-  "maxWidth": "100%",
+        var popup_d029dc82a1afd78b43d61d17499bac7b = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_c619cdcd6e3428aa07dad01d32714bd8 = $(`<div id="html_c619cdcd6e3428aa07dad01d32714bd8" style="width: 100.0%; height: 100.0%;">         <strong>Trieste</strong><br>         Incidenti medi: 925<br>         Morti medi: 7<br>         Feriti medi: 1129         </div>`)[0];
-                popup_8a9cdbc7ed70e5d5a550bf8274639218.setContent(html_c619cdcd6e3428aa07dad01d32714bd8);
+                var html_a5a52416f6b8a0d2658ee0e6c5180293 = $(`<div id="html_a5a52416f6b8a0d2658ee0e6c5180293" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Trieste</strong><br>           <b>Incidenti medi:</b> 925<br>           <b>Morti medi:</b> 7<br>           <b>Feriti medi:</b> 1129         </div>         </div>`)[0];
+                popup_d029dc82a1afd78b43d61d17499bac7b.setContent(html_a5a52416f6b8a0d2658ee0e6c5180293);
             
         
 
-        marker_60dfe62b6a367498d2e6878e0a4eef5c.bindPopup(popup_8a9cdbc7ed70e5d5a550bf8274639218)
+        circle_marker_575dc344889df61883ffd95c06af3453.bindPopup(popup_d029dc82a1afd78b43d61d17499bac7b)
         ;
 
         
     
     
-            marker_60dfe62b6a367498d2e6878e0a4eef5c.bindTooltip(
+            circle_marker_575dc344889df61883ffd95c06af3453.bindTooltip(
                 `<div>
                      Trieste
                  </div>`,
@@ -1712,45 +1205,30 @@
             );
         
     
-                marker_60dfe62b6a367498d2e6878e0a4eef5c.setIcon(icon_ea9ab88ad448e58eb387156fd3b608e6);
-            
-    
-            var marker_df2fe933ecf657e82169fcf04bc56c96 = L.marker(
+            var circle_marker_e6b5f52a19fa3a3c5c35552d9a1f924a = L.circleMarker(
                 [43.941866, 7.828637],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_c05648cb451fd95d0b423c396402d384 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e9fcad1b8b7459f36bbfbc679f86d1e9 = L.popup({
-  "maxWidth": "100%",
+        var popup_699fe53a0076149876ceacd1964e4b86 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_f507dfcbbef97563fd9b3a4db94df242 = $(`<div id="html_f507dfcbbef97563fd9b3a4db94df242" style="width: 100.0%; height: 100.0%;">         <strong>Imperia</strong><br>         Incidenti medi: 931<br>         Morti medi: 12<br>         Feriti medi: 1158         </div>`)[0];
-                popup_e9fcad1b8b7459f36bbfbc679f86d1e9.setContent(html_f507dfcbbef97563fd9b3a4db94df242);
+                var html_ed57c1158633b6f34ac01eb36789113a = $(`<div id="html_ed57c1158633b6f34ac01eb36789113a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Imperia</strong><br>           <b>Incidenti medi:</b> 931<br>           <b>Morti medi:</b> 12<br>           <b>Feriti medi:</b> 1158         </div>         </div>`)[0];
+                popup_699fe53a0076149876ceacd1964e4b86.setContent(html_ed57c1158633b6f34ac01eb36789113a);
             
         
 
-        marker_df2fe933ecf657e82169fcf04bc56c96.bindPopup(popup_e9fcad1b8b7459f36bbfbc679f86d1e9)
+        circle_marker_e6b5f52a19fa3a3c5c35552d9a1f924a.bindPopup(popup_699fe53a0076149876ceacd1964e4b86)
         ;
 
         
     
     
-            marker_df2fe933ecf657e82169fcf04bc56c96.bindTooltip(
+            circle_marker_e6b5f52a19fa3a3c5c35552d9a1f924a.bindTooltip(
                 `<div>
                      Imperia
                  </div>`,
@@ -1760,45 +1238,30 @@
             );
         
     
-                marker_df2fe933ecf657e82169fcf04bc56c96.setIcon(icon_c05648cb451fd95d0b423c396402d384);
-            
-    
-            var marker_eb87c74802e4fd20c002221a59b92fe9 = L.marker(
+            var circle_marker_9755e04b8dcb0cca289896f287e8c71b = L.circleMarker(
                 [44.2888, 8.265058],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_2ca119a35996bf9d034a3ca0e3f3e6f8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_65e6ad29363736ae81f1e7744b51f492 = L.popup({
-  "maxWidth": "100%",
+        var popup_ffb9b6fdf67ee89b9d51128a64ade4cf = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_19cac3acd50ced6ba0c46a87bea04899 = $(`<div id="html_19cac3acd50ced6ba0c46a87bea04899" style="width: 100.0%; height: 100.0%;">         <strong>Savona</strong><br>         Incidenti medi: 1230<br>         Morti medi: 13<br>         Feriti medi: 1646         </div>`)[0];
-                popup_65e6ad29363736ae81f1e7744b51f492.setContent(html_19cac3acd50ced6ba0c46a87bea04899);
+                var html_e61d9d33a8a2c01a0afcb058229b5a1d = $(`<div id="html_e61d9d33a8a2c01a0afcb058229b5a1d" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Savona</strong><br>           <b>Incidenti medi:</b> 1230<br>           <b>Morti medi:</b> 13<br>           <b>Feriti medi:</b> 1646         </div>         </div>`)[0];
+                popup_ffb9b6fdf67ee89b9d51128a64ade4cf.setContent(html_e61d9d33a8a2c01a0afcb058229b5a1d);
             
         
 
-        marker_eb87c74802e4fd20c002221a59b92fe9.bindPopup(popup_65e6ad29363736ae81f1e7744b51f492)
+        circle_marker_9755e04b8dcb0cca289896f287e8c71b.bindPopup(popup_ffb9b6fdf67ee89b9d51128a64ade4cf)
         ;
 
         
     
     
-            marker_eb87c74802e4fd20c002221a59b92fe9.bindTooltip(
+            circle_marker_9755e04b8dcb0cca289896f287e8c71b.bindTooltip(
                 `<div>
                      Savona
                  </div>`,
@@ -1808,45 +1271,30 @@
             );
         
     
-                marker_eb87c74802e4fd20c002221a59b92fe9.setIcon(icon_2ca119a35996bf9d034a3ca0e3f3e6f8);
-            
-    
-            var marker_b67c7840031fa00d031c6bb595ba8b55 = L.marker(
+            var circle_marker_f5d61d175cf3111d1ddd92e45d36608f = L.circleMarker(
                 [44.446625, 9.145615],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_01add9238c724f5dcec05a5a05f33d5c = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_40f9b3a99ddcca6fa9b641178ff11b4b = L.popup({
-  "maxWidth": "100%",
+        var popup_aff3db1e1cd973adba1831927085fd64 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_254653675515f7476acfa39ed6db3aa9 = $(`<div id="html_254653675515f7476acfa39ed6db3aa9" style="width: 100.0%; height: 100.0%;">         <strong>Genova</strong><br>         Incidenti medi: 4618<br>         Morti medi: 25<br>         Feriti medi: 5646         </div>`)[0];
-                popup_40f9b3a99ddcca6fa9b641178ff11b4b.setContent(html_254653675515f7476acfa39ed6db3aa9);
+                var html_c65329de5c5bee3670c548a752d7012e = $(`<div id="html_c65329de5c5bee3670c548a752d7012e" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Genova</strong><br>           <b>Incidenti medi:</b> 4618<br>           <b>Morti medi:</b> 25<br>           <b>Feriti medi:</b> 5646         </div>         </div>`)[0];
+                popup_aff3db1e1cd973adba1831927085fd64.setContent(html_c65329de5c5bee3670c548a752d7012e);
             
         
 
-        marker_b67c7840031fa00d031c6bb595ba8b55.bindPopup(popup_40f9b3a99ddcca6fa9b641178ff11b4b)
+        circle_marker_f5d61d175cf3111d1ddd92e45d36608f.bindPopup(popup_aff3db1e1cd973adba1831927085fd64)
         ;
 
         
     
     
-            marker_b67c7840031fa00d031c6bb595ba8b55.bindTooltip(
+            circle_marker_f5d61d175cf3111d1ddd92e45d36608f.bindTooltip(
                 `<div>
                      Genova
                  </div>`,
@@ -1856,45 +1304,30 @@
             );
         
     
-                marker_b67c7840031fa00d031c6bb595ba8b55.setIcon(icon_01add9238c724f5dcec05a5a05f33d5c);
-            
-    
-            var marker_46538939cedaa7af064163b9bc54fa6b = L.marker(
+            var circle_marker_77ad123f7332129b26db469b9fecf94f = L.circleMarker(
                 [44.10245, 9.824083],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_ddc3351e76caca9b8f5fb91eb824c695 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_58f62be7a55e01bc7f407483ca948080 = L.popup({
-  "maxWidth": "100%",
+        var popup_cbb9a16c8f96eab54ca97c148b800b04 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_2b074361d268a516ace2841aa67f26af = $(`<div id="html_2b074361d268a516ace2841aa67f26af" style="width: 100.0%; height: 100.0%;">         <strong>La Spezia</strong><br>         Incidenti medi: 738<br>         Morti medi: 7<br>         Feriti medi: 952         </div>`)[0];
-                popup_58f62be7a55e01bc7f407483ca948080.setContent(html_2b074361d268a516ace2841aa67f26af);
+                var html_a19975ba26ba636c75a83e3e783469c2 = $(`<div id="html_a19975ba26ba636c75a83e3e783469c2" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">La Spezia</strong><br>           <b>Incidenti medi:</b> 738<br>           <b>Morti medi:</b> 7<br>           <b>Feriti medi:</b> 952         </div>         </div>`)[0];
+                popup_cbb9a16c8f96eab54ca97c148b800b04.setContent(html_a19975ba26ba636c75a83e3e783469c2);
             
         
 
-        marker_46538939cedaa7af064163b9bc54fa6b.bindPopup(popup_58f62be7a55e01bc7f407483ca948080)
+        circle_marker_77ad123f7332129b26db469b9fecf94f.bindPopup(popup_cbb9a16c8f96eab54ca97c148b800b04)
         ;
 
         
     
     
-            marker_46538939cedaa7af064163b9bc54fa6b.bindTooltip(
+            circle_marker_77ad123f7332129b26db469b9fecf94f.bindTooltip(
                 `<div>
                      La Spezia
                  </div>`,
@@ -1904,45 +1337,30 @@
             );
         
     
-                marker_46538939cedaa7af064163b9bc54fa6b.setIcon(icon_ddc3351e76caca9b8f5fb91eb824c695);
-            
-    
-            var marker_a78fea0e039aa7d126ac7912c96f990d = L.marker(
+            var circle_marker_fc7ebf948e6a20d98b8a6e8d86b36474 = L.circleMarker(
                 [44.826311, 9.529145],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_2678658f9b3bb562883f9625e3cb6d25 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_82272466c056da9ab3800745bb61ea5e = L.popup({
-  "maxWidth": "100%",
+        var popup_12f8d9d1909c7f716bb0db86f4f4731b = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_231010e58059d2b0ac33a5d3f886cb2c = $(`<div id="html_231010e58059d2b0ac33a5d3f886cb2c" style="width: 100.0%; height: 100.0%;">         <strong>Piacenza</strong><br>         Incidenti medi: 1032<br>         Morti medi: 23<br>         Feriti medi: 1347         </div>`)[0];
-                popup_82272466c056da9ab3800745bb61ea5e.setContent(html_231010e58059d2b0ac33a5d3f886cb2c);
+                var html_4227f237c02cfd0fb94bfe717b14350a = $(`<div id="html_4227f237c02cfd0fb94bfe717b14350a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Piacenza</strong><br>           <b>Incidenti medi:</b> 1032<br>           <b>Morti medi:</b> 23<br>           <b>Feriti medi:</b> 1347         </div>         </div>`)[0];
+                popup_12f8d9d1909c7f716bb0db86f4f4731b.setContent(html_4227f237c02cfd0fb94bfe717b14350a);
             
         
 
-        marker_a78fea0e039aa7d126ac7912c96f990d.bindPopup(popup_82272466c056da9ab3800745bb61ea5e)
+        circle_marker_fc7ebf948e6a20d98b8a6e8d86b36474.bindPopup(popup_12f8d9d1909c7f716bb0db86f4f4731b)
         ;
 
         
     
     
-            marker_a78fea0e039aa7d126ac7912c96f990d.bindTooltip(
+            circle_marker_fc7ebf948e6a20d98b8a6e8d86b36474.bindTooltip(
                 `<div>
                      Piacenza
                  </div>`,
@@ -1952,45 +1370,30 @@
             );
         
     
-                marker_a78fea0e039aa7d126ac7912c96f990d.setIcon(icon_2678658f9b3bb562883f9625e3cb6d25);
-            
-    
-            var marker_3f2696e1d2b3379762dc332a15e03fc3 = L.marker(
+            var circle_marker_818a0408d1bdcbca7ccc9c61a4ff93e2 = L.circleMarker(
                 [44.801532, 10.327935],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_5e7d6b80b2fbea32051c87e0a98e6b78 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_1b682c7569cf6332156956608feeb8f3 = L.popup({
-  "maxWidth": "100%",
+        var popup_16865ea38f240275db8baccb07c938b1 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_9b2310786aac5078ab5461d6c6e8c789 = $(`<div id="html_9b2310786aac5078ab5461d6c6e8c789" style="width: 100.0%; height: 100.0%;">         <strong>Parma</strong><br>         Incidenti medi: 1358<br>         Morti medi: 27<br>         Feriti medi: 1874         </div>`)[0];
-                popup_1b682c7569cf6332156956608feeb8f3.setContent(html_9b2310786aac5078ab5461d6c6e8c789);
+                var html_4cd8855514f1ce411c85c507b21e564a = $(`<div id="html_4cd8855514f1ce411c85c507b21e564a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Parma</strong><br>           <b>Incidenti medi:</b> 1358<br>           <b>Morti medi:</b> 27<br>           <b>Feriti medi:</b> 1874         </div>         </div>`)[0];
+                popup_16865ea38f240275db8baccb07c938b1.setContent(html_4cd8855514f1ce411c85c507b21e564a);
             
         
 
-        marker_3f2696e1d2b3379762dc332a15e03fc3.bindPopup(popup_1b682c7569cf6332156956608feeb8f3)
+        circle_marker_818a0408d1bdcbca7ccc9c61a4ff93e2.bindPopup(popup_16865ea38f240275db8baccb07c938b1)
         ;
 
         
     
     
-            marker_3f2696e1d2b3379762dc332a15e03fc3.bindTooltip(
+            circle_marker_818a0408d1bdcbca7ccc9c61a4ff93e2.bindTooltip(
                 `<div>
                      Parma
                  </div>`,
@@ -2000,47 +1403,32 @@
             );
         
     
-                marker_3f2696e1d2b3379762dc332a15e03fc3.setIcon(icon_5e7d6b80b2fbea32051c87e0a98e6b78);
-            
-    
-            var marker_fce2c4ccc1ea8cff8d8ea415c6645cbc = L.marker(
+            var circle_marker_945275e223b8753ef524eade16519158 = L.circleMarker(
                 [44.585658, 10.556474],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_86611427920fb4db124b371cd0f1bd7b = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e3b26446fda4ae29827db5a3c67f7b75 = L.popup({
-  "maxWidth": "100%",
+        var popup_a5fdb76190a68a67f113cab4911a2ff4 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_35c67bc1e825d0a0193e79131dbc6468 = $(`<div id="html_35c67bc1e825d0a0193e79131dbc6468" style="width: 100.0%; height: 100.0%;">         <strong>Reggio nell'Emilia</strong><br>         Incidenti medi: 1660<br>         Morti medi: 29<br>         Feriti medi: 2255         </div>`)[0];
-                popup_e3b26446fda4ae29827db5a3c67f7b75.setContent(html_35c67bc1e825d0a0193e79131dbc6468);
+                var html_a4ec088ba5ee2db332d6ddab3d55e7c8 = $(`<div id="html_a4ec088ba5ee2db332d6ddab3d55e7c8" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Reggio Nell'Emilia</strong><br>           <b>Incidenti medi:</b> 1660<br>           <b>Morti medi:</b> 29<br>           <b>Feriti medi:</b> 2255         </div>         </div>`)[0];
+                popup_a5fdb76190a68a67f113cab4911a2ff4.setContent(html_a4ec088ba5ee2db332d6ddab3d55e7c8);
             
         
 
-        marker_fce2c4ccc1ea8cff8d8ea415c6645cbc.bindPopup(popup_e3b26446fda4ae29827db5a3c67f7b75)
+        circle_marker_945275e223b8753ef524eade16519158.bindPopup(popup_a5fdb76190a68a67f113cab4911a2ff4)
         ;
 
         
     
     
-            marker_fce2c4ccc1ea8cff8d8ea415c6645cbc.bindTooltip(
+            circle_marker_945275e223b8753ef524eade16519158.bindTooltip(
                 `<div>
-                     Reggio nell'Emilia
+                     Reggio Nell'Emilia
                  </div>`,
                 {
   "sticky": true,
@@ -2048,45 +1436,30 @@
             );
         
     
-                marker_fce2c4ccc1ea8cff8d8ea415c6645cbc.setIcon(icon_86611427920fb4db124b371cd0f1bd7b);
-            
-    
-            var marker_402b6bdd30dca10fb167bf7c7b5235dd = L.marker(
+            var circle_marker_458ff6914540067af3b1d66a694336da = L.circleMarker(
                 [44.55138, 10.918048],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_6632ee5a98eb7960e970ad9c7baabcf7 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_240835cf7eeb741fb1dca647bce8689f = L.popup({
-  "maxWidth": "100%",
+        var popup_6b147b858da43cfadac125e5dfacfb3e = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_627e6319a671ae6503919be1b3ef7794 = $(`<div id="html_627e6319a671ae6503919be1b3ef7794" style="width: 100.0%; height: 100.0%;">         <strong>Modena</strong><br>         Incidenti medi: 2567<br>         Morti medi: 46<br>         Feriti medi: 3417         </div>`)[0];
-                popup_240835cf7eeb741fb1dca647bce8689f.setContent(html_627e6319a671ae6503919be1b3ef7794);
+                var html_d8e8f840eaf5fdaa61bb4b06c8e73101 = $(`<div id="html_d8e8f840eaf5fdaa61bb4b06c8e73101" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Modena</strong><br>           <b>Incidenti medi:</b> 2567<br>           <b>Morti medi:</b> 46<br>           <b>Feriti medi:</b> 3417         </div>         </div>`)[0];
+                popup_6b147b858da43cfadac125e5dfacfb3e.setContent(html_d8e8f840eaf5fdaa61bb4b06c8e73101);
             
         
 
-        marker_402b6bdd30dca10fb167bf7c7b5235dd.bindPopup(popup_240835cf7eeb741fb1dca647bce8689f)
+        circle_marker_458ff6914540067af3b1d66a694336da.bindPopup(popup_6b147b858da43cfadac125e5dfacfb3e)
         ;
 
         
     
     
-            marker_402b6bdd30dca10fb167bf7c7b5235dd.bindTooltip(
+            circle_marker_458ff6914540067af3b1d66a694336da.bindTooltip(
                 `<div>
                      Modena
                  </div>`,
@@ -2096,45 +1469,30 @@
             );
         
     
-                marker_402b6bdd30dca10fb167bf7c7b5235dd.setIcon(icon_6632ee5a98eb7960e970ad9c7baabcf7);
-            
-    
-            var marker_30c3385be7b47bb96188f7695e0690cd = L.marker(
+            var circle_marker_582d5767970edd353eb6668a6d65c793 = L.circleMarker(
                 [44.50051, 11.304784],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_1fcb5f19623f96cb0bab23922f19cf07 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_2a0bb6073495857d7a6598794b3d31c3 = L.popup({
-  "maxWidth": "100%",
+        var popup_fc78c8f1ad3a89e3938dc5ac7ed92b60 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_f3e8c39bbf4d2a7c0e5c807367d1daaa = $(`<div id="html_f3e8c39bbf4d2a7c0e5c807367d1daaa" style="width: 100.0%; height: 100.0%;">         <strong>Bologna</strong><br>         Incidenti medi: 3958<br>         Morti medi: 64<br>         Feriti medi: 5431         </div>`)[0];
-                popup_2a0bb6073495857d7a6598794b3d31c3.setContent(html_f3e8c39bbf4d2a7c0e5c807367d1daaa);
+                var html_5cb04adeb8e9b9490f1a202e6f68770a = $(`<div id="html_5cb04adeb8e9b9490f1a202e6f68770a" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Bologna</strong><br>           <b>Incidenti medi:</b> 3958<br>           <b>Morti medi:</b> 64<br>           <b>Feriti medi:</b> 5431         </div>         </div>`)[0];
+                popup_fc78c8f1ad3a89e3938dc5ac7ed92b60.setContent(html_5cb04adeb8e9b9490f1a202e6f68770a);
             
         
 
-        marker_30c3385be7b47bb96188f7695e0690cd.bindPopup(popup_2a0bb6073495857d7a6598794b3d31c3)
+        circle_marker_582d5767970edd353eb6668a6d65c793.bindPopup(popup_fc78c8f1ad3a89e3938dc5ac7ed92b60)
         ;
 
         
     
     
-            marker_30c3385be7b47bb96188f7695e0690cd.bindTooltip(
+            circle_marker_582d5767970edd353eb6668a6d65c793.bindTooltip(
                 `<div>
                      Bologna
                  </div>`,
@@ -2144,45 +1502,30 @@
             );
         
     
-                marker_30c3385be7b47bb96188f7695e0690cd.setIcon(icon_1fcb5f19623f96cb0bab23922f19cf07);
-            
-    
-            var marker_d452cf1fec9db6c95fefe02fc41d2a35 = L.marker(
+            var circle_marker_e755f8881b037f20bf45c0183d7aa2b1 = L.circleMarker(
                 [44.766368, 11.764407],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_86d3ca63e7399b476643caac3d831c0e = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_a89cc43a5554fc2f72caaffc9f644707 = L.popup({
-  "maxWidth": "100%",
+        var popup_4036980e477f6c62573fb8f253a15698 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_e4d86da5381debda62d30c079740006d = $(`<div id="html_e4d86da5381debda62d30c079740006d" style="width: 100.0%; height: 100.0%;">         <strong>Ferrara</strong><br>         Incidenti medi: 1059<br>         Morti medi: 28<br>         Feriti medi: 1424         </div>`)[0];
-                popup_a89cc43a5554fc2f72caaffc9f644707.setContent(html_e4d86da5381debda62d30c079740006d);
+                var html_591e30582ed9b57cf1d4b40002565596 = $(`<div id="html_591e30582ed9b57cf1d4b40002565596" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Ferrara</strong><br>           <b>Incidenti medi:</b> 1059<br>           <b>Morti medi:</b> 28<br>           <b>Feriti medi:</b> 1424         </div>         </div>`)[0];
+                popup_4036980e477f6c62573fb8f253a15698.setContent(html_591e30582ed9b57cf1d4b40002565596);
             
         
 
-        marker_d452cf1fec9db6c95fefe02fc41d2a35.bindPopup(popup_a89cc43a5554fc2f72caaffc9f644707)
+        circle_marker_e755f8881b037f20bf45c0183d7aa2b1.bindPopup(popup_4036980e477f6c62573fb8f253a15698)
         ;
 
         
     
     
-            marker_d452cf1fec9db6c95fefe02fc41d2a35.bindTooltip(
+            circle_marker_e755f8881b037f20bf45c0183d7aa2b1.bindTooltip(
                 `<div>
                      Ferrara
                  </div>`,
@@ -2192,45 +1535,30 @@
             );
         
     
-                marker_d452cf1fec9db6c95fefe02fc41d2a35.setIcon(icon_86d3ca63e7399b476643caac3d831c0e);
-            
-    
-            var marker_7f7c11d829653b861b606efe8c21ec07 = L.marker(
+            var circle_marker_81122f012813cf1af787209e5d9a4d80 = L.circleMarker(
                 [44.418444, 12.2036],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_c814cea2930a72b8ececc53ecf99cf30 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_5d4858c5f78cac4c796e8a65abbe89aa = L.popup({
-  "maxWidth": "100%",
+        var popup_8e2f62c767326a8be43eb7650cbd3ea1 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_bc1851921f81bfbb1059e3f8e36ae6c4 = $(`<div id="html_bc1851921f81bfbb1059e3f8e36ae6c4" style="width: 100.0%; height: 100.0%;">         <strong>Ravenna</strong><br>         Incidenti medi: 1596<br>         Morti medi: 33<br>         Feriti medi: 2160         </div>`)[0];
-                popup_5d4858c5f78cac4c796e8a65abbe89aa.setContent(html_bc1851921f81bfbb1059e3f8e36ae6c4);
+                var html_cc68b1fc3a5bcf33e6e0fdedf9858aec = $(`<div id="html_cc68b1fc3a5bcf33e6e0fdedf9858aec" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Ravenna</strong><br>           <b>Incidenti medi:</b> 1596<br>           <b>Morti medi:</b> 33<br>           <b>Feriti medi:</b> 2160         </div>         </div>`)[0];
+                popup_8e2f62c767326a8be43eb7650cbd3ea1.setContent(html_cc68b1fc3a5bcf33e6e0fdedf9858aec);
             
         
 
-        marker_7f7c11d829653b861b606efe8c21ec07.bindPopup(popup_5d4858c5f78cac4c796e8a65abbe89aa)
+        circle_marker_81122f012813cf1af787209e5d9a4d80.bindPopup(popup_8e2f62c767326a8be43eb7650cbd3ea1)
         ;
 
         
     
     
-            marker_7f7c11d829653b861b606efe8c21ec07.bindTooltip(
+            circle_marker_81122f012813cf1af787209e5d9a4d80.bindTooltip(
                 `<div>
                      Ravenna
                  </div>`,
@@ -2240,45 +1568,30 @@
             );
         
     
-                marker_7f7c11d829653b861b606efe8c21ec07.setIcon(icon_c814cea2930a72b8ececc53ecf99cf30);
-            
-    
-            var marker_91ef531db58b1dd03aab82695ab4319e = L.marker(
+            var circle_marker_9a3b31bfe405cd8985d217f341dbcf1e = L.circleMarker(
                 [43.967605, 12.575703],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_7e799facf344c187aa11fe7224ff22ad = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_769e5ecfe5cc418dfff695a5c83abeaa = L.popup({
-  "maxWidth": "100%",
+        var popup_4b585943625ef3f80f3276d81b3204d4 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_42c7519d124d8289c6c699a08b537ded = $(`<div id="html_42c7519d124d8289c6c699a08b537ded" style="width: 100.0%; height: 100.0%;">         <strong>Rimini</strong><br>         Incidenti medi: 1571<br>         Morti medi: 15<br>         Feriti medi: 1982         </div>`)[0];
-                popup_769e5ecfe5cc418dfff695a5c83abeaa.setContent(html_42c7519d124d8289c6c699a08b537ded);
+                var html_9d7ad1c5a2ccd3157fc30688b5cc2f1f = $(`<div id="html_9d7ad1c5a2ccd3157fc30688b5cc2f1f" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Rimini</strong><br>           <b>Incidenti medi:</b> 1571<br>           <b>Morti medi:</b> 15<br>           <b>Feriti medi:</b> 1982         </div>         </div>`)[0];
+                popup_4b585943625ef3f80f3276d81b3204d4.setContent(html_9d7ad1c5a2ccd3157fc30688b5cc2f1f);
             
         
 
-        marker_91ef531db58b1dd03aab82695ab4319e.bindPopup(popup_769e5ecfe5cc418dfff695a5c83abeaa)
+        circle_marker_9a3b31bfe405cd8985d217f341dbcf1e.bindPopup(popup_4b585943625ef3f80f3276d81b3204d4)
         ;
 
         
     
     
-            marker_91ef531db58b1dd03aab82695ab4319e.bindTooltip(
+            circle_marker_9a3b31bfe405cd8985d217f341dbcf1e.bindTooltip(
                 `<div>
                      Rimini
                  </div>`,
@@ -2288,45 +1601,30 @@
             );
         
     
-                marker_91ef531db58b1dd03aab82695ab4319e.setIcon(icon_7e799facf344c187aa11fe7224ff22ad);
-            
-    
-            var marker_69c9185b01c3fc251225a832314b6601 = L.marker(
+            var circle_marker_ea20d8ec70bb6081ab92917fa1b3f8ac = L.circleMarker(
                 [44.079325, 10.097677],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_edc35dabd2a30e4ab111f2b133839d50 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_6da33d77baccde4c6cee686b2710c5cd = L.popup({
-  "maxWidth": "100%",
+        var popup_5074e1fffdcebf6738851cbdf039b0a9 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_7208280155c5ca0695bef90dc39e883b = $(`<div id="html_7208280155c5ca0695bef90dc39e883b" style="width: 100.0%; height: 100.0%;">         <strong>Massa Carrara</strong><br>         Incidenti medi: 806<br>         Morti medi: 7<br>         Feriti medi: 1150         </div>`)[0];
-                popup_6da33d77baccde4c6cee686b2710c5cd.setContent(html_7208280155c5ca0695bef90dc39e883b);
+                var html_3821e96f7114f5aa5008553eb2605813 = $(`<div id="html_3821e96f7114f5aa5008553eb2605813" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Massa Carrara</strong><br>           <b>Incidenti medi:</b> 806<br>           <b>Morti medi:</b> 7<br>           <b>Feriti medi:</b> 1150         </div>         </div>`)[0];
+                popup_5074e1fffdcebf6738851cbdf039b0a9.setContent(html_3821e96f7114f5aa5008553eb2605813);
             
         
 
-        marker_69c9185b01c3fc251225a832314b6601.bindPopup(popup_6da33d77baccde4c6cee686b2710c5cd)
+        circle_marker_ea20d8ec70bb6081ab92917fa1b3f8ac.bindPopup(popup_5074e1fffdcebf6738851cbdf039b0a9)
         ;
 
         
     
     
-            marker_69c9185b01c3fc251225a832314b6601.bindTooltip(
+            circle_marker_ea20d8ec70bb6081ab92917fa1b3f8ac.bindTooltip(
                 `<div>
                      Massa Carrara
                  </div>`,
@@ -2336,45 +1634,30 @@
             );
         
     
-                marker_69c9185b01c3fc251225a832314b6601.setIcon(icon_edc35dabd2a30e4ab111f2b133839d50);
-            
-    
-            var marker_dae11d29ef4206940dc4c481a45845dc = L.marker(
+            var circle_marker_1a28e7bf4a29418c59f09c47e4177a63 = L.circleMarker(
                 [43.837674, 10.495053],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_775a4821418143d494d8217d283a47bc = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e2037f5757c01f1b41a6a1ea63e64c0f = L.popup({
-  "maxWidth": "100%",
+        var popup_e4e758b690eb9f254fbd064561f816d3 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_a22ea3a8cac9a9dbbe2299a4a0dbc007 = $(`<div id="html_a22ea3a8cac9a9dbbe2299a4a0dbc007" style="width: 100.0%; height: 100.0%;">         <strong>Lucca</strong><br>         Incidenti medi: 1589<br>         Morti medi: 19<br>         Feriti medi: 2106         </div>`)[0];
-                popup_e2037f5757c01f1b41a6a1ea63e64c0f.setContent(html_a22ea3a8cac9a9dbbe2299a4a0dbc007);
+                var html_93cea85c8f810b4dd8b3cad859fd7261 = $(`<div id="html_93cea85c8f810b4dd8b3cad859fd7261" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Lucca</strong><br>           <b>Incidenti medi:</b> 1589<br>           <b>Morti medi:</b> 19<br>           <b>Feriti medi:</b> 2106         </div>         </div>`)[0];
+                popup_e4e758b690eb9f254fbd064561f816d3.setContent(html_93cea85c8f810b4dd8b3cad859fd7261);
             
         
 
-        marker_dae11d29ef4206940dc4c481a45845dc.bindPopup(popup_e2037f5757c01f1b41a6a1ea63e64c0f)
+        circle_marker_1a28e7bf4a29418c59f09c47e4177a63.bindPopup(popup_e4e758b690eb9f254fbd064561f816d3)
         ;
 
         
     
     
-            marker_dae11d29ef4206940dc4c481a45845dc.bindTooltip(
+            circle_marker_1a28e7bf4a29418c59f09c47e4177a63.bindTooltip(
                 `<div>
                      Lucca
                  </div>`,
@@ -2384,45 +1667,30 @@
             );
         
     
-                marker_dae11d29ef4206940dc4c481a45845dc.setIcon(icon_775a4821418143d494d8217d283a47bc);
-            
-    
-            var marker_0d383ccfc56d845e8a9b3fbd1f949b06 = L.marker(
+            var circle_marker_e3ca7df4b9d6f7c0ed8dae4a4b32e764 = L.circleMarker(
                 [43.954373, 10.89031],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.666666666666666, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_ee55e79bd283532058f99b3263b3cd41 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_097016ae8b9590e1547c5402d304081d = L.popup({
-  "maxWidth": "100%",
+        var popup_305cbf2691077586dfbf738e618322d1 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_8f7d35f7ea15d425444d1b764a4a52e7 = $(`<div id="html_8f7d35f7ea15d425444d1b764a4a52e7" style="width: 100.0%; height: 100.0%;">         <strong>Pistoia</strong><br>         Incidenti medi: 902<br>         Morti medi: 15<br>         Feriti medi: 1238         </div>`)[0];
-                popup_097016ae8b9590e1547c5402d304081d.setContent(html_8f7d35f7ea15d425444d1b764a4a52e7);
+                var html_a347a92c47cdea528b9dbf7d6b84aeb2 = $(`<div id="html_a347a92c47cdea528b9dbf7d6b84aeb2" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Pistoia</strong><br>           <b>Incidenti medi:</b> 902<br>           <b>Morti medi:</b> 15<br>           <b>Feriti medi:</b> 1238         </div>         </div>`)[0];
+                popup_305cbf2691077586dfbf738e618322d1.setContent(html_a347a92c47cdea528b9dbf7d6b84aeb2);
             
         
 
-        marker_0d383ccfc56d845e8a9b3fbd1f949b06.bindPopup(popup_097016ae8b9590e1547c5402d304081d)
+        circle_marker_e3ca7df4b9d6f7c0ed8dae4a4b32e764.bindPopup(popup_305cbf2691077586dfbf738e618322d1)
         ;
 
         
     
     
-            marker_0d383ccfc56d845e8a9b3fbd1f949b06.bindTooltip(
+            circle_marker_e3ca7df4b9d6f7c0ed8dae4a4b32e764.bindTooltip(
                 `<div>
                      Pistoia
                  </div>`,
@@ -2432,45 +1700,30 @@
             );
         
     
-                marker_0d383ccfc56d845e8a9b3fbd1f949b06.setIcon(icon_ee55e79bd283532058f99b3263b3cd41);
-            
-    
-            var marker_ab2e562b39c5d0ba46f4f4ab2126225e = L.marker(
+            var circle_marker_00f752364cef15a901e63898c85138d5 = L.circleMarker(
                 [43.767918, 11.252379],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_095251938c7752acde5b5c4b2d05f1b4 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_5efdaa7e1109529ad9960075c3ac3cb8 = L.popup({
-  "maxWidth": "100%",
+        var popup_88b361466842f593512c6d144f6e0095 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_be8c10a0837a05ea8405fc55214917e3 = $(`<div id="html_be8c10a0837a05ea8405fc55214917e3" style="width: 100.0%; height: 100.0%;">         <strong>Firenze</strong><br>         Incidenti medi: 4729<br>         Morti medi: 55<br>         Feriti medi: 6096         </div>`)[0];
-                popup_5efdaa7e1109529ad9960075c3ac3cb8.setContent(html_be8c10a0837a05ea8405fc55214917e3);
+                var html_c25ff6897be5e5f8b7a37a65a43166a6 = $(`<div id="html_c25ff6897be5e5f8b7a37a65a43166a6" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Firenze</strong><br>           <b>Incidenti medi:</b> 4729<br>           <b>Morti medi:</b> 55<br>           <b>Feriti medi:</b> 6096         </div>         </div>`)[0];
+                popup_88b361466842f593512c6d144f6e0095.setContent(html_c25ff6897be5e5f8b7a37a65a43166a6);
             
         
 
-        marker_ab2e562b39c5d0ba46f4f4ab2126225e.bindPopup(popup_5efdaa7e1109529ad9960075c3ac3cb8)
+        circle_marker_00f752364cef15a901e63898c85138d5.bindPopup(popup_88b361466842f593512c6d144f6e0095)
         ;
 
         
     
     
-            marker_ab2e562b39c5d0ba46f4f4ab2126225e.bindTooltip(
+            circle_marker_00f752364cef15a901e63898c85138d5.bindTooltip(
                 `<div>
                      Firenze
                  </div>`,
@@ -2480,45 +1733,30 @@
             );
         
     
-                marker_ab2e562b39c5d0ba46f4f4ab2126225e.setIcon(icon_095251938c7752acde5b5c4b2d05f1b4);
-            
-    
-            var marker_c071fe3e8ab3707119268d431193c467 = L.marker(
+            var circle_marker_bbf047437f73be7258bbc10cae977180 = L.circleMarker(
                 [44.04539, 11.116445],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_7d871504629c44946f553b81319cee9e = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e1064ee683dfa3b07e8915b57e526c40 = L.popup({
-  "maxWidth": "100%",
+        var popup_2ca107ee8671129991aa8bb5cc4c5d5b = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_307c6a92be80a95bfa8c658d2b706c29 = $(`<div id="html_307c6a92be80a95bfa8c658d2b706c29" style="width: 100.0%; height: 100.0%;">         <strong>Prato</strong><br>         Incidenti medi: 922<br>         Morti medi: 6<br>         Feriti medi: 1102         </div>`)[0];
-                popup_e1064ee683dfa3b07e8915b57e526c40.setContent(html_307c6a92be80a95bfa8c658d2b706c29);
+                var html_783d9ece2cb6d449266e67f097e855a2 = $(`<div id="html_783d9ece2cb6d449266e67f097e855a2" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Prato</strong><br>           <b>Incidenti medi:</b> 922<br>           <b>Morti medi:</b> 6<br>           <b>Feriti medi:</b> 1102         </div>         </div>`)[0];
+                popup_2ca107ee8671129991aa8bb5cc4c5d5b.setContent(html_783d9ece2cb6d449266e67f097e855a2);
             
         
 
-        marker_c071fe3e8ab3707119268d431193c467.bindPopup(popup_e1064ee683dfa3b07e8915b57e526c40)
+        circle_marker_bbf047437f73be7258bbc10cae977180.bindPopup(popup_2ca107ee8671129991aa8bb5cc4c5d5b)
         ;
 
         
     
     
-            marker_c071fe3e8ab3707119268d431193c467.bindTooltip(
+            circle_marker_bbf047437f73be7258bbc10cae977180.bindTooltip(
                 `<div>
                      Prato
                  </div>`,
@@ -2528,45 +1766,30 @@
             );
         
     
-                marker_c071fe3e8ab3707119268d431193c467.setIcon(icon_7d871504629c44946f553b81319cee9e);
-            
-    
-            var marker_bece6f0c158cc6e8992fdca49767122d = L.marker(
+            var circle_marker_e738573eb9e6c5c069aa3eb3dbd37a12 = L.circleMarker(
                 [43.023985, 10.66471],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.333333333333332, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_9ce8b9dd53c0d7b6a181ede7d4bd3542 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_b0594e8d8ba8912bdeb5d8640212658b = L.popup({
-  "maxWidth": "100%",
+        var popup_46b953017ad28555e401d07706adc2b6 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_311317891061b1e48749c5cc643ad370 = $(`<div id="html_311317891061b1e48749c5cc643ad370" style="width: 100.0%; height: 100.0%;">         <strong>Livorno</strong><br>         Incidenti medi: 1602<br>         Morti medi: 17<br>         Feriti medi: 2098         </div>`)[0];
-                popup_b0594e8d8ba8912bdeb5d8640212658b.setContent(html_311317891061b1e48749c5cc643ad370);
+                var html_52692da8728a201f3f2c0bded1e1dd7b = $(`<div id="html_52692da8728a201f3f2c0bded1e1dd7b" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Livorno</strong><br>           <b>Incidenti medi:</b> 1602<br>           <b>Morti medi:</b> 17<br>           <b>Feriti medi:</b> 2098         </div>         </div>`)[0];
+                popup_46b953017ad28555e401d07706adc2b6.setContent(html_52692da8728a201f3f2c0bded1e1dd7b);
             
         
 
-        marker_bece6f0c158cc6e8992fdca49767122d.bindPopup(popup_b0594e8d8ba8912bdeb5d8640212658b)
+        circle_marker_e738573eb9e6c5c069aa3eb3dbd37a12.bindPopup(popup_46b953017ad28555e401d07706adc2b6)
         ;
 
         
     
     
-            marker_bece6f0c158cc6e8992fdca49767122d.bindTooltip(
+            circle_marker_e738573eb9e6c5c069aa3eb3dbd37a12.bindTooltip(
                 `<div>
                      Livorno
                  </div>`,
@@ -2576,45 +1799,30 @@
             );
         
     
-                marker_bece6f0c158cc6e8992fdca49767122d.setIcon(icon_9ce8b9dd53c0d7b6a181ede7d4bd3542);
-            
-    
-            var marker_0e505e0cdab2526d6bc75bf13753d6fd = L.marker(
+            var circle_marker_f40b82615e92391f2f46aec7dcc14090 = L.circleMarker(
                 [43.722832, 10.401719],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_a627127d30c646e91a1dc8fd91c54c75 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_df761d8ac0db98f7f8d18360270b2b76 = L.popup({
-  "maxWidth": "100%",
+        var popup_d818809f19b3f07d4fe36292bdcdd015 = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_818d7502a73be50df3e91cd52b3ab29e = $(`<div id="html_818d7502a73be50df3e91cd52b3ab29e" style="width: 100.0%; height: 100.0%;">         <strong>Pisa</strong><br>         Incidenti medi: 1512<br>         Morti medi: 26<br>         Feriti medi: 2058         </div>`)[0];
-                popup_df761d8ac0db98f7f8d18360270b2b76.setContent(html_818d7502a73be50df3e91cd52b3ab29e);
+                var html_daed4476104970d2d1e511c90a452c94 = $(`<div id="html_daed4476104970d2d1e511c90a452c94" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Pisa</strong><br>           <b>Incidenti medi:</b> 1512<br>           <b>Morti medi:</b> 26<br>           <b>Feriti medi:</b> 2058         </div>         </div>`)[0];
+                popup_d818809f19b3f07d4fe36292bdcdd015.setContent(html_daed4476104970d2d1e511c90a452c94);
             
         
 
-        marker_0e505e0cdab2526d6bc75bf13753d6fd.bindPopup(popup_df761d8ac0db98f7f8d18360270b2b76)
+        circle_marker_f40b82615e92391f2f46aec7dcc14090.bindPopup(popup_d818809f19b3f07d4fe36292bdcdd015)
         ;
 
         
     
     
-            marker_0e505e0cdab2526d6bc75bf13753d6fd.bindTooltip(
+            circle_marker_f40b82615e92391f2f46aec7dcc14090.bindTooltip(
                 `<div>
                      Pisa
                  </div>`,
@@ -2624,45 +1832,30 @@
             );
         
     
-                marker_0e505e0cdab2526d6bc75bf13753d6fd.setIcon(icon_a627127d30c646e91a1dc8fd91c54c75);
-            
-    
-            var marker_5837b25f2bfa9b002a91b09c0832da16 = L.marker(
+            var circle_marker_617ffc614dbc19a290d898cdf5235fec = L.circleMarker(
                 [43.466896, 11.88236],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_63a7049a1ffd8e918892d4e45695a85f = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_3233281174676909d615a2ca58c35081 = L.popup({
-  "maxWidth": "100%",
+        var popup_2772eb765b52d79f7feba0000765a82c = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_28721400cbc2b77960bb1c2c2c60657c = $(`<div id="html_28721400cbc2b77960bb1c2c2c60657c" style="width: 100.0%; height: 100.0%;">         <strong>Arezzo</strong><br>         Incidenti medi: 927<br>         Morti medi: 24<br>         Feriti medi: 1220         </div>`)[0];
-                popup_3233281174676909d615a2ca58c35081.setContent(html_28721400cbc2b77960bb1c2c2c60657c);
+                var html_885177dc608b438a2906ff88ec8bd570 = $(`<div id="html_885177dc608b438a2906ff88ec8bd570" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Arezzo</strong><br>           <b>Incidenti medi:</b> 927<br>           <b>Morti medi:</b> 24<br>           <b>Feriti medi:</b> 1220         </div>         </div>`)[0];
+                popup_2772eb765b52d79f7feba0000765a82c.setContent(html_885177dc608b438a2906ff88ec8bd570);
             
         
 
-        marker_5837b25f2bfa9b002a91b09c0832da16.bindPopup(popup_3233281174676909d615a2ca58c35081)
+        circle_marker_617ffc614dbc19a290d898cdf5235fec.bindPopup(popup_2772eb765b52d79f7feba0000765a82c)
         ;
 
         
     
     
-            marker_5837b25f2bfa9b002a91b09c0832da16.bindTooltip(
+            circle_marker_617ffc614dbc19a290d898cdf5235fec.bindTooltip(
                 `<div>
                      Arezzo
                  </div>`,
@@ -2672,45 +1865,30 @@
             );
         
     
-                marker_5837b25f2bfa9b002a91b09c0832da16.setIcon(icon_63a7049a1ffd8e918892d4e45695a85f);
-            
-    
-            var marker_34502681e21dafdffee85c17ca7c30f0 = L.marker(
+            var circle_marker_bcc754810f015c8f1268a2ae0674be6c = L.circleMarker(
                 [43.293773, 11.433915],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.0, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_ee07dd42641f1c9d45bf29f66d1a11dd = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_2131d58893fdbbf3de59dd58e1427abb = L.popup({
-  "maxWidth": "100%",
+        var popup_0778a5866779980b08a31a624d8f21ae = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_cadb5ee410c1fad9a193957bf6ae6a71 = $(`<div id="html_cadb5ee410c1fad9a193957bf6ae6a71" style="width: 100.0%; height: 100.0%;">         <strong>Siena</strong><br>         Incidenti medi: 742<br>         Morti medi: 17<br>         Feriti medi: 1019         </div>`)[0];
-                popup_2131d58893fdbbf3de59dd58e1427abb.setContent(html_cadb5ee410c1fad9a193957bf6ae6a71);
+                var html_1fad401383d519544f5d8d31bf2516a8 = $(`<div id="html_1fad401383d519544f5d8d31bf2516a8" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Siena</strong><br>           <b>Incidenti medi:</b> 742<br>           <b>Morti medi:</b> 17<br>           <b>Feriti medi:</b> 1019         </div>         </div>`)[0];
+                popup_0778a5866779980b08a31a624d8f21ae.setContent(html_1fad401383d519544f5d8d31bf2516a8);
             
         
 
-        marker_34502681e21dafdffee85c17ca7c30f0.bindPopup(popup_2131d58893fdbbf3de59dd58e1427abb)
+        circle_marker_bcc754810f015c8f1268a2ae0674be6c.bindPopup(popup_0778a5866779980b08a31a624d8f21ae)
         ;
 
         
     
     
-            marker_34502681e21dafdffee85c17ca7c30f0.bindTooltip(
+            circle_marker_bcc754810f015c8f1268a2ae0674be6c.bindTooltip(
                 `<div>
                      Siena
                  </div>`,
@@ -2720,45 +1898,30 @@
             );
         
     
-                marker_34502681e21dafdffee85c17ca7c30f0.setIcon(icon_ee07dd42641f1c9d45bf29f66d1a11dd);
-            
-    
-            var marker_3788d28b992a59d8374f99d0844b1bf9 = L.marker(
+            var circle_marker_8c60bfbaf521056e8c4f35a02589a114 = L.circleMarker(
                 [42.851801, 11.252379],
-                {
-}
-            ).addTo(map_5635f33b7fce1046657eca8062ba0b33);
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.666666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_797d806b8a54552aade2e518637b6d57);
         
     
-            var icon_451d62815389e4aead6ed8d315fe3718 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_bdd63e0c16fc877b98168f027f509386 = L.popup({
-  "maxWidth": "100%",
+        var popup_bfc548e3df26d36e130093ad564a962d = L.popup({
+  "maxWidth": 250,
 });
 
         
             
-                var html_ddc39482bd68a08d2c1ab040f3ae46cd = $(`<div id="html_ddc39482bd68a08d2c1ab040f3ae46cd" style="width: 100.0%; height: 100.0%;">         <strong>Grosseto</strong><br>         Incidenti medi: 812<br>         Morti medi: 16<br>         Feriti medi: 1113         </div>`)[0];
-                popup_bdd63e0c16fc877b98168f027f509386.setContent(html_ddc39482bd68a08d2c1ab040f3ae46cd);
+                var html_293bd6b4293b016bf4d1eb26d2ab4926 = $(`<div id="html_293bd6b4293b016bf4d1eb26d2ab4926" style="width: 100.0%; height: 100.0%;">         <div style="width: 220px; font-family:Arial; font-size:14px;">           <strong style="font-size:16px; color:darkblue;">Grosseto</strong><br>           <b>Incidenti medi:</b> 812<br>           <b>Morti medi:</b> 16<br>           <b>Feriti medi:</b> 1113         </div>         </div>`)[0];
+                popup_bfc548e3df26d36e130093ad564a962d.setContent(html_293bd6b4293b016bf4d1eb26d2ab4926);
             
         
 
-        marker_3788d28b992a59d8374f99d0844b1bf9.bindPopup(popup_bdd63e0c16fc877b98168f027f509386)
+        circle_marker_8c60bfbaf521056e8c4f35a02589a114.bindPopup(popup_bfc548e3df26d36e130093ad564a962d)
         ;
 
         
     
     
-            marker_3788d28b992a59d8374f99d0844b1bf9.bindTooltip(
+            circle_marker_8c60bfbaf521056e8c4f35a02589a114.bindTooltip(
                 `<div>
                      Grosseto
                  </div>`,
@@ -2767,8 +1930,5 @@
 }
             );
         
-    
-                marker_3788d28b992a59d8374f99d0844b1bf9.setIcon(icon_451d62815389e4aead6ed8d315fe3718);
-            
 </script>
 </html>
