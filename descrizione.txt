@@ -1,1 +1,8 @@
-descrizione.txt
+Il dataset include 56 province italiane, con dati su popolazione, incidenti stradali e numero di ospedali.
+La popolazione media è di 552,785 abitanti, con un minimo di 138,034 a Gorizia e un massimo di 3,228,006 a Milano.
+Il numero medio di ospedali per provincia è di 5.7, con un minimo di 1 a Biella e un massimo di 25 a Milano.
+La mortalità media per incidenti stradali è di 5.30 morti ogni 100.000 abitanti; la mediana è 5.27.
+I valori estremi di mortalità vanno da 1.49 (minimo, a Monza e della Brianza) a 10.25 (massimo, a Vercelli).
+Delle province analizzate, 3 presentano un tasso elevato (>8), 29 sono nella fascia intermedia (5–8), e 24 rientrano nel basso rischio (<5 morti ogni 100k).
+La presenza ospedaliera non mostra una chiara correlazione lineare con la mortalità, suggerendo che altri fattori (come densità, traffico o qualità stradale) possano influenzare maggiormente gli esiti degli incidenti.
+Questa fotografia statistica del dataset fornisce una base robusta per ulteriori esplorazioni, valutazioni territoriali e decisioni strategiche sulla sicurezza stradale.
