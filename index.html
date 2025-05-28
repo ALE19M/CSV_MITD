@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Mobilità Italia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="logo-container">
+            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/logo.png" alt="Logo" class="logo">
+        </div>
+        <h1><a href="#intro" class="home-link">Info Mobilità Italia</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#grafici" class="nav-link">Statistiche</a></li>
+                <li><a href="#dati" class="nav-link">Analisi</a></li>
+                <li><a href="#mappa" class="nav-link">Mappa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro" class="sezione active">
+            <div class="intro-container">
+                <div class="intro-text-container">                   
+                    <p>Esplora l'analisi dettagliata degli incidenti stradali nelle province italiane. <br> Un progetto di Alessandro Miani, Lorenzo Marabese, Ludovico Pio Vicari e Giulio Bongiorni, per comprendere, prevenire e migliorare la sicurezza sulle nostre strade.</p>
+                </div>
+                <div class="map-container">           
+                    <iframe 
+                        src="https://ale19m.github.io/CSV_MITD/mappa_province_incidenti.html" 
+                        style="width: 90%; height: 90%; border: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                        title="Mappa Interattiva">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="grafici" class="sezione">
+            <div class="content-container">
+                <h2>Statistiche</h2>
+                <h3>Descrizione del DataSet</h3> <br>
+                <div id="statistiche-descrizione"></div> <br><br>
+                <h3>Province per mortalità</h3><br>
+                <div id="statistiche-testo"></div><br><br>
+                <h3>Mortalità e Ospedali</h3><br>
+                <div id="statistiche-metodologia"></div>
+                <p class="analysis-description">L’analisi della correlazione lineare tra numero di ospedali e mortalità da incidenti stradali mostra un’equazione stimata: y = 1.56 * x + 3.49, dove y è la mortalità per 100k abitanti e x il numero di ospedali per 100k abitanti. Il coefficiente angolare positivo suggerisce una correlazione diretta, ma il valore di R² = 0.144 indica che solo il 14.4% della variabilità è spiegata dal modello. Quindi la relazione è molto debole e statisticamente poco rilevante. È probabile che entrino in gioco altri fattori esterni (es. traffico, urbanizzazione, tempistiche dei soccorsi). In sintesi, il numero di ospedali non è un buon predittore della mortalità da incidenti. Il dato va interpretato con cautela e integrato con ulteriori variabili.</p> <br><br><br>
+                <h3>Province simili con mortalità differenti</h3> <br>
+                <div id="statistiche-conclusioni"></div>
+            </div>
+        </section>
+
+        <section id="dati" class="sezione">
+            <div class="content-container">
+                <h2>Analisi</h2>
+                <div class="analysis-stack">
+                    <div class="analysis-item">
+                        <h3>1. Popolazione per Regione Italiana</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto1.png" alt="Analisi dati 1" class="analysis-image">
+                        </div>
+                        <p class="analysis-description">Questo grafico mostra la distribuzione della popolazione tra le diverse regioni italiane. È stato utilizzato per fornire un contesto demografico alle successive analisi sugli incidenti stradali, permettendo di confrontare regioni con dimensioni molto diverse e capire l’impatto della densità abitativa.</p>
+                    </div>
+                    
+                    <div class="analysis-item">
+                        <h3>2. Media incidenti stradali per 100.000 abitanti per regioni italiane</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto2.png" alt="Analisi dati 2" class="analysis-image">
+                        </div>
+                        <p class="analysis-description">Il grafico confronta la frequenza media di incidenti stradali, normalizzata per popolazione, nelle varie regioni italiane. Serve a identificare le aree geografiche con maggiore rischio relativo, indipendentemente dalla dimensione demografica, rendendo il confronto tra regioni più equo e significativo.</p>
+                    </div>
+
+                    <div class="analysis-item">
+                        <h3>3. Evoluzione di incidenti, feriti e morti per anno</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto4_1.png" alt="Analisi comparativa 1" class="analysis-image" id="compareImage">
+                            <button id="toggleImage" class="toggle-button">Cambia Vista</button>
+                        </div>
+                        <p class="analysis-description">Questi grafici (è possibile cambiare vista con il bottone sopra raffigurato) rappresenta l’andamento degli incidenti stradali, del numero di feriti e del numero di morti nel corso degli ultimi anni. L’obiettivo è evidenziare tendenze temporali e valutare se ci siano stati miglioramenti o peggioramenti nel tempo in termini di sicurezza stradale.
+
+                        </p>
+                    </div>
+
+                    <div class="analysis-item">
+                        <h3>5. Correlazione tra popolazione e media incidenti stradali</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto7.png" alt="Distribuzione temporale" class="analysis-image">
+                        </div>
+                        <p class="analysis-description">Il grafico analizza la relazione tra la popolazione di una provincia e la media degli incidenti registrati. È stato usato per verificare se le province più popolate tendono ad avere più incidenti in media, o se altri fattori incidono maggiormente sul numero di sinistri.</p>
+                    </div>
+
+                    <div class="analysis-item">
+                        <h3>6. Relazione tra numero di ospedali e mortalità da incidenti stradali (per 100.000 abitanti)</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto5.png" alt="Correlazione fattori" class="analysis-image">
+                        </div>
+                        <p class="analysis-description">Il grafico esplora il legame tra la presenza di strutture ospedaliere e la mortalità da incidenti stradali, normalizzata per popolazione. Serve a verificare se una maggiore disponibilità di strutture sanitarie contribuisce effettivamente a ridurre il tasso di decessi in seguito a incidenti.</p>
+                    </div>
+
+                    <div class="analysis-item">
+                        <h3>7. Distribuzione della mortalità per gruppi di numero di ospedali</h3>
+                        <div class="analysis-container">
+                            <img src="https://raw.githubusercontent.com/ALE19M/CSV_MITD/main/foto6.png" alt="Tendenze stagionali" class="analysis-image">
+                        </div>
+                        <p class="analysis-description">Questo boxplot suddivide le province in gruppi in base al numero di ospedali presenti e confronta la distribuzione della mortalità da incidenti per ciascun gruppo. È stato utilizzato per valutare se esiste un pattern ricorrente o significativo tra la disponibilità di strutture sanitarie e gli esiti letali degli incidenti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mappa" class="sezione">
+            <div class="content-container">
+              <h2>Mappa Interattiva</h2>         
+
+              <div class="fullwidth-map-section">
+                <h3>Mappa Indice Composito</h3> <br>
+                <div class="fullwidth-map-container">
+                  <iframe
+                    src="https://ale19m.github.io/CSV_MITD/mappa_indice_composito.html"
+                    class="fullwidth-map"
+                    title="Mappa generale">
+                </iframe>
+                </div>
+                <p class="map-description">Questa mappa visualizza un indice complesso che mette in relazione il tasso di mortalità per incidenti stradali (calcolato come morti per 100.000 abitanti) con la presenza di strutture sanitarie (numero di ospedali per provincia). <br> Ogni cerchio rappresenta una provincia italiana, posizionato sulla base delle coordinate geografiche. La dimensione del cerchio è proporzionale al valore dell’indice combinato: più grande è il cerchio, maggiore è la mortalità rispetto alla copertura ospedaliera. <br> Il colore indica il livello di rischio relativo: verde per valori bassi (buona copertura ospedaliera e bassa mortalità), arancione per livelli intermedi e rosso per province con elevata mortalità a fronte di una scarsa presenza ospedaliera. <br> Questa mappa è utile per identificare territori potenzialmente vulnerabili, dove un numero relativamente basso di strutture sanitarie coincide con un’elevata mortalità da incidenti, suggerendo aree su cui concentrare interventi di prevenzione o rafforzamento del sistema sanitario locale.</p>
+              </div>
+
+              <div class="maps-grid">
+                <div class="map-box">
+                  <h3>Mappa Strutture Sanitarie</h3>
+                  <div class="map-container">
+                    <iframe 
+                        src="https://ale19m.github.io/CSV_MITD/mappa_strutture_sanitarie.html" 
+                        style="width: 90%; height: 90%; border: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                        title="Mappa Interattiva">
+                    </iframe>
+                  </div>
+                  <p class="map-description">La mappa mostra la distribuzione del numero di strutture sanitarie in Italia a livello provinciale. <br> Ogni punto sulla mappa rappresenta una provincia, posizionato secondo le coordinate geografiche del capoluogo. Il diametro dei cerchi è proporzionale al numero totale di strutture sanitarie presenti nella provincia, permettendo di cogliere visivamente quali territori sono più dotati in termini di infrastrutture sanitarie. <br>
+                    Al passaggio del mouse o clic su ogni punto, viene visualizzato un box informativo. <br>
+                    Questo tipo di visualizzazione è utile per evidenziare la disparità nella distribuzione delle risorse sanitarie e può supportare riflessioni su accessibilità, pianificazione territoriale e fabbisogno sanitario nelle diverse aree del Paese.</p>
+                </div>
+                <div class="map-box">
+                    <h3>Mappa Percentuali di morti sul numero di incidenti</h3>
+                    <div class="map-container">
+                      <iframe 
+                          src="https://ale19m.github.io/CSV_MITD/mappa_percentuale.html" 
+                          style="width: 90%; height: 90%; border: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                          title="Mappa Interattiva">
+                      </iframe>
+                    </div>
+                    <p class="map-description">Il grafico proposto è una mappa interattiva in cui ogni cerchio rappresenta una provincia italiana e visualizza, tramite dimensioni e colori, l’intensità del fenomeno degli incidenti stradali con esito mortale. <br> Dimensione del cerchio: proporzionale alla percentuale di incidenti con almeno una vittima sul totale degli incidenti nella provincia (media triennale 2021–2023). <br>Colore del cerchio: indica visivamente il livello di rischio: Verde se la percentuale è inferiore all’1% (bassa incidenza di mortalità) Arancione tra 1% e 2% (livello intermedio) Rosso oltre il 2% (alta incidenza di mortalità). <br> Ogni punto è cliccabile e mostra in un popup le seguenti informazioni: Nome della provincia
+                        Media triennale degli incidenti stradali
+                        Media triennale dei decessi
+                        Percentuale di incidenti mortali. <br>
+                        Questo tipo di rappresentazione consente una lettura immediata delle zone più critiche d’Italia in termini di gravità degli incidenti, e non solo di frequenza, offrendo spunti per politiche di prevenzione più mirate.</p>
+                  </div>               
+              </div>   
+
+              
+            </div>
+        </section>
+
+          
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>alessandro.miani2@studio.unibo.it</p>
+                <p>alessandro.miani2@studio.unibo.it</p>
+                <p>alessandro.miani2@studio.unibo.it</p>
+                <p>alessandro.miani2@studio.unibo.it</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Team</h3>
+                <p>Alessandro Miani</p>
+                <p>Lorenzo Marabese</p>
+                <p>Ludovico Pio Vicari</p>
+                <p>Giulio Bongiorni</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Università di Bologna</h3>
+                <p>Metodi Informatici Per la Trasformazione Digitale</p>
+                <p>Bologna</p>
+            </div>
+        </div>
+
+        <div class="footer-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
