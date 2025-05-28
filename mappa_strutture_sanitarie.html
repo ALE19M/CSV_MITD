@@ -1,0 +1,3566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27e5aad8eb09bcad1efdc70a5a76a54a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27e5aad8eb09bcad1efdc70a5a76a54a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27e5aad8eb09bcad1efdc70a5a76a54a = L.map(
+                "map_27e5aad8eb09bcad1efdc70a5a76a54a",
+                {
+                    center: [42.5, 12.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8de91aa4b0186860c0e32d797c3b636f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8de91aa4b0186860c0e32d797c3b636f.addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+            var circle_marker_d45186a6821962a6b1a4ea5564f5b1d7 = L.circleMarker(
+                [45.063299, 7.669289],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_75452db13c56059459d080d4cb13bc9e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_071e9e2b88b5aef6742526b2a940f237 = $(`<div id="html_071e9e2b88b5aef6742526b2a940f237" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Torino</strong><br>       <b>Strutture sanitarie:</b> 60     </div>     </div>`)[0];
+                popup_75452db13c56059459d080d4cb13bc9e.setContent(html_071e9e2b88b5aef6742526b2a940f237);
+            
+        
+
+        circle_marker_d45186a6821962a6b1a4ea5564f5b1d7.bindPopup(popup_75452db13c56059459d080d4cb13bc9e)
+        ;
+
+        
+    
+    
+            circle_marker_d45186a6821962a6b1a4ea5564f5b1d7.bindTooltip(
+                `<div>
+                     Torino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_910082884ee926b462c531d4c01dd6e1 = L.circleMarker(
+                [45.32022, 8.418508],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_97d306804f92d07ab74e5dc8cde5e6c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f5af94d5d1010b96aaee7789c4c3b77 = $(`<div id="html_3f5af94d5d1010b96aaee7789c4c3b77" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Vercelli</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_97d306804f92d07ab74e5dc8cde5e6c4.setContent(html_3f5af94d5d1010b96aaee7789c4c3b77);
+            
+        
+
+        circle_marker_910082884ee926b462c531d4c01dd6e1.bindPopup(popup_97d306804f92d07ab74e5dc8cde5e6c4)
+        ;
+
+        
+    
+    
+            circle_marker_910082884ee926b462c531d4c01dd6e1.bindTooltip(
+                `<div>
+                     Vercelli
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_956b64266dd1ae2a4fa73c77270b4e15 = L.circleMarker(
+                [45.548513, 8.515079],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_059230e28aa6989de5f2ee4a2ccd7130 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8d1096bfffe6f529b99300d8367c4332 = $(`<div id="html_8d1096bfffe6f529b99300d8367c4332" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Novara</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_059230e28aa6989de5f2ee4a2ccd7130.setContent(html_8d1096bfffe6f529b99300d8367c4332);
+            
+        
+
+        circle_marker_956b64266dd1ae2a4fa73c77270b4e15.bindPopup(popup_059230e28aa6989de5f2ee4a2ccd7130)
+        ;
+
+        
+    
+    
+            circle_marker_956b64266dd1ae2a4fa73c77270b4e15.bindTooltip(
+                `<div>
+                     Novara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1a12c221865710932d2ef6433b59fb4 = L.circleMarker(
+                [44.597031, 7.611422],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_0262de0c32f36b96b0ddd97768d6ab66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e5c60cadc5b7c8a95057b072312e46fa = $(`<div id="html_e5c60cadc5b7c8a95057b072312e46fa" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Cuneo</strong><br>       <b>Strutture sanitarie:</b> 15     </div>     </div>`)[0];
+                popup_0262de0c32f36b96b0ddd97768d6ab66.setContent(html_e5c60cadc5b7c8a95057b072312e46fa);
+            
+        
+
+        circle_marker_a1a12c221865710932d2ef6433b59fb4.bindPopup(popup_0262de0c32f36b96b0ddd97768d6ab66)
+        ;
+
+        
+    
+    
+            circle_marker_a1a12c221865710932d2ef6433b59fb4.bindTooltip(
+                `<div>
+                     Cuneo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d42baa0b94eb7e6c0b9f1a3f42d4477a = L.circleMarker(
+                [44.900765, 8.206432],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_8db44d3d0d99e463e615f28096770fd9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb128473f899ed2654e61fdb3cea5b11 = $(`<div id="html_cb128473f899ed2654e61fdb3cea5b11" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Asti</strong><br>       <b>Strutture sanitarie:</b> 3     </div>     </div>`)[0];
+                popup_8db44d3d0d99e463e615f28096770fd9.setContent(html_cb128473f899ed2654e61fdb3cea5b11);
+            
+        
+
+        circle_marker_d42baa0b94eb7e6c0b9f1a3f42d4477a.bindPopup(popup_8db44d3d0d99e463e615f28096770fd9)
+        ;
+
+        
+    
+    
+            circle_marker_d42baa0b94eb7e6c0b9f1a3f42d4477a.bindTooltip(
+                `<div>
+                     Asti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d610fdd52691d1d567eef53785b769f8 = L.circleMarker(
+                [44.817559, 8.704663],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_3e000d6f5e6d72f91fe314a71dbc1ba4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21d70cfb7d28838cf80dea53fc3e9e92 = $(`<div id="html_21d70cfb7d28838cf80dea53fc3e9e92" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Alessandria</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_3e000d6f5e6d72f91fe314a71dbc1ba4.setContent(html_21d70cfb7d28838cf80dea53fc3e9e92);
+            
+        
+
+        circle_marker_d610fdd52691d1d567eef53785b769f8.bindPopup(popup_3e000d6f5e6d72f91fe314a71dbc1ba4)
+        ;
+
+        
+    
+    
+            circle_marker_d610fdd52691d1d567eef53785b769f8.bindTooltip(
+                `<div>
+                     Alessandria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9223c1d21ba5d1cabb5d0f8b6fa79c36 = L.circleMarker(
+                [45.738888, 7.426187],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_e95df81535a2ab87e7a47d81de77f4f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a4d57d2250ea80781c1d1f528da5ac20 = $(`<div id="html_a4d57d2250ea80781c1d1f528da5ac20" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Valle D'Aosta/Valle D'Aoste</strong><br>       <b>Strutture sanitarie:</b> 2     </div>     </div>`)[0];
+                popup_e95df81535a2ab87e7a47d81de77f4f8.setContent(html_a4d57d2250ea80781c1d1f528da5ac20);
+            
+        
+
+        circle_marker_9223c1d21ba5d1cabb5d0f8b6fa79c36.bindPopup(popup_e95df81535a2ab87e7a47d81de77f4f8)
+        ;
+
+        
+    
+    
+            circle_marker_9223c1d21ba5d1cabb5d0f8b6fa79c36.bindTooltip(
+                `<div>
+                     Valle D'Aosta/Valle D'Aoste
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60079227779f0289b4a574256876276b = L.circleMarker(
+                [43.941866, 7.828637],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_6ef108e76172110642a80768f86ba025 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b12a153448828a393d168f11173879b9 = $(`<div id="html_b12a153448828a393d168f11173879b9" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Imperia</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_6ef108e76172110642a80768f86ba025.setContent(html_b12a153448828a393d168f11173879b9);
+            
+        
+
+        circle_marker_60079227779f0289b4a574256876276b.bindPopup(popup_6ef108e76172110642a80768f86ba025)
+        ;
+
+        
+    
+    
+            circle_marker_60079227779f0289b4a574256876276b.bindTooltip(
+                `<div>
+                     Imperia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cb8cbe32fe3b66481ccba2c234d71b9 = L.circleMarker(
+                [44.2888, 8.265058],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_5be175ba82615904e578db126d31579c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4dfb90a90f38c923d7015cf6de7be85c = $(`<div id="html_4dfb90a90f38c923d7015cf6de7be85c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Savona</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_5be175ba82615904e578db126d31579c.setContent(html_4dfb90a90f38c923d7015cf6de7be85c);
+            
+        
+
+        circle_marker_2cb8cbe32fe3b66481ccba2c234d71b9.bindPopup(popup_5be175ba82615904e578db126d31579c)
+        ;
+
+        
+    
+    
+            circle_marker_2cb8cbe32fe3b66481ccba2c234d71b9.bindTooltip(
+                `<div>
+                     Savona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_215665a7dfabce06105e770ee9c30741 = L.circleMarker(
+                [44.446625, 9.145615],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_057e391a49c9cee30452b2339b7aa921 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c9a2614508388e8a071509e15efd0625 = $(`<div id="html_c9a2614508388e8a071509e15efd0625" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Genova</strong><br>       <b>Strutture sanitarie:</b> 23     </div>     </div>`)[0];
+                popup_057e391a49c9cee30452b2339b7aa921.setContent(html_c9a2614508388e8a071509e15efd0625);
+            
+        
+
+        circle_marker_215665a7dfabce06105e770ee9c30741.bindPopup(popup_057e391a49c9cee30452b2339b7aa921)
+        ;
+
+        
+    
+    
+            circle_marker_215665a7dfabce06105e770ee9c30741.bindTooltip(
+                `<div>
+                     Genova
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b15da89addf2fe5b815ff5eac441942 = L.circleMarker(
+                [44.10245, 9.824083],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_91dc9e409c3211f73b31064c401441fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a07d23887724bc644e58013adf476483 = $(`<div id="html_a07d23887724bc644e58013adf476483" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">La Spezia</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_91dc9e409c3211f73b31064c401441fe.setContent(html_a07d23887724bc644e58013adf476483);
+            
+        
+
+        circle_marker_7b15da89addf2fe5b815ff5eac441942.bindPopup(popup_91dc9e409c3211f73b31064c401441fe)
+        ;
+
+        
+    
+    
+            circle_marker_7b15da89addf2fe5b815ff5eac441942.bindTooltip(
+                `<div>
+                     La Spezia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22d8ea8ad3c9cec444c1949ed149342c = L.circleMarker(
+                [45.799026, 8.730095],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_253c80f36e7064bef009f036235436e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23dbdeb1366af98bba4d18ce05b9e69f = $(`<div id="html_23dbdeb1366af98bba4d18ce05b9e69f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Varese</strong><br>       <b>Strutture sanitarie:</b> 19     </div>     </div>`)[0];
+                popup_253c80f36e7064bef009f036235436e1.setContent(html_23dbdeb1366af98bba4d18ce05b9e69f);
+            
+        
+
+        circle_marker_22d8ea8ad3c9cec444c1949ed149342c.bindPopup(popup_253c80f36e7064bef009f036235436e1)
+        ;
+
+        
+    
+    
+            circle_marker_22d8ea8ad3c9cec444c1949ed149342c.bindTooltip(
+                `<div>
+                     Varese
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_754f91e12aee722164103e84c20d17f3 = L.circleMarker(
+                [45.808042, 9.085179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_1199e1606f44172f6a9833224bf82ad2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24e1ddc695fb315fbf783523deb71e28 = $(`<div id="html_24e1ddc695fb315fbf783523deb71e28" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Como</strong><br>       <b>Strutture sanitarie:</b> 14     </div>     </div>`)[0];
+                popup_1199e1606f44172f6a9833224bf82ad2.setContent(html_24e1ddc695fb315fbf783523deb71e28);
+            
+        
+
+        circle_marker_754f91e12aee722164103e84c20d17f3.bindPopup(popup_1199e1606f44172f6a9833224bf82ad2)
+        ;
+
+        
+    
+    
+            circle_marker_754f91e12aee722164103e84c20d17f3.bindTooltip(
+                `<div>
+                     Como
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c95365d48601e778d805cf06906e1e0 = L.circleMarker(
+                [46.172764, 9.799492],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_ed26d1f93bc2617a366f097bab35de94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b61e6c06d32767f91497779a7adab8b1 = $(`<div id="html_b61e6c06d32767f91497779a7adab8b1" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Sondrio</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_ed26d1f93bc2617a366f097bab35de94.setContent(html_b61e6c06d32767f91497779a7adab8b1);
+            
+        
+
+        circle_marker_8c95365d48601e778d805cf06906e1e0.bindPopup(popup_ed26d1f93bc2617a366f097bab35de94)
+        ;
+
+        
+    
+    
+            circle_marker_8c95365d48601e778d805cf06906e1e0.bindTooltip(
+                `<div>
+                     Sondrio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_946ac50e5910ee7df3e80d6cfaab6b9d = L.circleMarker(
+                [45.458626, 9.181873],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_e521eee286bc77817ab201bfe59059e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0a5fd1acebcd6700a90a66b30945a64e = $(`<div id="html_0a5fd1acebcd6700a90a66b30945a64e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Milano</strong><br>       <b>Strutture sanitarie:</b> 67     </div>     </div>`)[0];
+                popup_e521eee286bc77817ab201bfe59059e1.setContent(html_0a5fd1acebcd6700a90a66b30945a64e);
+            
+        
+
+        circle_marker_946ac50e5910ee7df3e80d6cfaab6b9d.bindPopup(popup_e521eee286bc77817ab201bfe59059e1)
+        ;
+
+        
+    
+    
+            circle_marker_946ac50e5910ee7df3e80d6cfaab6b9d.bindTooltip(
+                `<div>
+                     Milano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98054abe340cde602e55c64f3a641958 = L.circleMarker(
+                [45.85783, 9.881998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_7baa1e5e0b9d94544adf419d5fb95c37 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6f89458df46596b31360d1291b9e940c = $(`<div id="html_6f89458df46596b31360d1291b9e940c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Bergamo</strong><br>       <b>Strutture sanitarie:</b> 26     </div>     </div>`)[0];
+                popup_7baa1e5e0b9d94544adf419d5fb95c37.setContent(html_6f89458df46596b31360d1291b9e940c);
+            
+        
+
+        circle_marker_98054abe340cde602e55c64f3a641958.bindPopup(popup_7baa1e5e0b9d94544adf419d5fb95c37)
+        ;
+
+        
+    
+    
+            circle_marker_98054abe340cde602e55c64f3a641958.bindTooltip(
+                `<div>
+                     Bergamo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_625166fe2c950b7bdf9f0a77811e3665 = L.circleMarker(
+                [45.659677, 10.385672],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_7e05f5eb5bea271acefa28d889fdde4b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8eef8c4d114344c28f2f8649c95603e = $(`<div id="html_f8eef8c4d114344c28f2f8649c95603e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Brescia</strong><br>       <b>Strutture sanitarie:</b> 33     </div>     </div>`)[0];
+                popup_7e05f5eb5bea271acefa28d889fdde4b.setContent(html_f8eef8c4d114344c28f2f8649c95603e);
+            
+        
+
+        circle_marker_625166fe2c950b7bdf9f0a77811e3665.bindPopup(popup_7e05f5eb5bea271acefa28d889fdde4b)
+        ;
+
+        
+    
+    
+            circle_marker_625166fe2c950b7bdf9f0a77811e3665.bindTooltip(
+                `<div>
+                     Brescia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_727673e8c6aa6ea5a9ecbddf4b5d72f5 = L.circleMarker(
+                [45.321817, 8.846624],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_c8ba051d595adac2b58274593757d9e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3b96d9caf81a8c0a23904c5be5740174 = $(`<div id="html_3b96d9caf81a8c0a23904c5be5740174" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pavia</strong><br>       <b>Strutture sanitarie:</b> 16     </div>     </div>`)[0];
+                popup_c8ba051d595adac2b58274593757d9e7.setContent(html_3b96d9caf81a8c0a23904c5be5740174);
+            
+        
+
+        circle_marker_727673e8c6aa6ea5a9ecbddf4b5d72f5.bindPopup(popup_c8ba051d595adac2b58274593757d9e7)
+        ;
+
+        
+    
+    
+            circle_marker_727673e8c6aa6ea5a9ecbddf4b5d72f5.bindTooltip(
+                `<div>
+                     Pavia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d59310b96d9de7f6ea2e74cc18b1c0d0 = L.circleMarker(
+                [45.201438, 9.983658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_7eb80c124c1f84387b6c5fbb1887b635 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_171afcf612bb696f2628250abec1f8e6 = $(`<div id="html_171afcf612bb696f2628250abec1f8e6" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Cremona</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_7eb80c124c1f84387b6c5fbb1887b635.setContent(html_171afcf612bb696f2628250abec1f8e6);
+            
+        
+
+        circle_marker_d59310b96d9de7f6ea2e74cc18b1c0d0.bindPopup(popup_7eb80c124c1f84387b6c5fbb1887b635)
+        ;
+
+        
+    
+    
+            circle_marker_d59310b96d9de7f6ea2e74cc18b1c0d0.bindTooltip(
+                `<div>
+                     Cremona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9181c9ffeea1a1eeaca2b755679404f2 = L.circleMarker(
+                [45.156417, 10.791375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_aeae2d109bce34b294ccff87d50eeb2d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_644c1be17eee00a136f2718b8e47bbb5 = $(`<div id="html_644c1be17eee00a136f2718b8e47bbb5" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Mantova</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_aeae2d109bce34b294ccff87d50eeb2d.setContent(html_644c1be17eee00a136f2718b8e47bbb5);
+            
+        
+
+        circle_marker_9181c9ffeea1a1eeaca2b755679404f2.bindPopup(popup_aeae2d109bce34b294ccff87d50eeb2d)
+        ;
+
+        
+    
+    
+            circle_marker_9181c9ffeea1a1eeaca2b755679404f2.bindTooltip(
+                `<div>
+                     Mantova
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db813ad30a740f2ebc592b424f369610 = L.circleMarker(
+                [46.734096, 11.288802],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_4a66ae993802f0fcda2bd983dd7e8f82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3752dc9fe69c4c1a4cf515cf652041ca = $(`<div id="html_3752dc9fe69c4c1a4cf515cf652041ca" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Bolzano-Bozen</strong><br>       <b>Strutture sanitarie:</b> 18     </div>     </div>`)[0];
+                popup_4a66ae993802f0fcda2bd983dd7e8f82.setContent(html_3752dc9fe69c4c1a4cf515cf652041ca);
+            
+        
+
+        circle_marker_db813ad30a740f2ebc592b424f369610.bindPopup(popup_4a66ae993802f0fcda2bd983dd7e8f82)
+        ;
+
+        
+    
+    
+            circle_marker_db813ad30a740f2ebc592b424f369610.bindTooltip(
+                `<div>
+                     Bolzano-Bozen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_602ae8be751e2159ceadc0e973332530 = L.circleMarker(
+                [46.0512, 11.117539],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_d65111a9d9d277c35ef4c59b7d9336bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b7bbfce5d75117be8cd49f5cec2d93b1 = $(`<div id="html_b7bbfce5d75117be8cd49f5cec2d93b1" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Trento</strong><br>       <b>Strutture sanitarie:</b> 15     </div>     </div>`)[0];
+                popup_d65111a9d9d277c35ef4c59b7d9336bd.setContent(html_b7bbfce5d75117be8cd49f5cec2d93b1);
+            
+        
+
+        circle_marker_602ae8be751e2159ceadc0e973332530.bindPopup(popup_d65111a9d9d277c35ef4c59b7d9336bd)
+        ;
+
+        
+    
+    
+            circle_marker_602ae8be751e2159ceadc0e973332530.bindTooltip(
+                `<div>
+                     Trento
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1fd4d0a418020386b2b78b672ae8cf5 = L.circleMarker(
+                [45.44185, 11.073532],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_f9bdcb20ca6657290b05c624409485bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_25a21181abd4050557f61bed15ff5c85 = $(`<div id="html_25a21181abd4050557f61bed15ff5c85" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Verona</strong><br>       <b>Strutture sanitarie:</b> 16     </div>     </div>`)[0];
+                popup_f9bdcb20ca6657290b05c624409485bd.setContent(html_25a21181abd4050557f61bed15ff5c85);
+            
+        
+
+        circle_marker_c1fd4d0a418020386b2b78b672ae8cf5.bindPopup(popup_f9bdcb20ca6657290b05c624409485bd)
+        ;
+
+        
+    
+    
+            circle_marker_c1fd4d0a418020386b2b78b672ae8cf5.bindTooltip(
+                `<div>
+                     Verona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edd51bd18e688e918df57606cb6bcb58 = L.circleMarker(
+                [45.545479, 11.535421],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_7a813be060e5be87dd7dcda349803ce5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3416baaf38ef129b0adbb49a1f91ac3c = $(`<div id="html_3416baaf38ef129b0adbb49a1f91ac3c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Vicenza</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_7a813be060e5be87dd7dcda349803ce5.setContent(html_3416baaf38ef129b0adbb49a1f91ac3c);
+            
+        
+
+        circle_marker_edd51bd18e688e918df57606cb6bcb58.bindPopup(popup_7a813be060e5be87dd7dcda349803ce5)
+        ;
+
+        
+    
+    
+            circle_marker_edd51bd18e688e918df57606cb6bcb58.bindTooltip(
+                `<div>
+                     Vicenza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_904bbc3598b830554e25ce048a709a7e = L.circleMarker(
+                [46.249766, 12.196957],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_c0175783ddd04b85b2cce3ff511484b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23a81aa82833eaaba8c37864ebd7b2d4 = $(`<div id="html_23a81aa82833eaaba8c37864ebd7b2d4" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Belluno</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_c0175783ddd04b85b2cce3ff511484b1.setContent(html_23a81aa82833eaaba8c37864ebd7b2d4);
+            
+        
+
+        circle_marker_904bbc3598b830554e25ce048a709a7e.bindPopup(popup_c0175783ddd04b85b2cce3ff511484b1)
+        ;
+
+        
+    
+    
+            circle_marker_904bbc3598b830554e25ce048a709a7e.bindTooltip(
+                `<div>
+                     Belluno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_533a26d6f650746a421c100470877b54 = L.circleMarker(
+                [45.666852, 12.243062],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_147c1e4af6827244fb63d4f392b9f5f7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_49c7d695e149ee14e1cd379e5ef6e926 = $(`<div id="html_49c7d695e149ee14e1cd379e5ef6e926" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Treviso</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_147c1e4af6827244fb63d4f392b9f5f7.setContent(html_49c7d695e149ee14e1cd379e5ef6e926);
+            
+        
+
+        circle_marker_533a26d6f650746a421c100470877b54.bindPopup(popup_147c1e4af6827244fb63d4f392b9f5f7)
+        ;
+
+        
+    
+    
+            circle_marker_533a26d6f650746a421c100470877b54.bindTooltip(
+                `<div>
+                     Treviso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b91f48f8d1301afd5407122532e5528f = L.circleMarker(
+                [45.493048, 12.4177],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b8da8fdd9d8bb9d1360e54ca02bd3c69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6bb4ce466e2d80bb180c9894c0fbcf9e = $(`<div id="html_6bb4ce466e2d80bb180c9894c0fbcf9e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Venezia</strong><br>       <b>Strutture sanitarie:</b> 13     </div>     </div>`)[0];
+                popup_b8da8fdd9d8bb9d1360e54ca02bd3c69.setContent(html_6bb4ce466e2d80bb180c9894c0fbcf9e);
+            
+        
+
+        circle_marker_b91f48f8d1301afd5407122532e5528f.bindPopup(popup_b8da8fdd9d8bb9d1360e54ca02bd3c69)
+        ;
+
+        
+    
+    
+            circle_marker_b91f48f8d1301afd5407122532e5528f.bindTooltip(
+                `<div>
+                     Venezia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef211712e6b682052497a6bc74751c9d = L.circleMarker(
+                [45.366186, 11.820914],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_cb97c6cf8037db21b3918a11b3548ed8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed8dc8718fea9eeaa6af191f0f1466dd = $(`<div id="html_ed8dc8718fea9eeaa6af191f0f1466dd" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Padova</strong><br>       <b>Strutture sanitarie:</b> 13     </div>     </div>`)[0];
+                popup_cb97c6cf8037db21b3918a11b3548ed8.setContent(html_ed8dc8718fea9eeaa6af191f0f1466dd);
+            
+        
+
+        circle_marker_ef211712e6b682052497a6bc74751c9d.bindPopup(popup_cb97c6cf8037db21b3918a11b3548ed8)
+        ;
+
+        
+    
+    
+            circle_marker_ef211712e6b682052497a6bc74751c9d.bindTooltip(
+                `<div>
+                     Padova
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d500ecb88065988bd116aff435612957 = L.circleMarker(
+                [45.024182, 11.823816],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_f086287988587b0cbf102eb99f203b94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69b604891036ce35544d757d3105285f = $(`<div id="html_69b604891036ce35544d757d3105285f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Rovigo</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_f086287988587b0cbf102eb99f203b94.setContent(html_69b604891036ce35544d757d3105285f);
+            
+        
+
+        circle_marker_d500ecb88065988bd116aff435612957.bindPopup(popup_f086287988587b0cbf102eb99f203b94)
+        ;
+
+        
+    
+    
+            circle_marker_d500ecb88065988bd116aff435612957.bindTooltip(
+                `<div>
+                     Rovigo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_24b2400741f22e262152932fe0dd6ab6 = L.circleMarker(
+                [46.140797, 13.16629],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_0776f699e532ace1dcc2ce9bdebcfe8b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc6f43bed15d5aba6bd152e718a4513d = $(`<div id="html_cc6f43bed15d5aba6bd152e718a4513d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Udine</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_0776f699e532ace1dcc2ce9bdebcfe8b.setContent(html_cc6f43bed15d5aba6bd152e718a4513d);
+            
+        
+
+        circle_marker_24b2400741f22e262152932fe0dd6ab6.bindPopup(popup_0776f699e532ace1dcc2ce9bdebcfe8b)
+        ;
+
+        
+    
+    
+            circle_marker_24b2400741f22e262152932fe0dd6ab6.bindTooltip(
+                `<div>
+                     Udine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d51c02f7cbb9e39052a6abcddfc536a9 = L.circleMarker(
+                [45.90539, 13.516373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a300560e2ac6aa5d82fdeef17d919f80 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5f7002ba82131d2853c3097ed13664a = $(`<div id="html_d5f7002ba82131d2853c3097ed13664a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Gorizia</strong><br>       <b>Strutture sanitarie:</b> 2     </div>     </div>`)[0];
+                popup_a300560e2ac6aa5d82fdeef17d919f80.setContent(html_d5f7002ba82131d2853c3097ed13664a);
+            
+        
+
+        circle_marker_d51c02f7cbb9e39052a6abcddfc536a9.bindPopup(popup_a300560e2ac6aa5d82fdeef17d919f80)
+        ;
+
+        
+    
+    
+            circle_marker_d51c02f7cbb9e39052a6abcddfc536a9.bindTooltip(
+                `<div>
+                     Gorizia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08ce1234b7cdd51baf57a5077038cf96 = L.circleMarker(
+                [45.689482, 13.783307],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b433bbbeb48a678c18686196f5179e53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_afa507f8f737b7ff0541f1f8dad2f9ae = $(`<div id="html_afa507f8f737b7ff0541f1f8dad2f9ae" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Trieste</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_b433bbbeb48a678c18686196f5179e53.setContent(html_afa507f8f737b7ff0541f1f8dad2f9ae);
+            
+        
+
+        circle_marker_08ce1234b7cdd51baf57a5077038cf96.bindPopup(popup_b433bbbeb48a678c18686196f5179e53)
+        ;
+
+        
+    
+    
+            circle_marker_08ce1234b7cdd51baf57a5077038cf96.bindTooltip(
+                `<div>
+                     Trieste
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f19687c586b94c2b74bbebe6e0b39b7 = L.circleMarker(
+                [44.826311, 9.529145],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_0759f2d200a8b45ae22923e1bd167bd4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c3795ba9e680fb8c4ed4e439d51ab81 = $(`<div id="html_2c3795ba9e680fb8c4ed4e439d51ab81" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Piacenza</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_0759f2d200a8b45ae22923e1bd167bd4.setContent(html_2c3795ba9e680fb8c4ed4e439d51ab81);
+            
+        
+
+        circle_marker_4f19687c586b94c2b74bbebe6e0b39b7.bindPopup(popup_0759f2d200a8b45ae22923e1bd167bd4)
+        ;
+
+        
+    
+    
+            circle_marker_4f19687c586b94c2b74bbebe6e0b39b7.bindTooltip(
+                `<div>
+                     Piacenza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_158f942f3f1690f04834530f5fb4ba18 = L.circleMarker(
+                [44.801532, 10.327935],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_2fb715aaea3be5b69a238c7b77758328 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f505f61090c711e33876e532b7564ac = $(`<div id="html_0f505f61090c711e33876e532b7564ac" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Parma</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_2fb715aaea3be5b69a238c7b77758328.setContent(html_0f505f61090c711e33876e532b7564ac);
+            
+        
+
+        circle_marker_158f942f3f1690f04834530f5fb4ba18.bindPopup(popup_2fb715aaea3be5b69a238c7b77758328)
+        ;
+
+        
+    
+    
+            circle_marker_158f942f3f1690f04834530f5fb4ba18.bindTooltip(
+                `<div>
+                     Parma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88e26a33e53ae568499df04daffa1517 = L.circleMarker(
+                [44.585658, 10.556474],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a1fd406780bc5df1dd6c079f00334327 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_084417107d7834c8ce1aa992bace7f1a = $(`<div id="html_084417107d7834c8ce1aa992bace7f1a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Reggio Nell'Emilia</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_a1fd406780bc5df1dd6c079f00334327.setContent(html_084417107d7834c8ce1aa992bace7f1a);
+            
+        
+
+        circle_marker_88e26a33e53ae568499df04daffa1517.bindPopup(popup_a1fd406780bc5df1dd6c079f00334327)
+        ;
+
+        
+    
+    
+            circle_marker_88e26a33e53ae568499df04daffa1517.bindTooltip(
+                `<div>
+                     Reggio Nell'Emilia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ba02460f8649957e4e3225beaf73e17 = L.circleMarker(
+                [44.55138, 10.918048],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_de5b3798671e6ae47c59f3034f35a35a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_462571a04c71ba1db4b62329fe760472 = $(`<div id="html_462571a04c71ba1db4b62329fe760472" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Modena</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_de5b3798671e6ae47c59f3034f35a35a.setContent(html_462571a04c71ba1db4b62329fe760472);
+            
+        
+
+        circle_marker_2ba02460f8649957e4e3225beaf73e17.bindPopup(popup_de5b3798671e6ae47c59f3034f35a35a)
+        ;
+
+        
+    
+    
+            circle_marker_2ba02460f8649957e4e3225beaf73e17.bindTooltip(
+                `<div>
+                     Modena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77b97281f60b1b542a927243372fce16 = L.circleMarker(
+                [44.50051, 11.304784],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_9f27ba754e6b78bd2f360f37944e01cd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a03ec9f63973df404633c9751acb96ec = $(`<div id="html_a03ec9f63973df404633c9751acb96ec" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Bologna</strong><br>       <b>Strutture sanitarie:</b> 29     </div>     </div>`)[0];
+                popup_9f27ba754e6b78bd2f360f37944e01cd.setContent(html_a03ec9f63973df404633c9751acb96ec);
+            
+        
+
+        circle_marker_77b97281f60b1b542a927243372fce16.bindPopup(popup_9f27ba754e6b78bd2f360f37944e01cd)
+        ;
+
+        
+    
+    
+            circle_marker_77b97281f60b1b542a927243372fce16.bindTooltip(
+                `<div>
+                     Bologna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2afa5129e54be74fbf610f66e1bc4d1 = L.circleMarker(
+                [44.766368, 11.764407],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_c32bd6e5b2104ce8f7d042b6a16189d9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0e4f873b9dff8f73cd7fc9e3239fc34 = $(`<div id="html_a0e4f873b9dff8f73cd7fc9e3239fc34" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Ferrara</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_c32bd6e5b2104ce8f7d042b6a16189d9.setContent(html_a0e4f873b9dff8f73cd7fc9e3239fc34);
+            
+        
+
+        circle_marker_e2afa5129e54be74fbf610f66e1bc4d1.bindPopup(popup_c32bd6e5b2104ce8f7d042b6a16189d9)
+        ;
+
+        
+    
+    
+            circle_marker_e2afa5129e54be74fbf610f66e1bc4d1.bindTooltip(
+                `<div>
+                     Ferrara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a7d76ceb9c744843074ef651d891a73 = L.circleMarker(
+                [44.418444, 12.2036],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_4aa654d436a8d7060d7b6b97fab153f8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4e193bc4f850e440ce6d83b4f38cc1d = $(`<div id="html_e4e193bc4f850e440ce6d83b4f38cc1d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Ravenna</strong><br>       <b>Strutture sanitarie:</b> 8     </div>     </div>`)[0];
+                popup_4aa654d436a8d7060d7b6b97fab153f8.setContent(html_e4e193bc4f850e440ce6d83b4f38cc1d);
+            
+        
+
+        circle_marker_5a7d76ceb9c744843074ef651d891a73.bindPopup(popup_4aa654d436a8d7060d7b6b97fab153f8)
+        ;
+
+        
+    
+    
+            circle_marker_5a7d76ceb9c744843074ef651d891a73.bindTooltip(
+                `<div>
+                     Ravenna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4270accee98f88ce2697c73f6096d5b = L.circleMarker(
+                [44.2225, 12.040833],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_0542730d08a907d000012f4574b6c050 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71ff5cad65da4c25e6188298e415c75c = $(`<div id="html_71ff5cad65da4c25e6188298e415c75c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Forli'-Cesena</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_0542730d08a907d000012f4574b6c050.setContent(html_71ff5cad65da4c25e6188298e415c75c);
+            
+        
+
+        circle_marker_b4270accee98f88ce2697c73f6096d5b.bindPopup(popup_0542730d08a907d000012f4574b6c050)
+        ;
+
+        
+    
+    
+            circle_marker_b4270accee98f88ce2697c73f6096d5b.bindTooltip(
+                `<div>
+                     Forli'-Cesena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e45acba5d89b19cbbe58e55f70743dd2 = L.circleMarker(
+                [43.613012, 12.713512],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_9598673ee7fea5beb1269986ff3c103c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2fe4f00e951f0653cb5893055c42e108 = $(`<div id="html_2fe4f00e951f0653cb5893055c42e108" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pesaro E Urbino</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_9598673ee7fea5beb1269986ff3c103c.setContent(html_2fe4f00e951f0653cb5893055c42e108);
+            
+        
+
+        circle_marker_e45acba5d89b19cbbe58e55f70743dd2.bindPopup(popup_9598673ee7fea5beb1269986ff3c103c)
+        ;
+
+        
+    
+    
+            circle_marker_e45acba5d89b19cbbe58e55f70743dd2.bindTooltip(
+                `<div>
+                     Pesaro E Urbino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85998cd7109655babe5e2c9c643fcf36 = L.circleMarker(
+                [43.549325, 13.266348],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a443311bc9d5f7c7d84cb267497bf21d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50410722adb2fd6f2c87b8691a4a63fc = $(`<div id="html_50410722adb2fd6f2c87b8691a4a63fc" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Ancona</strong><br>       <b>Strutture sanitarie:</b> 14     </div>     </div>`)[0];
+                popup_a443311bc9d5f7c7d84cb267497bf21d.setContent(html_50410722adb2fd6f2c87b8691a4a63fc);
+            
+        
+
+        circle_marker_85998cd7109655babe5e2c9c643fcf36.bindPopup(popup_a443311bc9d5f7c7d84cb267497bf21d)
+        ;
+
+        
+    
+    
+            circle_marker_85998cd7109655babe5e2c9c643fcf36.bindTooltip(
+                `<div>
+                     Ancona
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa9fe0fbbb364fa6b1cd27e4bff6144d = L.circleMarker(
+                [43.245932, 13.266348],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a41b847f18c06506f6bb2c8721e2050b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_372335bd66037acd0811e0f0394c9f93 = $(`<div id="html_372335bd66037acd0811e0f0394c9f93" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Macerata</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_a41b847f18c06506f6bb2c8721e2050b.setContent(html_372335bd66037acd0811e0f0394c9f93);
+            
+        
+
+        circle_marker_fa9fe0fbbb364fa6b1cd27e4bff6144d.bindPopup(popup_a41b847f18c06506f6bb2c8721e2050b)
+        ;
+
+        
+    
+    
+            circle_marker_fa9fe0fbbb364fa6b1cd27e4bff6144d.bindTooltip(
+                `<div>
+                     Macerata
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6cb56be50a580797c01e41e3a9a5b70 = L.circleMarker(
+                [42.863893, 13.589973],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_99ea69c935a6b3d0c3fd52b62ef14a3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_128b8fa28288ea0884ffb3721a24d19c = $(`<div id="html_128b8fa28288ea0884ffb3721a24d19c" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Ascoli Piceno</strong><br>       <b>Strutture sanitarie:</b> 3     </div>     </div>`)[0];
+                popup_99ea69c935a6b3d0c3fd52b62ef14a3c.setContent(html_128b8fa28288ea0884ffb3721a24d19c);
+            
+        
+
+        circle_marker_e6cb56be50a580797c01e41e3a9a5b70.bindPopup(popup_99ea69c935a6b3d0c3fd52b62ef14a3c)
+        ;
+
+        
+    
+    
+            circle_marker_e6cb56be50a580797c01e41e3a9a5b70.bindTooltip(
+                `<div>
+                     Ascoli Piceno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab3f26c533f9815b27efd3e6b3c2159e = L.circleMarker(
+                [44.079325, 10.097677],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_5091931c1f98c74a7a0763bb58301358 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4af43da98bb66cfcb5a3b8e282fb946b = $(`<div id="html_4af43da98bb66cfcb5a3b8e282fb946b" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Massa Carrara</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_5091931c1f98c74a7a0763bb58301358.setContent(html_4af43da98bb66cfcb5a3b8e282fb946b);
+            
+        
+
+        circle_marker_ab3f26c533f9815b27efd3e6b3c2159e.bindPopup(popup_5091931c1f98c74a7a0763bb58301358)
+        ;
+
+        
+    
+    
+            circle_marker_ab3f26c533f9815b27efd3e6b3c2159e.bindTooltip(
+                `<div>
+                     Massa Carrara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ee415066e0e2c9c76f4f59cb7c35d50 = L.circleMarker(
+                [43.837674, 10.495053],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_aeab7e1fb67d11ce8cda4594da35f692 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27e3052d46e4727ae41eb0dec0dcd7f8 = $(`<div id="html_27e3052d46e4727ae41eb0dec0dcd7f8" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Lucca</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_aeab7e1fb67d11ce8cda4594da35f692.setContent(html_27e3052d46e4727ae41eb0dec0dcd7f8);
+            
+        
+
+        circle_marker_6ee415066e0e2c9c76f4f59cb7c35d50.bindPopup(popup_aeab7e1fb67d11ce8cda4594da35f692)
+        ;
+
+        
+    
+    
+            circle_marker_6ee415066e0e2c9c76f4f59cb7c35d50.bindTooltip(
+                `<div>
+                     Lucca
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e826b5fe5e1944b0f60eaf114d86fa6e = L.circleMarker(
+                [43.954373, 10.89031],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_816dbd6a02258dc5bec51795b6ebd7a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_92798877ca8ad596f541b79212d90d10 = $(`<div id="html_92798877ca8ad596f541b79212d90d10" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pistoia</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_816dbd6a02258dc5bec51795b6ebd7a0.setContent(html_92798877ca8ad596f541b79212d90d10);
+            
+        
+
+        circle_marker_e826b5fe5e1944b0f60eaf114d86fa6e.bindPopup(popup_816dbd6a02258dc5bec51795b6ebd7a0)
+        ;
+
+        
+    
+    
+            circle_marker_e826b5fe5e1944b0f60eaf114d86fa6e.bindTooltip(
+                `<div>
+                     Pistoia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_453467e1122fb0a970ecabca69434bb7 = L.circleMarker(
+                [43.767918, 11.252379],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_7f966ab58784c800917351eeb4390d94 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e88710ca47b4ffd9d3c96cb04d1822fd = $(`<div id="html_e88710ca47b4ffd9d3c96cb04d1822fd" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Firenze</strong><br>       <b>Strutture sanitarie:</b> 22     </div>     </div>`)[0];
+                popup_7f966ab58784c800917351eeb4390d94.setContent(html_e88710ca47b4ffd9d3c96cb04d1822fd);
+            
+        
+
+        circle_marker_453467e1122fb0a970ecabca69434bb7.bindPopup(popup_7f966ab58784c800917351eeb4390d94)
+        ;
+
+        
+    
+    
+            circle_marker_453467e1122fb0a970ecabca69434bb7.bindTooltip(
+                `<div>
+                     Firenze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57b7b4e94d496ff46b3d936bf1aa6987 = L.circleMarker(
+                [43.023985, 10.66471],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_fea5eddaa438349c3bb4003371ec90ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9bfbf462fb7a294fce603f29a00b1986 = $(`<div id="html_9bfbf462fb7a294fce603f29a00b1986" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Livorno</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_fea5eddaa438349c3bb4003371ec90ab.setContent(html_9bfbf462fb7a294fce603f29a00b1986);
+            
+        
+
+        circle_marker_57b7b4e94d496ff46b3d936bf1aa6987.bindPopup(popup_fea5eddaa438349c3bb4003371ec90ab)
+        ;
+
+        
+    
+    
+            circle_marker_57b7b4e94d496ff46b3d936bf1aa6987.bindTooltip(
+                `<div>
+                     Livorno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_028813ffdb043c695a358caaa00e872d = L.circleMarker(
+                [43.722832, 10.401719],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b497961117d80c739901a0d6758bc1ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_429660b857e2a87487047761ea11bd28 = $(`<div id="html_429660b857e2a87487047761ea11bd28" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pisa</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_b497961117d80c739901a0d6758bc1ae.setContent(html_429660b857e2a87487047761ea11bd28);
+            
+        
+
+        circle_marker_028813ffdb043c695a358caaa00e872d.bindPopup(popup_b497961117d80c739901a0d6758bc1ae)
+        ;
+
+        
+    
+    
+            circle_marker_028813ffdb043c695a358caaa00e872d.bindTooltip(
+                `<div>
+                     Pisa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc33a383f4302acb0523cbe0c4902038 = L.circleMarker(
+                [43.466896, 11.88236],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_51f2600a8403688cf782a62317d94b7a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac4b699d3dc7c59949ba602f66327b9d = $(`<div id="html_ac4b699d3dc7c59949ba602f66327b9d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Arezzo</strong><br>       <b>Strutture sanitarie:</b> 8     </div>     </div>`)[0];
+                popup_51f2600a8403688cf782a62317d94b7a.setContent(html_ac4b699d3dc7c59949ba602f66327b9d);
+            
+        
+
+        circle_marker_dc33a383f4302acb0523cbe0c4902038.bindPopup(popup_51f2600a8403688cf782a62317d94b7a)
+        ;
+
+        
+    
+    
+            circle_marker_dc33a383f4302acb0523cbe0c4902038.bindTooltip(
+                `<div>
+                     Arezzo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ff32a3c91b442d8dd63e5bc3e7630e0 = L.circleMarker(
+                [43.293773, 11.433915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_fb7dd559cc27017f8328d753692cf3b3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53d8dd8dae49195fe8d0fb8ecb5263c2 = $(`<div id="html_53d8dd8dae49195fe8d0fb8ecb5263c2" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Siena</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_fb7dd559cc27017f8328d753692cf3b3.setContent(html_53d8dd8dae49195fe8d0fb8ecb5263c2);
+            
+        
+
+        circle_marker_9ff32a3c91b442d8dd63e5bc3e7630e0.bindPopup(popup_fb7dd559cc27017f8328d753692cf3b3)
+        ;
+
+        
+    
+    
+            circle_marker_9ff32a3c91b442d8dd63e5bc3e7630e0.bindTooltip(
+                `<div>
+                     Siena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_10dbeb4677006ac299ff086668053ba1 = L.circleMarker(
+                [42.851801, 11.252379],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_aebcb3de58dcc2721f76d40a25b78e82 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_83cb11e4c19a8ac3f406b30534b6acac = $(`<div id="html_83cb11e4c19a8ac3f406b30534b6acac" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Grosseto</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_aebcb3de58dcc2721f76d40a25b78e82.setContent(html_83cb11e4c19a8ac3f406b30534b6acac);
+            
+        
+
+        circle_marker_10dbeb4677006ac299ff086668053ba1.bindPopup(popup_aebcb3de58dcc2721f76d40a25b78e82)
+        ;
+
+        
+    
+    
+            circle_marker_10dbeb4677006ac299ff086668053ba1.bindTooltip(
+                `<div>
+                     Grosseto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0483221c498ead20564e11c3436e39a9 = L.circleMarker(
+                [42.938004, 12.621621],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_6c4e20dcf19c60d36a528c23350b4812 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_051c1f17c1e70132be91f8c09e2bc067 = $(`<div id="html_051c1f17c1e70132be91f8c09e2bc067" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Perugia</strong><br>       <b>Strutture sanitarie:</b> 18     </div>     </div>`)[0];
+                popup_6c4e20dcf19c60d36a528c23350b4812.setContent(html_051c1f17c1e70132be91f8c09e2bc067);
+            
+        
+
+        circle_marker_0483221c498ead20564e11c3436e39a9.bindPopup(popup_6c4e20dcf19c60d36a528c23350b4812)
+        ;
+
+        
+    
+    
+            circle_marker_0483221c498ead20564e11c3436e39a9.bindTooltip(
+                `<div>
+                     Perugia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07eba405b3a0134a3b6deea3723eeb22 = L.circleMarker(
+                [42.563453, 12.529803],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_2c93ffd1a1836d2b66b5b5dd635ffaea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6e6f5c26ae4599daed1d83863f5b519 = $(`<div id="html_c6e6f5c26ae4599daed1d83863f5b519" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Terni</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_2c93ffd1a1836d2b66b5b5dd635ffaea.setContent(html_c6e6f5c26ae4599daed1d83863f5b519);
+            
+        
+
+        circle_marker_07eba405b3a0134a3b6deea3723eeb22.bindPopup(popup_2c93ffd1a1836d2b66b5b5dd635ffaea)
+        ;
+
+        
+    
+    
+            circle_marker_07eba405b3a0134a3b6deea3723eeb22.bindTooltip(
+                `<div>
+                     Terni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_628436b3bdadddd5ab66991f8fe23f6e = L.circleMarker(
+                [42.420677, 12.107669],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b35328a3c827b48c9fed227554cc0f23 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_205df69b21fb0bb680460caac2b66000 = $(`<div id="html_205df69b21fb0bb680460caac2b66000" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Viterbo</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_b35328a3c827b48c9fed227554cc0f23.setContent(html_205df69b21fb0bb680460caac2b66000);
+            
+        
+
+        circle_marker_628436b3bdadddd5ab66991f8fe23f6e.bindPopup(popup_b35328a3c827b48c9fed227554cc0f23)
+        ;
+
+        
+    
+    
+            circle_marker_628436b3bdadddd5ab66991f8fe23f6e.bindTooltip(
+                `<div>
+                     Viterbo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5589286b0f36fc8f2626b09801990730 = L.circleMarker(
+                [42.367441, 12.89751],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_f171cf3dc423246459a2899165c1784b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1dd956bdb61fefc3075d6e6c698601f = $(`<div id="html_c1dd956bdb61fefc3075d6e6c698601f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Rieti</strong><br>       <b>Strutture sanitarie:</b> 1     </div>     </div>`)[0];
+                popup_f171cf3dc423246459a2899165c1784b.setContent(html_c1dd956bdb61fefc3075d6e6c698601f);
+            
+        
+
+        circle_marker_5589286b0f36fc8f2626b09801990730.bindPopup(popup_f171cf3dc423246459a2899165c1784b)
+        ;
+
+        
+    
+    
+            circle_marker_5589286b0f36fc8f2626b09801990730.bindTooltip(
+                `<div>
+                     Rieti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4192ef4fcd56cb49c8fac98482ce3311 = L.circleMarker(
+                [41.872411, 12.480225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.2, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b7751ff37016b9661113de0e62fcba9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5002bded9d263b1786e565ea7778985 = $(`<div id="html_c5002bded9d263b1786e565ea7778985" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Roma</strong><br>       <b>Strutture sanitarie:</b> 122     </div>     </div>`)[0];
+                popup_b7751ff37016b9661113de0e62fcba9b.setContent(html_c5002bded9d263b1786e565ea7778985);
+            
+        
+
+        circle_marker_4192ef4fcd56cb49c8fac98482ce3311.bindPopup(popup_b7751ff37016b9661113de0e62fcba9b)
+        ;
+
+        
+    
+    
+            circle_marker_4192ef4fcd56cb49c8fac98482ce3311.bindTooltip(
+                `<div>
+                     Roma
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_949de155b6c775b4e9287ceba6d821c9 = L.circleMarker(
+                [41.408748, 13.08179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a4d81d11a341746ef1db6a497ddb7879 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e028b7d6061c813a11ff03d6f09e3bc1 = $(`<div id="html_e028b7d6061c813a11ff03d6f09e3bc1" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Latina</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_a4d81d11a341746ef1db6a497ddb7879.setContent(html_e028b7d6061c813a11ff03d6f09e3bc1);
+            
+        
+
+        circle_marker_949de155b6c775b4e9287ceba6d821c9.bindPopup(popup_a4d81d11a341746ef1db6a497ddb7879)
+        ;
+
+        
+    
+    
+            circle_marker_949de155b6c775b4e9287ceba6d821c9.bindTooltip(
+                `<div>
+                     Latina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_354d885f1f4fa6339e5f15bde28ed1f4 = L.circleMarker(
+                [41.657653, 13.636272],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_9b331287dc98af3692a028e03b0785bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fdb9af702ffb16beea75f457373c694 = $(`<div id="html_9fdb9af702ffb16beea75f457373c694" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Frosinone</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_9b331287dc98af3692a028e03b0785bd.setContent(html_9fdb9af702ffb16beea75f457373c694);
+            
+        
+
+        circle_marker_354d885f1f4fa6339e5f15bde28ed1f4.bindPopup(popup_9b331287dc98af3692a028e03b0785bd)
+        ;
+
+        
+    
+    
+            circle_marker_354d885f1f4fa6339e5f15bde28ed1f4.bindTooltip(
+                `<div>
+                     Frosinone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0764506a26194967ea867f1ed365868 = L.circleMarker(
+                [41.207835, 14.100133],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_41a349bd44cb4f922dbe32f0fda18e56 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0490fa228b6e8f3906fd619c8392af5e = $(`<div id="html_0490fa228b6e8f3906fd619c8392af5e" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Caserta</strong><br>       <b>Strutture sanitarie:</b> 20     </div>     </div>`)[0];
+                popup_41a349bd44cb4f922dbe32f0fda18e56.setContent(html_0490fa228b6e8f3906fd619c8392af5e);
+            
+        
+
+        circle_marker_b0764506a26194967ea867f1ed365868.bindPopup(popup_41a349bd44cb4f922dbe32f0fda18e56)
+        ;
+
+        
+    
+    
+            circle_marker_b0764506a26194967ea867f1ed365868.bindTooltip(
+                `<div>
+                     Caserta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_363deddea6b18b28695bf00ae9f195e1 = L.circleMarker(
+                [41.203509, 14.752094],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_d630c3a8102a2916aace07d203a05d78 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7a341471a604ced09929005d46504847 = $(`<div id="html_7a341471a604ced09929005d46504847" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Benevento</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_d630c3a8102a2916aace07d203a05d78.setContent(html_7a341471a604ced09929005d46504847);
+            
+        
+
+        circle_marker_363deddea6b18b28695bf00ae9f195e1.bindPopup(popup_d630c3a8102a2916aace07d203a05d78)
+        ;
+
+        
+    
+    
+            circle_marker_363deddea6b18b28695bf00ae9f195e1.bindTooltip(
+                `<div>
+                     Benevento
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_937f4fd4bc494d871b866e38f6774f90 = L.circleMarker(
+                [40.996451, 15.125896],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_11f922903d8430b6554aec68e1081d2a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_908f70ddb0678fa090649360cea21ecc = $(`<div id="html_908f70ddb0678fa090649360cea21ecc" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Avellino</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_11f922903d8430b6554aec68e1081d2a.setContent(html_908f70ddb0678fa090649360cea21ecc);
+            
+        
+
+        circle_marker_937f4fd4bc494d871b866e38f6774f90.bindPopup(popup_11f922903d8430b6554aec68e1081d2a)
+        ;
+
+        
+    
+    
+            circle_marker_937f4fd4bc494d871b866e38f6774f90.bindTooltip(
+                `<div>
+                     Avellino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c8567ec6f32f632e45a0bd499217962 = L.circleMarker(
+                [40.428783, 15.219481],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_238480cecde4d273fcb2eb6285af5995 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_70b6880b3aebcb032d959630c3b746d3 = $(`<div id="html_70b6880b3aebcb032d959630c3b746d3" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Salerno</strong><br>       <b>Strutture sanitarie:</b> 26     </div>     </div>`)[0];
+                popup_238480cecde4d273fcb2eb6285af5995.setContent(html_70b6880b3aebcb032d959630c3b746d3);
+            
+        
+
+        circle_marker_2c8567ec6f32f632e45a0bd499217962.bindPopup(popup_238480cecde4d273fcb2eb6285af5995)
+        ;
+
+        
+    
+    
+            circle_marker_2c8567ec6f32f632e45a0bd499217962.bindTooltip(
+                `<div>
+                     Salerno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25ad9db5588d15d6a978bb7eac99715d = L.circleMarker(
+                [42.349848, 13.399509],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_e073ed6ce8b474725b800f4defcc0ea5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5d9710f58c4d86d38fdcd55d6b8054d1 = $(`<div id="html_5d9710f58c4d86d38fdcd55d6b8054d1" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">L'Aquila</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_e073ed6ce8b474725b800f4defcc0ea5.setContent(html_5d9710f58c4d86d38fdcd55d6b8054d1);
+            
+        
+
+        circle_marker_25ad9db5588d15d6a978bb7eac99715d.bindPopup(popup_e073ed6ce8b474725b800f4defcc0ea5)
+        ;
+
+        
+    
+    
+            circle_marker_25ad9db5588d15d6a978bb7eac99715d.bindTooltip(
+                `<div>
+                     L'Aquila
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d91344ec86ac34d098819432f03dc321 = L.circleMarker(
+                [42.589561, 13.636272],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a7bcb141c3da996e6bfbd4f67c576878 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1cecdad41d3065516064e4f96d22770d = $(`<div id="html_1cecdad41d3065516064e4f96d22770d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Teramo</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_a7bcb141c3da996e6bfbd4f67c576878.setContent(html_1cecdad41d3065516064e4f96d22770d);
+            
+        
+
+        circle_marker_d91344ec86ac34d098819432f03dc321.bindPopup(popup_a7bcb141c3da996e6bfbd4f67c576878)
+        ;
+
+        
+    
+    
+            circle_marker_d91344ec86ac34d098819432f03dc321.bindTooltip(
+                `<div>
+                     Teramo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8b667c17d41c841ed7af1a81ef8f115 = L.circleMarker(
+                [42.357066, 13.960809],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_ea98b665c657f539ad4aa957bd506c55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_960fee815628f1311ba1b416b273a27f = $(`<div id="html_960fee815628f1311ba1b416b273a27f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pescara</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_ea98b665c657f539ad4aa957bd506c55.setContent(html_960fee815628f1311ba1b416b273a27f);
+            
+        
+
+        circle_marker_d8b667c17d41c841ed7af1a81ef8f115.bindPopup(popup_ea98b665c657f539ad4aa957bd506c55)
+        ;
+
+        
+    
+    
+            circle_marker_d8b667c17d41c841ed7af1a81ef8f115.bindTooltip(
+                `<div>
+                     Pescara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5e531e2b8aa193a90fc44c421261ad4 = L.circleMarker(
+                [42.033443, 14.379191],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_fa8d90daa987af45454df32963369b92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03ab0807fede4142a7e2c2bb1bd20ca0 = $(`<div id="html_03ab0807fede4142a7e2c2bb1bd20ca0" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Chieti</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_fa8d90daa987af45454df32963369b92.setContent(html_03ab0807fede4142a7e2c2bb1bd20ca0);
+            
+        
+
+        circle_marker_c5e531e2b8aa193a90fc44c421261ad4.bindPopup(popup_fa8d90daa987af45454df32963369b92)
+        ;
+
+        
+    
+    
+            circle_marker_c5e531e2b8aa193a90fc44c421261ad4.bindTooltip(
+                `<div>
+                     Chieti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c971772ee47e54035fa9bdf5b8523b46 = L.circleMarker(
+                [41.673887, 14.752094],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_15244c042392d9173c7b9c4395238d25 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_465d4a8ac9640af43ffd61aaaaf3506f = $(`<div id="html_465d4a8ac9640af43ffd61aaaaf3506f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Campobasso</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_15244c042392d9173c7b9c4395238d25.setContent(html_465d4a8ac9640af43ffd61aaaaf3506f);
+            
+        
+
+        circle_marker_c971772ee47e54035fa9bdf5b8523b46.bindPopup(popup_15244c042392d9173c7b9c4395238d25)
+        ;
+
+        
+    
+    
+            circle_marker_c971772ee47e54035fa9bdf5b8523b46.bindTooltip(
+                `<div>
+                     Campobasso
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf50ab4e08ef150fb35c65ba680753b6 = L.circleMarker(
+                [41.638448, 15.594339],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_6e0231f5b540d89383f425676698b411 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b316c44a3542cea302a730684bec9656 = $(`<div id="html_b316c44a3542cea302a730684bec9656" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Foggia</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_6e0231f5b540d89383f425676698b411.setContent(html_b316c44a3542cea302a730684bec9656);
+            
+        
+
+        circle_marker_cf50ab4e08ef150fb35c65ba680753b6.bindPopup(popup_6e0231f5b540d89383f425676698b411)
+        ;
+
+        
+    
+    
+            circle_marker_cf50ab4e08ef150fb35c65ba680753b6.bindTooltip(
+                `<div>
+                     Foggia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3880928859168522f5760c616fe6ea5 = L.circleMarker(
+                [41.117123, 16.871976],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_1238f468ce8093d88d80db62d999b49d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a88c820b238c9fb02c01f0f705005866 = $(`<div id="html_a88c820b238c9fb02c01f0f705005866" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Bari</strong><br>       <b>Strutture sanitarie:</b> 20     </div>     </div>`)[0];
+                popup_1238f468ce8093d88d80db62d999b49d.setContent(html_a88c820b238c9fb02c01f0f705005866);
+            
+        
+
+        circle_marker_f3880928859168522f5760c616fe6ea5.bindPopup(popup_1238f468ce8093d88d80db62d999b49d)
+        ;
+
+        
+    
+    
+            circle_marker_f3880928859168522f5760c616fe6ea5.bindTooltip(
+                `<div>
+                     Bari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_466b3d2bc1e238e4c687ee76020728b3 = L.circleMarker(
+                [40.57409, 17.242998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_9fcb9a06ff94316751aebe024356107a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db2320b9a963239fd0fa76bc6f637cc6 = $(`<div id="html_db2320b9a963239fd0fa76bc6f637cc6" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Taranto</strong><br>       <b>Strutture sanitarie:</b> 16     </div>     </div>`)[0];
+                popup_9fcb9a06ff94316751aebe024356107a.setContent(html_db2320b9a963239fd0fa76bc6f637cc6);
+            
+        
+
+        circle_marker_466b3d2bc1e238e4c687ee76020728b3.bindPopup(popup_9fcb9a06ff94316751aebe024356107a)
+        ;
+
+        
+    
+    
+            circle_marker_466b3d2bc1e238e4c687ee76020728b3.bindTooltip(
+                `<div>
+                     Taranto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0704688127be7e0a83d0672483f87919 = L.circleMarker(
+                [40.611266, 17.763621],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_484f56a938b5b8ee0bf12804340a2676 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6b4c6bb0d008027bdd65b150503e584 = $(`<div id="html_c6b4c6bb0d008027bdd65b150503e584" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Brindisi</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_484f56a938b5b8ee0bf12804340a2676.setContent(html_c6b4c6bb0d008027bdd65b150503e584);
+            
+        
+
+        circle_marker_0704688127be7e0a83d0672483f87919.bindPopup(popup_484f56a938b5b8ee0bf12804340a2676)
+        ;
+
+        
+    
+    
+            circle_marker_0704688127be7e0a83d0672483f87919.bindTooltip(
+                `<div>
+                     Brindisi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a00d4749f7982c9d12bf024b7f5c56e9 = L.circleMarker(
+                [40.234739, 18.142867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_6cc81cc1c3e3c057e7430236c5f5d563 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a970bd77fbda56811306a8bda92d1ebd = $(`<div id="html_a970bd77fbda56811306a8bda92d1ebd" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Lecce</strong><br>       <b>Strutture sanitarie:</b> 14     </div>     </div>`)[0];
+                popup_6cc81cc1c3e3c057e7430236c5f5d563.setContent(html_a970bd77fbda56811306a8bda92d1ebd);
+            
+        
+
+        circle_marker_a00d4749f7982c9d12bf024b7f5c56e9.bindPopup(popup_6cc81cc1c3e3c057e7430236c5f5d563)
+        ;
+
+        
+    
+    
+            circle_marker_a00d4749f7982c9d12bf024b7f5c56e9.bindTooltip(
+                `<div>
+                     Lecce
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa6d1af4ad8a46a4eb6218d840ba5fe3 = L.circleMarker(
+                [40.418219, 15.876004],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_dcdfd7c9b805f1875728a8c9f33d23ff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d0195d99eb989d7c928118a1c4a6597 = $(`<div id="html_0d0195d99eb989d7c928118a1c4a6597" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Potenza</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_dcdfd7c9b805f1875728a8c9f33d23ff.setContent(html_0d0195d99eb989d7c928118a1c4a6597);
+            
+        
+
+        circle_marker_fa6d1af4ad8a46a4eb6218d840ba5fe3.bindPopup(popup_dcdfd7c9b805f1875728a8c9f33d23ff)
+        ;
+
+        
+    
+    
+            circle_marker_fa6d1af4ad8a46a4eb6218d840ba5fe3.bindTooltip(
+                `<div>
+                     Potenza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83d726db374501fc21bac1b331a412f4 = L.circleMarker(
+                [40.66635, 16.604364],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_2345aa15abf30de85f55c973af4ed3f5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9145747e93ff81983e96b6b726b5b877 = $(`<div id="html_9145747e93ff81983e96b6b726b5b877" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Matera</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_2345aa15abf30de85f55c973af4ed3f5.setContent(html_9145747e93ff81983e96b6b726b5b877);
+            
+        
+
+        circle_marker_83d726db374501fc21bac1b331a412f4.bindPopup(popup_2345aa15abf30de85f55c973af4ed3f5)
+        ;
+
+        
+    
+    
+            circle_marker_83d726db374501fc21bac1b331a412f4.bindTooltip(
+                `<div>
+                     Matera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfb678549e822709cd1122ff9c945d95 = L.circleMarker(
+                [39.564411, 16.252214],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_0fa70f023414387b53c6ccdd5654d34e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79bff20fd0d782751b38553622085996 = $(`<div id="html_79bff20fd0d782751b38553622085996" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Cosenza</strong><br>       <b>Strutture sanitarie:</b> 23     </div>     </div>`)[0];
+                popup_0fa70f023414387b53c6ccdd5654d34e.setContent(html_79bff20fd0d782751b38553622085996);
+            
+        
+
+        circle_marker_dfb678549e822709cd1122ff9c945d95.bindPopup(popup_0fa70f023414387b53c6ccdd5654d34e)
+        ;
+
+        
+    
+    
+            circle_marker_dfb678549e822709cd1122ff9c945d95.bindTooltip(
+                `<div>
+                     Cosenza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3101c3de1c62aada70284eb920d951fc = L.circleMarker(
+                [38.889635, 16.440587],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_a5814ffa545d3da31b841e6a8c87912b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b3d95d2a35ea818fc3f648eb35ecf851 = $(`<div id="html_b3d95d2a35ea818fc3f648eb35ecf851" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Catanzaro</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_a5814ffa545d3da31b841e6a8c87912b.setContent(html_b3d95d2a35ea818fc3f648eb35ecf851);
+            
+        
+
+        circle_marker_3101c3de1c62aada70284eb920d951fc.bindPopup(popup_a5814ffa545d3da31b841e6a8c87912b)
+        ;
+
+        
+    
+    
+            circle_marker_3101c3de1c62aada70284eb920d951fc.bindTooltip(
+                `<div>
+                     Catanzaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c1c83f50abda57220290b0bfb2b3961 = L.circleMarker(
+                [38.111301, 15.647291],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_895d3a9200f831fe035794874e06482c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c783f8a043b8277d8e7c8e93ac00b055 = $(`<div id="html_c783f8a043b8277d8e7c8e93ac00b055" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Reggio Di Calabria</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_895d3a9200f831fe035794874e06482c.setContent(html_c783f8a043b8277d8e7c8e93ac00b055);
+            
+        
+
+        circle_marker_7c1c83f50abda57220290b0bfb2b3961.bindPopup(popup_895d3a9200f831fe035794874e06482c)
+        ;
+
+        
+    
+    
+            circle_marker_7c1c83f50abda57220290b0bfb2b3961.bindTooltip(
+                `<div>
+                     Reggio Di Calabria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91f7a85d654e089950623a89ef6c921e = L.circleMarker(
+                [37.87774, 12.713512],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_005ad2316e1081357506f376d71aa802 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_adf24f428f60cb217ccc4b315edf114d = $(`<div id="html_adf24f428f60cb217ccc4b315edf114d" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Trapani</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_005ad2316e1081357506f376d71aa802.setContent(html_adf24f428f60cb217ccc4b315edf114d);
+            
+        
+
+        circle_marker_91f7a85d654e089950623a89ef6c921e.bindPopup(popup_005ad2316e1081357506f376d71aa802)
+        ;
+
+        
+    
+    
+            circle_marker_91f7a85d654e089950623a89ef6c921e.bindTooltip(
+                `<div>
+                     Trapani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4f2fe77a8f86c4a19c35c86f655239f = L.circleMarker(
+                [38.115621, 13.361318],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_f12e65ee3298577b7b1459af86a72742 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1539bb6615d16c3a67cbeb2e0d1bb286 = $(`<div id="html_1539bb6615d16c3a67cbeb2e0d1bb286" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Palermo</strong><br>       <b>Strutture sanitarie:</b> 32     </div>     </div>`)[0];
+                popup_f12e65ee3298577b7b1459af86a72742.setContent(html_1539bb6615d16c3a67cbeb2e0d1bb286);
+            
+        
+
+        circle_marker_b4f2fe77a8f86c4a19c35c86f655239f.bindPopup(popup_f12e65ee3298577b7b1459af86a72742)
+        ;
+
+        
+    
+    
+            circle_marker_b4f2fe77a8f86c4a19c35c86f655239f.bindTooltip(
+                `<div>
+                     Palermo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2109bef70fd5754be45cdf22a73c618 = L.circleMarker(
+                [38.06324, 14.985618],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_9567aee209bbfa0637ba47bd701e120c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21a59315b57a9e3e2f4f399a14e6fdf3 = $(`<div id="html_21a59315b57a9e3e2f4f399a14e6fdf3" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Messina</strong><br>       <b>Strutture sanitarie:</b> 22     </div>     </div>`)[0];
+                popup_9567aee209bbfa0637ba47bd701e120c.setContent(html_21a59315b57a9e3e2f4f399a14e6fdf3);
+            
+        
+
+        circle_marker_f2109bef70fd5754be45cdf22a73c618.bindPopup(popup_9567aee209bbfa0637ba47bd701e120c)
+        ;
+
+        
+    
+    
+            circle_marker_f2109bef70fd5754be45cdf22a73c618.bindTooltip(
+                `<div>
+                     Messina
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76275c6d2b722b475bdafaec94261df7 = L.circleMarker(
+                [37.31109, 13.576548],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b3d2dde3ffd693d3a14657edf0b21076 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f4f425b975ada24f6af5ed9988d38dad = $(`<div id="html_f4f425b975ada24f6af5ed9988d38dad" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Agrigento</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_b3d2dde3ffd693d3a14657edf0b21076.setContent(html_f4f425b975ada24f6af5ed9988d38dad);
+            
+        
+
+        circle_marker_76275c6d2b722b475bdafaec94261df7.bindPopup(popup_b3d2dde3ffd693d3a14657edf0b21076)
+        ;
+
+        
+    
+    
+            circle_marker_76275c6d2b722b475bdafaec94261df7.bindTooltip(
+                `<div>
+                     Agrigento
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7defd342fa713eebae29dc1fbd70fd7 = L.circleMarker(
+                [37.490112, 14.062893],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_1daaf14d3d0c770b248f498f7103dd95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cb0f8183af242bc22ad2e04ee437aca9 = $(`<div id="html_cb0f8183af242bc22ad2e04ee437aca9" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Caltanissetta</strong><br>       <b>Strutture sanitarie:</b> 8     </div>     </div>`)[0];
+                popup_1daaf14d3d0c770b248f498f7103dd95.setContent(html_cb0f8183af242bc22ad2e04ee437aca9);
+            
+        
+
+        circle_marker_d7defd342fa713eebae29dc1fbd70fd7.bindPopup(popup_1daaf14d3d0c770b248f498f7103dd95)
+        ;
+
+        
+    
+    
+            circle_marker_d7defd342fa713eebae29dc1fbd70fd7.bindTooltip(
+                `<div>
+                     Caltanissetta
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db9fb2199d872f9b7949e5957ab3521e = L.circleMarker(
+                [37.516481, 14.379191],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_000cc940ee49bd3e5cc0e034c94f3c92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5f0ba53fef48868da798b4427e603459 = $(`<div id="html_5f0ba53fef48868da798b4427e603459" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Enna</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_000cc940ee49bd3e5cc0e034c94f3c92.setContent(html_5f0ba53fef48868da798b4427e603459);
+            
+        
+
+        circle_marker_db9fb2199d872f9b7949e5957ab3521e.bindPopup(popup_000cc940ee49bd3e5cc0e034c94f3c92)
+        ;
+
+        
+    
+    
+            circle_marker_db9fb2199d872f9b7949e5957ab3521e.bindTooltip(
+                `<div>
+                     Enna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_092462675f256a974fb7a7d37dfa311d = L.circleMarker(
+                [37.612598, 14.938885],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_d5370391d79e1325d0e563f906cbb1a3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_88c77c238a937b02f624f17796a6ea3f = $(`<div id="html_88c77c238a937b02f624f17796a6ea3f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Catania</strong><br>       <b>Strutture sanitarie:</b> 34     </div>     </div>`)[0];
+                popup_d5370391d79e1325d0e563f906cbb1a3.setContent(html_88c77c238a937b02f624f17796a6ea3f);
+            
+        
+
+        circle_marker_092462675f256a974fb7a7d37dfa311d.bindPopup(popup_d5370391d79e1325d0e563f906cbb1a3)
+        ;
+
+        
+    
+    
+            circle_marker_092462675f256a974fb7a7d37dfa311d.bindTooltip(
+                `<div>
+                     Catania
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2499427c6a4823e207b1ab335390e10e = L.circleMarker(
+                [36.930622, 14.705431],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_010d996644fb8b2d95db8f444ad6781f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_319c7c4ba4ca8c3b85582161224d9a75 = $(`<div id="html_319c7c4ba4ca8c3b85582161224d9a75" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Ragusa</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_010d996644fb8b2d95db8f444ad6781f.setContent(html_319c7c4ba4ca8c3b85582161224d9a75);
+            
+        
+
+        circle_marker_2499427c6a4823e207b1ab335390e10e.bindPopup(popup_010d996644fb8b2d95db8f444ad6781f)
+        ;
+
+        
+    
+    
+            circle_marker_2499427c6a4823e207b1ab335390e10e.bindTooltip(
+                `<div>
+                     Ragusa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b69df71b48265874e9a56ee4d4068fd = L.circleMarker(
+                [37.075437, 15.286593],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_5c92f136e6974d711920f980c40999fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aaa7415bea941d2ba2624b7dfb47017a = $(`<div id="html_aaa7415bea941d2ba2624b7dfb47017a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Siracusa</strong><br>       <b>Strutture sanitarie:</b> 12     </div>     </div>`)[0];
+                popup_5c92f136e6974d711920f980c40999fb.setContent(html_aaa7415bea941d2ba2624b7dfb47017a);
+            
+        
+
+        circle_marker_2b69df71b48265874e9a56ee4d4068fd.bindPopup(popup_5c92f136e6974d711920f980c40999fb)
+        ;
+
+        
+    
+    
+            circle_marker_2b69df71b48265874e9a56ee4d4068fd.bindTooltip(
+                `<div>
+                     Siracusa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_291b1f113bf37dc31412f52f85d5bdfb = L.circleMarker(
+                [40.796791, 8.575041],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_b20f5c0da19d96baddff49cd1e658b2b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef69cbd6c5406bc7736ba0d5d1a7921f = $(`<div id="html_ef69cbd6c5406bc7736ba0d5d1a7921f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Sassari</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_b20f5c0da19d96baddff49cd1e658b2b.setContent(html_ef69cbd6c5406bc7736ba0d5d1a7921f);
+            
+        
+
+        circle_marker_291b1f113bf37dc31412f52f85d5bdfb.bindPopup(popup_b20f5c0da19d96baddff49cd1e658b2b)
+        ;
+
+        
+    
+    
+            circle_marker_291b1f113bf37dc31412f52f85d5bdfb.bindTooltip(
+                `<div>
+                     Sassari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c1dc3bfcacedffd39d716af0c3275f8 = L.circleMarker(
+                [40.32869, 9.456155],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_fa68de4b406e90e2f5e33e051a100398 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1872e683437ac4e8013e927c3fc3e618 = $(`<div id="html_1872e683437ac4e8013e927c3fc3e618" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Nuoro</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_fa68de4b406e90e2f5e33e051a100398.setContent(html_1872e683437ac4e8013e927c3fc3e618);
+            
+        
+
+        circle_marker_8c1dc3bfcacedffd39d716af0c3275f8.bindPopup(popup_fa68de4b406e90e2f5e33e051a100398)
+        ;
+
+        
+    
+    
+            circle_marker_8c1dc3bfcacedffd39d716af0c3275f8.bindTooltip(
+                `<div>
+                     Nuoro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42c45042c1419f8fe406bd04fcbe8449 = L.circleMarker(
+                [39.223763, 9.121867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_767cf38616136836f7aa7a8ed45868fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1300db0a55b45e1e574496b0ffd6e53 = $(`<div id="html_e1300db0a55b45e1e574496b0ffd6e53" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Cagliari</strong><br>       <b>Strutture sanitarie:</b> 15     </div>     </div>`)[0];
+                popup_767cf38616136836f7aa7a8ed45868fc.setContent(html_e1300db0a55b45e1e574496b0ffd6e53);
+            
+        
+
+        circle_marker_42c45042c1419f8fe406bd04fcbe8449.bindPopup(popup_767cf38616136836f7aa7a8ed45868fc)
+        ;
+
+        
+    
+    
+            circle_marker_42c45042c1419f8fe406bd04fcbe8449.bindTooltip(
+                `<div>
+                     Cagliari
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c7e95f79fa975a67b2a5d023c23c5f45 = L.circleMarker(
+                [46.037886, 12.710835],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_e3010399803e347a791aaa079cb5aff4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c1c4c7f716300a96d41d117c308c157 = $(`<div id="html_7c1c4c7f716300a96d41d117c308c157" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Pordenone</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_e3010399803e347a791aaa079cb5aff4.setContent(html_7c1c4c7f716300a96d41d117c308c157);
+            
+        
+
+        circle_marker_c7e95f79fa975a67b2a5d023c23c5f45.bindPopup(popup_e3010399803e347a791aaa079cb5aff4)
+        ;
+
+        
+    
+    
+            circle_marker_c7e95f79fa975a67b2a5d023c23c5f45.bindTooltip(
+                `<div>
+                     Pordenone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5585c72cfe510b5cb52082a78fcc0454 = L.circleMarker(
+                [41.589156, 14.193092],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_195bc696376fc8e86c63f01c279024b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea04f69376484a54dcf43999ac535ba3 = $(`<div id="html_ea04f69376484a54dcf43999ac535ba3" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Isernia</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_195bc696376fc8e86c63f01c279024b7.setContent(html_ea04f69376484a54dcf43999ac535ba3);
+            
+        
+
+        circle_marker_5585c72cfe510b5cb52082a78fcc0454.bindPopup(popup_195bc696376fc8e86c63f01c279024b7)
+        ;
+
+        
+    
+    
+            circle_marker_5585c72cfe510b5cb52082a78fcc0454.bindTooltip(
+                `<div>
+                     Isernia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_41f2d97d0aa818b3dc83fc754f90b81a = L.circleMarker(
+                [40.059907, 8.748117],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_ec55f860148a781ab00599d29f72c74a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_576e915b675e50d0878b870ba6af5dac = $(`<div id="html_576e915b675e50d0878b870ba6af5dac" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Oristano</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_ec55f860148a781ab00599d29f72c74a.setContent(html_576e915b675e50d0878b870ba6af5dac);
+            
+        
+
+        circle_marker_41f2d97d0aa818b3dc83fc754f90b81a.bindPopup(popup_ec55f860148a781ab00599d29f72c74a)
+        ;
+
+        
+    
+    
+            circle_marker_41f2d97d0aa818b3dc83fc754f90b81a.bindTooltip(
+                `<div>
+                     Oristano
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8fa61e42662b7d324988657d477898f = L.circleMarker(
+                [45.562818, 8.058272],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_efb6e3c89847768ae41b6b7a06023ec0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_baf3e01ffe67876ebb8c27d3d1a9466b = $(`<div id="html_baf3e01ffe67876ebb8c27d3d1a9466b" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Biella</strong><br>       <b>Strutture sanitarie:</b> 3     </div>     </div>`)[0];
+                popup_efb6e3c89847768ae41b6b7a06023ec0.setContent(html_baf3e01ffe67876ebb8c27d3d1a9466b);
+            
+        
+
+        circle_marker_c8fa61e42662b7d324988657d477898f.bindPopup(popup_efb6e3c89847768ae41b6b7a06023ec0)
+        ;
+
+        
+    
+    
+            circle_marker_c8fa61e42662b7d324988657d477898f.bindTooltip(
+                `<div>
+                     Biella
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a801c2ee26b00338fc2ccc9e98aeac82 = L.circleMarker(
+                [45.938294, 9.385729],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_68389c0068153ad870a90e60f84bbee7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57b01e0ab2a4836d1611dd5ca0c8e791 = $(`<div id="html_57b01e0ab2a4836d1611dd5ca0c8e791" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Lecco</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_68389c0068153ad870a90e60f84bbee7.setContent(html_57b01e0ab2a4836d1611dd5ca0c8e791);
+            
+        
+
+        circle_marker_a801c2ee26b00338fc2ccc9e98aeac82.bindPopup(popup_68389c0068153ad870a90e60f84bbee7)
+        ;
+
+        
+    
+    
+            circle_marker_a801c2ee26b00338fc2ccc9e98aeac82.bindTooltip(
+                `<div>
+                     Lecco
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a151a8e5ba52f0c7d385ece21936d28 = L.circleMarker(
+                [45.240504, 9.529251],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_f0a51d2978827186e07e6434d1f02548 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50d8db8f23b5464ede38b61190915426 = $(`<div id="html_50d8db8f23b5464ede38b61190915426" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Lodi</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_f0a51d2978827186e07e6434d1f02548.setContent(html_50d8db8f23b5464ede38b61190915426);
+            
+        
+
+        circle_marker_4a151a8e5ba52f0c7d385ece21936d28.bindPopup(popup_f0a51d2978827186e07e6434d1f02548)
+        ;
+
+        
+    
+    
+            circle_marker_4a151a8e5ba52f0c7d385ece21936d28.bindTooltip(
+                `<div>
+                     Lodi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b2bf9077b026cd36ac2754e7c3f463f = L.circleMarker(
+                [43.967605, 12.575703],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_2fb8e08f8bc8aa7f980b25b5db11fd5a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e811123b3ce389849143f46a42782c3f = $(`<div id="html_e811123b3ce389849143f46a42782c3f" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Rimini</strong><br>       <b>Strutture sanitarie:</b> 10     </div>     </div>`)[0];
+                popup_2fb8e08f8bc8aa7f980b25b5db11fd5a.setContent(html_e811123b3ce389849143f46a42782c3f);
+            
+        
+
+        circle_marker_1b2bf9077b026cd36ac2754e7c3f463f.bindPopup(popup_2fb8e08f8bc8aa7f980b25b5db11fd5a)
+        ;
+
+        
+    
+    
+            circle_marker_1b2bf9077b026cd36ac2754e7c3f463f.bindTooltip(
+                `<div>
+                     Rimini
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bb3d0346227486f75f2c685226966928 = L.circleMarker(
+                [44.04539, 11.116445],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_e6d2695cabde2221b5cbf71e412c50c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2b49f9e9a83f3122ad03a98c676d7a13 = $(`<div id="html_2b49f9e9a83f3122ad03a98c676d7a13" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Prato</strong><br>       <b>Strutture sanitarie:</b> 2     </div>     </div>`)[0];
+                popup_e6d2695cabde2221b5cbf71e412c50c9.setContent(html_2b49f9e9a83f3122ad03a98c676d7a13);
+            
+        
+
+        circle_marker_bb3d0346227486f75f2c685226966928.bindPopup(popup_e6d2695cabde2221b5cbf71e412c50c9)
+        ;
+
+        
+    
+    
+            circle_marker_bb3d0346227486f75f2c685226966928.bindTooltip(
+                `<div>
+                     Prato
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_811f4b1c0d43e71c7e2de03870891a21 = L.circleMarker(
+                [39.130986, 17.006703],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_19a54d6a51b70e181ea04701025a805b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e27e78950ca263a0569f2a34d7b866c7 = $(`<div id="html_e27e78950ca263a0569f2a34d7b866c7" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Crotone</strong><br>       <b>Strutture sanitarie:</b> 9     </div>     </div>`)[0];
+                popup_19a54d6a51b70e181ea04701025a805b.setContent(html_e27e78950ca263a0569f2a34d7b866c7);
+            
+        
+
+        circle_marker_811f4b1c0d43e71c7e2de03870891a21.bindPopup(popup_19a54d6a51b70e181ea04701025a805b)
+        ;
+
+        
+    
+    
+            circle_marker_811f4b1c0d43e71c7e2de03870891a21.bindTooltip(
+                `<div>
+                     Crotone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3666912452ab1535317b3e748975de4f = L.circleMarker(
+                [38.637857, 16.205148],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_5b2a27a416321a9c79dbd2323aa171c1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_036009d7f112360bac285dd967eef186 = $(`<div id="html_036009d7f112360bac285dd967eef186" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Vibo Valentia</strong><br>       <b>Strutture sanitarie:</b> 4     </div>     </div>`)[0];
+                popup_5b2a27a416321a9c79dbd2323aa171c1.setContent(html_036009d7f112360bac285dd967eef186);
+            
+        
+
+        circle_marker_3666912452ab1535317b3e748975de4f.bindPopup(popup_5b2a27a416321a9c79dbd2323aa171c1)
+        ;
+
+        
+    
+    
+            circle_marker_3666912452ab1535317b3e748975de4f.bindTooltip(
+                `<div>
+                     Vibo Valentia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a638d0ff71d0bea909b426f1eb4cc6ab = L.circleMarker(
+                [46.139969, 8.272465],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_1d740b50a7a26cd05a237fa598e5b3df = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5011c1eba2780a37297f15ca62d29fe3 = $(`<div id="html_5011c1eba2780a37297f15ca62d29fe3" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Verbano-Cusio-Ossola</strong><br>       <b>Strutture sanitarie:</b> 5     </div>     </div>`)[0];
+                popup_1d740b50a7a26cd05a237fa598e5b3df.setContent(html_5011c1eba2780a37297f15ca62d29fe3);
+            
+        
+
+        circle_marker_a638d0ff71d0bea909b426f1eb4cc6ab.bindPopup(popup_1d740b50a7a26cd05a237fa598e5b3df)
+        ;
+
+        
+    
+    
+            circle_marker_a638d0ff71d0bea909b426f1eb4cc6ab.bindTooltip(
+                `<div>
+                     Verbano-Cusio-Ossola
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c38c77c567de38c63e0cf0660aad0d2b = L.circleMarker(
+                [45.623599, 9.258802],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_acf5bc293e4d80d04196ed6ebfa672e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb38544068e812a9224b165488ae332a = $(`<div id="html_fb38544068e812a9224b165488ae332a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Monza E Della Brianza</strong><br>       <b>Strutture sanitarie:</b> 11     </div>     </div>`)[0];
+                popup_acf5bc293e4d80d04196ed6ebfa672e6.setContent(html_fb38544068e812a9224b165488ae332a);
+            
+        
+
+        circle_marker_c38c77c567de38c63e0cf0660aad0d2b.bindPopup(popup_acf5bc293e4d80d04196ed6ebfa672e6)
+        ;
+
+        
+    
+    
+            circle_marker_c38c77c567de38c63e0cf0660aad0d2b.bindTooltip(
+                `<div>
+                     Monza E Della Brianza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_89379ea8c64e92b341d8f74cf36f81e3 = L.circleMarker(
+                [43.093137, 13.589973],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_2cc04770c81523fde2f6a5ef8dbbc8be = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b02ef33aae91e215492451c5a2f9faf = $(`<div id="html_7b02ef33aae91e215492451c5a2f9faf" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Fermo</strong><br>       <b>Strutture sanitarie:</b> 7     </div>     </div>`)[0];
+                popup_2cc04770c81523fde2f6a5ef8dbbc8be.setContent(html_7b02ef33aae91e215492451c5a2f9faf);
+            
+        
+
+        circle_marker_89379ea8c64e92b341d8f74cf36f81e3.bindPopup(popup_2cc04770c81523fde2f6a5ef8dbbc8be)
+        ;
+
+        
+    
+    
+            circle_marker_89379ea8c64e92b341d8f74cf36f81e3.bindTooltip(
+                `<div>
+                     Fermo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f2db7035a19cbecefc7389dd7f09f9f = L.circleMarker(
+                [41.200454, 16.205148],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_27e5aad8eb09bcad1efdc70a5a76a54a);
+        
+    
+        var popup_4fe85fc71b0ec88757e9bd31fea4ca00 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95d7044ccc1b8253f45b9cacdf8c181a = $(`<div id="html_95d7044ccc1b8253f45b9cacdf8c181a" style="width: 100.0%; height: 100.0%;">     <div style="width: 220px; font-family:Arial; font-size:14px;">       <strong style="font-size:16px; color:darkblue;">Barletta-Andria-Trani</strong><br>       <b>Strutture sanitarie:</b> 6     </div>     </div>`)[0];
+                popup_4fe85fc71b0ec88757e9bd31fea4ca00.setContent(html_95d7044ccc1b8253f45b9cacdf8c181a);
+            
+        
+
+        circle_marker_8f2db7035a19cbecefc7389dd7f09f9f.bindPopup(popup_4fe85fc71b0ec88757e9bd31fea4ca00)
+        ;
+
+        
+    
+    
+            circle_marker_8f2db7035a19cbecefc7389dd7f09f9f.bindTooltip(
+                `<div>
+                     Barletta-Andria-Trani
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
