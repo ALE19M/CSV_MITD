@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gestione click sui link di navigazione
     links.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
+            /* e.preventDefault(); */
             const targetId = link.getAttribute('href').substring(1);
             
             // Nascondi tutte le sezioni, incluso intro

@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Space Grotesk', sans-serif;
     background-color: #0a0a0a;
@@ -290,7 +294,7 @@ nav ul {
     opacity: 0;
     transform: translateY(50px);
     transition: all 1s ease;
-    display: none;
+    /* display: none; */
     padding-top: 120px; /* Aumentato il padding superiore */
 }
 
@@ -317,14 +321,14 @@ nav ul {
     opacity: 0;
     transform: translateY(100px);
     transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-    display: none;
+    /*display: none; */
     position: relative;
 }
 
 .sezione.active {
     opacity: 1;
     transform: translateY(0);
-    display: block;
+    /*display: block;*/
 }
 
 .content-container {
